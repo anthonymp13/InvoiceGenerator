@@ -7,6 +7,7 @@ util\Database.class
 controller\CreateUser.class
 controller\Theme.class
 persistence\GenericDao.class
+api\UserApplication.class
 controller\GenerateInvoice.class
 generator\PojoFactory.class
 controller\InsertInvoice.class
@@ -17,6 +18,7 @@ controller\ChooseCustomer.class
 entity\User.class
 entity\Invoice.class
 entity\Product.class
+api\Users.class
 generator\PdfInvoicesBasic.class
 generator\Driver.class
 entity\Role.class

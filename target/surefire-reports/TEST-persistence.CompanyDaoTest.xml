@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="persistence.CompanyDaoTest" time="10.515" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="persistence.CompanyDaoTest" time="12.126" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.2+9-LTS"/>
@@ -63,12 +63,12 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="deleteSuccess" classname="persistence.CompanyDaoTest" time="9.211"/>
-  <testcase name="getByPropertyEqualSuccess" classname="persistence.CompanyDaoTest" time="0.256"/>
-  <testcase name="insertWithCompanySuccess" classname="persistence.CompanyDaoTest" time="0.196"/>
-  <testcase name="getByPropertyLikeSuccess" classname="persistence.CompanyDaoTest" time="0.148"/>
-  <testcase name="getAllCompaniesSuccess" classname="persistence.CompanyDaoTest" time="0.152"/>
-  <testcase name="getByIdSuccess" classname="persistence.CompanyDaoTest" time="0.16"/>
-  <testcase name="updateSuccess" classname="persistence.CompanyDaoTest" time="0.168"/>
-  <testcase name="insertSuccess" classname="persistence.CompanyDaoTest" time="0.116"/>
+  <testcase name="deleteSuccess" classname="persistence.CompanyDaoTest" time="10.519"/>
+  <testcase name="getByPropertyEqualSuccess" classname="persistence.CompanyDaoTest" time="0.323"/>
+  <testcase name="insertWithCompanySuccess" classname="persistence.CompanyDaoTest" time="0.277"/>
+  <testcase name="getByPropertyLikeSuccess" classname="persistence.CompanyDaoTest" time="0.18"/>
+  <testcase name="getAllCompaniesSuccess" classname="persistence.CompanyDaoTest" time="0.131"/>
+  <testcase name="getByIdSuccess" classname="persistence.CompanyDaoTest" time="0.134"/>
+  <testcase name="updateSuccess" classname="persistence.CompanyDaoTest" time="0.199"/>
+  <testcase name="insertSuccess" classname="persistence.CompanyDaoTest" time="0.101"/>
 </testsuite>

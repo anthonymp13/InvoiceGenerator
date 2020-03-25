@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="persistence.InvoiceDaoTest" time="1.039" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="persistence.InvoiceDaoTest" time="1.4" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.2+9-LTS"/>
@@ -63,10 +63,10 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="deleteSuccess" classname="persistence.InvoiceDaoTest" time="0.104"/>
-  <testcase name="getByPropertyEqualSuccess" classname="persistence.InvoiceDaoTest" time="0.104"/>
-  <testcase name="getByPropertyLikeSuccess" classname="persistence.InvoiceDaoTest" time="0.112"/>
-  <testcase name="insertWithInvoiceAndProduct" classname="persistence.InvoiceDaoTest" time="0.331"/>
-  <testcase name="updateSuccess" classname="persistence.InvoiceDaoTest" time="0.156"/>
-  <testcase name="getAllUsersSuccess" classname="persistence.InvoiceDaoTest" time="0.228"/>
+  <testcase name="deleteSuccess" classname="persistence.InvoiceDaoTest" time="0.253"/>
+  <testcase name="getByPropertyEqualSuccess" classname="persistence.InvoiceDaoTest" time="0.163"/>
+  <testcase name="getByPropertyLikeSuccess" classname="persistence.InvoiceDaoTest" time="0.225"/>
+  <testcase name="insertWithInvoiceAndProduct" classname="persistence.InvoiceDaoTest" time="0.29"/>
+  <testcase name="updateSuccess" classname="persistence.InvoiceDaoTest" time="0.29"/>
+  <testcase name="getAllUsersSuccess" classname="persistence.InvoiceDaoTest" time="0.178"/>
 </testsuite>
