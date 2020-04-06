@@ -26,7 +26,6 @@ input {
     /* border: 1px black solid; */
     display: inline-block;
     float: right;
-
 }
 
 #tables table {
@@ -66,6 +65,16 @@ input {
     /* width: 100%; */
 }
 
+.descriptionRow1 td input {
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+.descriptionRow1 td input:focus {
+    outline: none;
+}
+
+
 .descriptionRow td input {
     border: none;
     border-bottom: 1px solid grey;
@@ -77,4 +86,8 @@ input {
 
 #customerContainer {
     margin-top: .5em;
+}
+
+select {
+    width: 100%;
 }

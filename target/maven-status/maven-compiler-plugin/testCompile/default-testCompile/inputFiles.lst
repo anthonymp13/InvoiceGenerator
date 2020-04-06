@@ -1,8 +1,8 @@
-C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\test\java\persistence\CustomerDaoTest.java
-C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\test\java\persistence\UserDaoTest.java
-C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\test\java\persistence\InvoiceDaoTest.java
-C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\test\java\persistence\RoleDaoTest.java
-C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\test\java\controller\ChooseCustomerTest.java
+C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\test\java\anthony\com\persistence\CustomerDaoTest.java
+C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\test\java\anthony\com\persistence\InvoiceDaoTest.java
+C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\test\java\anthony\com\persistence\RoleDaoTest.java
+C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\test\java\anthony\com\persistence\UserDaoTest.java
 C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\test\java\test\util\Database.java
-C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\test\java\persistence\CompanyDaoTest.java
+C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\test\java\anthony\com\controller\ChooseCustomerTest.java
+C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\test\java\anthony\com\persistence\CompanyDaoTest.java
 C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\test\java\utilities\PropertiesLoader.java

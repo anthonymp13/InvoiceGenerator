@@ -17,5 +17,7 @@
         <TR><TH><INPUT TYPE="SUBMIT" VALUE="Log In">
     </TABLE>
 </FORM>
+
+<%--TODO: Add forgot username and/or password button--%>
 </body>
 </html>

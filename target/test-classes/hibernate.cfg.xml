@@ -17,13 +17,13 @@
         <property name="hibernate.c3p0.idle_test_period">3000</property>
 
 <!--        Adding mapping class-->
-        <mapping class="entity.User"/>
-        <mapping class="entity.Customer"/>
-        <mapping class="entity.Product"/>
-        <mapping class="entity.Invoice"/>
-        <mapping class="entity.Role"/>
-        <mapping class="entity.Item"/>
-        <mapping class="entity.Company"/>
+        <mapping class="anthony.com.entity.User"/>
+        <mapping class="anthony.com.entity.Customer"/>
+        <mapping class="anthony.com.entity.Product"/>
+        <mapping class="anthony.com.entity.Invoice"/>
+        <mapping class="anthony.com.entity.Role"/>
+        <mapping class="anthony.com.entity.Item"/>
+        <mapping class="anthony.com.entity.Company"/>
 
     </session-factory>
 

@@ -29,6 +29,7 @@
     </auth-constraint>
   </security-constraint>
 
+  <!-- Protect the invoice anthony.com.generator page. -->
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>search</web-resource-name>

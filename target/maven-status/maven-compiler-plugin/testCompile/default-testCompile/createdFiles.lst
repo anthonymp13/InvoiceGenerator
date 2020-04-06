@@ -1,8 +1,8 @@
-persistence\InvoiceDaoTest.class
-controller\ChooseCustomerTest.class
+anthony\com\controller\ChooseCustomerTest.class
+anthony\com\persistence\UserDaoTest.class
+anthony\com\persistence\RoleDaoTest.class
+anthony\com\persistence\InvoiceDaoTest.class
+anthony\com\persistence\CompanyDaoTest.class
 utilities\PropertiesLoader.class
-persistence\CompanyDaoTest.class
 test\util\Database.class
-persistence\RoleDaoTest.class
-persistence\CustomerDaoTest.class
-persistence\UserDaoTest.class
+anthony\com\persistence\CustomerDaoTest.class
