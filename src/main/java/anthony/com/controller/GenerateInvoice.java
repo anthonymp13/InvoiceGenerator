@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.PreparedStatement;
 
 @WebServlet(
         name="GenerateInvoice"
@@ -27,20 +28,22 @@ public class GenerateInvoice extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
 
-//        TODO: Set companyId to a session variable
-//        TODO: Add states into database as abbreviations ex. Wisconsin : WI
+//      TODO: Set companyId to a session variable
+//      TODO: Add states into database as abbreviations ex. Wisconsin : WI
 
         GenericDao companyDao = new GenericDao(Company.class);
         GenericDao customerDao = new GenericDao(Customer.class);
 
+//      Create prepared statement for inserting invoice
+//      TODO: Instantiate an invoice
 
 
 
         request.setAttribute("company", companyDao.getById(1));
-        request.setAttribute("customers", customerDao.getAll());
+//        request.setAttribute("customers", customerDao.getAll());
 
 
-        String url = "generateInvoice/generateInvoice.jsp";
+        String url = "/InvoiceGenerator/generateInvoice/generateInvoice.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
     }

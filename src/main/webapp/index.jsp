@@ -65,7 +65,7 @@
     <div class="container" id="invoiceDescription">
         <h1><span>Free</span> Invoices</h1>
         <p>The invoice anthony.com.generator is an easy and free way to generate invoices for your company. Employees will be able to use this application to store data about customers. Then store and generate invoices for those customers.</p>
-        <a href="#" class="btn btn-outline-primary">Generate Invoice</a>
+        <a href="generateInvoice/generateInvoice.jsp" class="btn btn-outline-primary">Generate Invoice</a>
     </div>
     <div class="imageContainer">
         <img id="invoiceExampleImage" alt="image of invoice" src="images/invoice.png">

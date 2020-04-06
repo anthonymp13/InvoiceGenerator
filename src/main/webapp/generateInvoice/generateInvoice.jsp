@@ -60,11 +60,7 @@
 
 <p>Image place holder</p>
 
-
-
 <form action="GenerateInvoice" method="POST">
-
-
     <div class="companyInfo">
         <td>${company.companyId}</td>
         <td>${company.companyName}</td>
