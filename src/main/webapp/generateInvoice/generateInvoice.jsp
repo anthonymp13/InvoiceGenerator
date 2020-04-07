@@ -31,8 +31,7 @@
         </tbody>
 
     </table>
-    <form id="invoiceForm">
-
+    <form method="POST" action="GenerateInvoice" id="invoiceForm">
         <table class="table  table-bordered">
             <tablehead>
                 <tr class="bg-primary">
@@ -97,14 +96,14 @@
 
         <tr class="descriptionRow">
             <td><label for="description">Description</label>
-                <input type="text" id="description" class="description" name="mytext[]"></td>
+                <input type="text" id="description" class="description" name="description"></td>
             <td>
                 <label for="quantity">Quantity</label>
-                <input type="text" id="quantity" class="quantity" name="mytext[]">
+                <input type="text" id="quantity" class="quantity" name="quantity">
             </td>
             <td>
                 <label for="unitPrice">Unit Price</label>
-                <input type="text" id="unitPrice" class="unitPrice" name="mytext[]">
+                <input type="text" id="unitPrice" class="unitPrice" name="unitPrice">
             </td>
             <td>
                 <p class="amount"></p>

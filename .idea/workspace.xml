@@ -10,19 +10,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/GenerateInvoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/GenerateInvoice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/generateInvoice/generateInvoice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/generateInvoice/generateInvoice.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/anthony/com/controller/ChooseCustomerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/anthony/com/persistence/CompanyDaoTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/anthony/com/persistence/CustomerDaoTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/anthony/com/persistence/InvoiceDaoTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/anthony/com/persistence/RoleDaoTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/anthony/com/persistence/UserDaoTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/util/Database.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/PropertiesLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/generateInvoice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/generateInvoice.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +49,13 @@
         <item name="iTextInvoice@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="itextinvoice: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="invoice: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="iTextInvoice@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="itextinvoice: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="user_role: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
@@ -72,8 +67,8 @@
         <option value="jsf" />
         <option value="AnnotationType" />
         <option value="JavaScript File" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -405,7 +400,7 @@
       <workItem from="1585860334610" duration="261000" />
       <workItem from="1585865012044" duration="321000" />
       <workItem from="1586203694320" duration="12000" />
-      <workItem from="1586216271276" duration="949000" />
+      <workItem from="1586216271276" duration="3442000" />
     </task>
     <servers />
   </component>
@@ -476,22 +471,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="600" y="115" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585066407333" />
-    <state width="905" height="210" key="GridCell.Tab.0.bottom" timestamp="1586216528346">
+    <state width="1323" height="170" key="GridCell.Tab.0.bottom" timestamp="1586219785727">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="210" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586216528346" />
-    <state width="905" height="210" key="GridCell.Tab.0.center" timestamp="1586216528344">
+    <state width="1323" height="170" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586219785727" />
+    <state width="1323" height="170" key="GridCell.Tab.0.center" timestamp="1586219785727">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="210" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586216528344" />
-    <state width="905" height="210" key="GridCell.Tab.0.left" timestamp="1586216528344">
+    <state width="1323" height="170" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586219785727" />
+    <state width="1323" height="170" key="GridCell.Tab.0.left" timestamp="1586219785727">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="210" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586216528344" />
-    <state width="905" height="210" key="GridCell.Tab.0.right" timestamp="1586216528344">
+    <state width="1323" height="170" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586219785727" />
+    <state width="1323" height="170" key="GridCell.Tab.0.right" timestamp="1586219785727">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="210" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586216528344" />
+    <state width="1323" height="170" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586219785727" />
     <state width="905" height="210" key="GridCell.Tab.1.bottom" timestamp="1586216528346">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -620,10 +615,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="65" y="59" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1585333612612" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1585614767827">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1586217805940">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1585614767827" />
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1586217805940" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1585349472828">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
