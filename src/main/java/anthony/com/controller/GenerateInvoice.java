@@ -78,7 +78,9 @@ public class GenerateInvoice extends HttpServlet {
 
 //      Calculate total
         for(int i = 0; i < descriptions.size(); i++) {
+//          Calculate total
             total += Integer.parseInt(quantities.get(i)) * Integer.parseInt(unitPrices.get(i));
+
         }
 
 //      Get selected customer object
@@ -98,6 +100,8 @@ public class GenerateInvoice extends HttpServlet {
 
 //      Create invoice object
         Invoice newInvoice = new Invoice(date, total, terms, user, customer);
+
+
 
 
         String url = "/InvoiceGenerator/generateInvoice/generateInvoice.jsp";

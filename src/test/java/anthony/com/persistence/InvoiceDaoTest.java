@@ -40,8 +40,7 @@ class InvoiceDaoTest {
         Invoice newInvoice = new Invoice(date, 1500.00, "Upon completion", user, customer);
 
         GenericDao productDao = new GenericDao(Product.class);
-        Product product = (Product) productDao.getById(1);
-
+        Product product = (Product)productDao.getById(1);
 
         Item item = new Item(1, product, 5, newInvoice);
         newInvoice.addItem(item);
