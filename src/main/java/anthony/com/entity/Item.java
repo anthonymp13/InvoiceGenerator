@@ -57,10 +57,11 @@ public class Item {
      * @param quantity the quantity
      * @param invoice  the invoice
      */
-    public Item(int item, Product product, int quantity, Invoice invoice) {
+    public Item(int item, Product product, int quantity, double cost, Invoice invoice) {
         this.item = item;
         this.product = product;
         this.quantity = quantity;
+        this.cost = cost;
         this.invoice = invoice;
     }
 

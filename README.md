@@ -1,12 +1,12 @@
 ## Anthony Poleski Individual Project
 
-Anthony Poleski's Individual Project for Enterprise Java
+Individual Project for Enterprise Java
 
 ### Problem Statement:
 
-My goal is to allow for small businesses, specifically in the tree care industry to 
-send invoices from an online application, to save time, money, and effort. This application
-will also allow for easier analytics and file management.
+A problem that small businesses face is expensive accounting software that is complex and has extra functionality that 
+you pay for, but may never use or understand. My goal is to create a simpler application that is free for any number of 
+users to use. This will allow for businesses to put more time and resources into their mission. 
 
 ### Project Technologies/Techniques 
 

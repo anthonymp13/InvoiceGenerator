@@ -14,11 +14,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/8648d72440.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="generateInvoice.js"></script>
+    <script type="text/javascript" src="/invoiceGenerator/js/generateInvoice.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" href="css/masterstylesheet.css">
+    <link rel="stylesheet" type="text/css" href="/invoiceGenerator/css/index.css">
+    <link rel="stylesheet" href="/invoiceGenerator/css/masterstylesheet.css">
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -64,8 +63,8 @@
 <div class="jumbotron jumbotron-fluid" id="invoiceJumbotron">
     <div class="container" id="invoiceDescription">
         <h1><span>Free</span> Invoices</h1>
-        <p>The invoice anthony.com.generator is an easy and free way to generate invoices for your company. Employees will be able to use this application to store data about customers. Then store and generate invoices for those customers.</p>
-        <a href="#" class="btn btn-outline-primary">Generate Invoice</a>
+        <p>The invoice generator is an easy and free way to generate invoices for your company. Employees will be able to use this application to store data about customers. Then store and generate invoices for those customers.</p>
+        <a href="GenerateInvoice" class="btn btn-outline-primary">Generate Invoice</a>
     </div>
     <div class="imageContainer">
         <img id="invoiceExampleImage" alt="image of invoice" src="images/invoice.png">
@@ -77,7 +76,7 @@
         <div class="row">
             <div class="col-sm-12 col-md-6">
                 <h6>About</h6>
-                <p class="text-justify">The invoice anthony.com.generator was made by Anthony Poleski for small businesses that want a free alternative to costly invoicing programs without losing functionality.</p>
+                <p class="text-justify">The invoice generator was made by Anthony Poleski for small businesses that want a free alternative to costly invoicing programs without losing functionality.</p>
             </div>
 
             <div class="col-xs-6 col-md-3">

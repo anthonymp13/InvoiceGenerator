@@ -1,37 +1,44 @@
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/8648d72440.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/8648d72440.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/invoiceGenerator/js/generateInvoice.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../css/generateInvoice.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script type="text/javascript" src="../js/generateInvoice.js"> </script>
+    <link rel="stylesheet" href="/invoiceGenerator/css/masterstylesheet.css">
+    <link rel="stylesheet" href="/invoiceGenerator/css/generateInvoice.css">
 
 </head>
 
 <body>
 
-
 <h1>Invoice Generator</h1>
 <p>Welcome to the Invoice Generator</p>
 
-<div id="tables">
-    <table class="table  table-bordered">
-        <tablehead>
-            <tr class="bg-primary">
-                <th scope="col">Invoice #</th>
-                <th scope="col">Date</th>
-            </tr>
-        </tablehead>
-        <tbody>
-        <tr>
+    <div id="tables">
+        <table class="table  table-bordered">
+            <tablehead>
+                <tr class="bg-primary">
+                    <th scope="col">Invoice #</th>
+                    <th scope="col">Date</th>
+                </tr>
+            </tablehead>
+            <tbody>
+                <tr>
+                    <td scope="row">1</td>
+                    <td>2/28/2020</td>
+                </tr>
+            </tbody>
+        </table>
 
-            <td scope="row">1</td>
-            <td>2/28/2020</td>
-        </tr>
-        </tbody>
-
-    </table>
-    <form method="POST" action="GenerateInvoice" id="invoiceForm">
         <table class="table  table-bordered">
             <tablehead>
                 <tr class="bg-primary">
@@ -52,14 +59,10 @@
                 </td>
             </tr>
             </tbody>
-
         </table>
-    </form>
-</div>
-
-<p>Image place holder</p>
-
-<form action="GenerateInvoice" method="POST">
+    </div>
+<form method="POST" action="GenerateInvoice" id="invoiceForm">
+    <p>Image place holder</p>
     <div class="companyInfo">
         <td>${company.companyId}</td>
         <td>${company.companyName}</td>
@@ -70,13 +73,13 @@
     <table id="billToTable" class="table  table-bordered" style="overflow-y:auto;">
         <tablehead>
             <tr class="bg-primary">
-                <th colspan="4" scope="col">Bill To:</th>
+                <th colspan="4" scope="col"><Bill To:</th>
             </tr>
         </tablehead>
     </table>
-    <select id="customerSelectBox">
+    <select form="invoiceForm" id="customerSelectBox">
         <c:forEach var="customer" items="${company.customers}">
-            <option value="${customer.id}">
+            <option form="" value="${customer.id}">
                     ${customer.firstName} ${customer.lastName},
                 Address: ${customer.street}, ${customer.city}, ${customer.state} ${customer.postalcode}
             </option>
@@ -111,11 +114,11 @@
             <td><a href="#" class="delete">Delete</a></td>
         </tr>
     </table>
-
+    <input type="submit" id="submit">Submit</input>
 </form>
 
 <button class="add_form_field">Add New Field &nbsp; <span style="font-size:16px; font-weight:bold;">+ </span></button>
-<button id="submit">Submit</button>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </form>
 

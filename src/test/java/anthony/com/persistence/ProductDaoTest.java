@@ -35,9 +35,11 @@ class ProductDaoTest {
 
         // int id, String name, double price, double vat
         Product product = new Product("Remove spruce tree", 3500.00, 20);
-        productDao.insert(product);
+        int id = productDao.insert(product);
 
-        Product insertedProduct = (Product)productDao.getById(3);
+        assertNotEquals(0,id);
+
+        Product insertedProduct = (Product)productDao.getByPropertyEqual("name", "Remove spruce tree").get(0);
         assertEquals(product, insertedProduct);
 
 
@@ -54,7 +56,7 @@ class ProductDaoTest {
 //        GenericDao<Item> itemDao = new GenericDao(Item.class);
 //        List<Item> items = itemDao.getAll();
 //        assertEquals(0, items.size());
-//    }
+//    }.
 //
 //    /**
 //     * Verify successful update of invoice

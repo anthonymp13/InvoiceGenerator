@@ -39,7 +39,7 @@ public class GenerateInvoice extends HttpServlet {
         request.setAttribute("company", companyDao.getById(1));
 
 
-        String url = "/InvoiceGenerator/generateInvoice/generateInvoice.jsp";
+        String url = "/generateInvoice/generateInvoice.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
     }
@@ -80,7 +80,6 @@ public class GenerateInvoice extends HttpServlet {
         for(int i = 0; i < descriptions.size(); i++) {
 //          Calculate total
             total += Integer.parseInt(quantities.get(i)) * Integer.parseInt(unitPrices.get(i));
-
         }
 
 //      Get selected customer object
@@ -98,11 +97,23 @@ public class GenerateInvoice extends HttpServlet {
         GenericDao<User> userDao = new GenericDao(User.class);
         User user = userDao.getById(1);
 
-//      Create invoice object
+//      Create new invoice object
         Invoice newInvoice = new Invoice(date, total, terms, user, customer);
 
+//      Add invoice items and products into database
+        for(int i = 0; i < descriptions.size(); i++) {
+//          Create a product that goes into the database permanently
+            Product product = new Product(descriptions.get(i), Double.parseDouble(unitPrices.get(i)), 20);
+            productDao.insert(product);
 
+//          Create an item that represents an item in the invoice
+            int quantity = Integer.parseInt(quantities.get(i));
+            double cost = Double.valueOf(unitPrices.get(i)) * quantity;
+            Item item = new Item(i, product, quantity, cost, newInvoice);
 
+            product.addItem(item);
+            newInvoice.addItem(item);
+        }
 
         String url = "/InvoiceGenerator/generateInvoice/generateInvoice.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
