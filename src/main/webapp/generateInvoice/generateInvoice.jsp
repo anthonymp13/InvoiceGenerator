@@ -73,11 +73,11 @@
     <table id="billToTable" class="table  table-bordered" style="overflow-y:auto;">
         <tablehead>
             <tr class="bg-primary">
-                <th colspan="4" scope="col"><Bill To:</th>
+                <th colspan="4" scope="col">Bill To:</th>
             </tr>
         </tablehead>
     </table>
-    <select form="invoiceForm" id="customerSelectBox">
+    <select form="invoiceForm" name="customerSelectBox" id="customerSelectBox">
         <c:forEach var="customer" items="${company.customers}">
             <option form="" value="${customer.id}">
                     ${customer.firstName} ${customer.lastName},

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="anthony.com.persistence.UserDaoTest" time="1.112" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="anthony.com.persistence.UserDaoTest" time="0.9" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.2+9-LTS"/>
@@ -63,12 +63,12 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="deleteSuccess" classname="anthony.com.persistence.UserDaoTest" time="0.143"/>
-  <testcase name="getCustomersByUserId" classname="anthony.com.persistence.UserDaoTest" time="0.168"/>
-  <testcase name="getByPropertyEqualSuccess" classname="anthony.com.persistence.UserDaoTest" time="0.135"/>
-  <testcase name="getByPropertyLikeSuccess" classname="anthony.com.persistence.UserDaoTest" time="0.183"/>
-  <testcase name="getByIdSuccess" classname="anthony.com.persistence.UserDaoTest" time="0.118"/>
-  <testcase name="updateSuccess" classname="anthony.com.persistence.UserDaoTest" time="0.131"/>
-  <testcase name="getAllUsersSuccess" classname="anthony.com.persistence.UserDaoTest" time="0.104"/>
-  <testcase name="insertSuccess" classname="anthony.com.persistence.UserDaoTest" time="0.129"/>
+  <testcase name="deleteSuccess" classname="anthony.com.persistence.UserDaoTest" time="0.115"/>
+  <testcase name="getCustomersByUserId" classname="anthony.com.persistence.UserDaoTest" time="0.133"/>
+  <testcase name="getByPropertyEqualSuccess" classname="anthony.com.persistence.UserDaoTest" time="0.108"/>
+  <testcase name="getByPropertyLikeSuccess" classname="anthony.com.persistence.UserDaoTest" time="0.116"/>
+  <testcase name="getByIdSuccess" classname="anthony.com.persistence.UserDaoTest" time="0.085"/>
+  <testcase name="updateSuccess" classname="anthony.com.persistence.UserDaoTest" time="0.104"/>
+  <testcase name="getAllUsersSuccess" classname="anthony.com.persistence.UserDaoTest" time="0.105"/>
+  <testcase name="insertSuccess" classname="anthony.com.persistence.UserDaoTest" time="0.114"/>
 </testsuite>

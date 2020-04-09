@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.PreparedStatement;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -98,7 +99,7 @@ public class GenerateInvoice extends HttpServlet {
         User user = userDao.getById(1);
 
 //      Create new invoice object
-        Invoice newInvoice = new Invoice(date, total, terms, user, customer);
+        Invoice newInvoice = new Invoice(total, terms, user, customer);
 
 //      Add invoice items and products into database
         for(int i = 0; i < descriptions.size(); i++) {

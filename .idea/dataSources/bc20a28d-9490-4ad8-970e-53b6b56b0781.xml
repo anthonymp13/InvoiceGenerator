@@ -1270,8 +1270,8 @@
     </column>
     <column id="315" parent="286" name="invoiceDate">
       <Position>3</Position>
-      <DataType>date|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>timestamp|0s</DataType>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="316" parent="286" name="terms">

@@ -43,7 +43,7 @@ class InvoiceDaoTest {
         User user = (User)userDao.getById(1);
         Date date = new Date(2020, 2, 27);
         Customer customer = (Customer)customerDao.getById(1);
-        Invoice newInvoice = new Invoice(date, 1500.00, "Upon completion", user, customer);
+        Invoice newInvoice = new Invoice(1500.00, "Upon completion", user, customer);
         customer.addInvoice(newInvoice);
 
         Product product = (Product)productDao.getById(1);

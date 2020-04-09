@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: anthony.com.persistence.CustomerDaoTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.212 sec - in anthony.com.persistence.CustomerDaoTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.012 sec - in anthony.com.persistence.CustomerDaoTest
