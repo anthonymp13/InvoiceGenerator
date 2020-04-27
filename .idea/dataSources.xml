@@ -7,5 +7,11 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/iTextInvoice</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="sample@localhost" uuid="b7ab5e37-1a5b-4ed1-a9cd-c36e91d3beae">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/sample</jdbc-url>
+    </data-source>
   </component>
 </project>

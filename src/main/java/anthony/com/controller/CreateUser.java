@@ -39,11 +39,12 @@ public class CreateUser extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html");
 
-        String url = "/login.jsp";
+        String url = "";
+        Boolean success = null;
 
 //      Set company dao
         GenericDao companyDao = new GenericDao(Company.class);
-//        TODO: Add "security" features
+//      TODO: Add "security" features
         GenericDao userDao = new GenericDao(User.class);
 
         String userName = request.getParameter("userName");
@@ -52,29 +53,44 @@ public class CreateUser extends HttpServlet {
         String password = request.getParameter("password");
         String companyName = request.getParameter("company");
 
-        userDao.getByPropertyEqual("userName", userName);
+        List<User> users = userDao.getByPropertyEqual("userName", userName);
+        User user = users.get(0);
 
-        List<Company> companyList = companyDao.getByPropertyLike("companyName", companyName);
+        if(user.equals(null)) {
+            url = "/login.jsp";
+
+//          Get company user entered
+            List<Company> companyList = companyDao.getByPropertyLike("companyName", companyName);
+            Company companyObject = companyList.get(0);
+
+            // Create user
+            User newUser = new User(firstName, lastName, userName, companyObject, password);
+
+            //Insert user
+            userDao.insert(newUser);
+
+//          Get inserted user id
+            List<User> userList = userDao.getByPropertyEqual("userName", userName);
+            User insertedUser = userList.get(0);
+            int userId =  insertedUser.getUserId();
+
+//          Create user role
+            Role usersRole = new Role(user, "basic", userName);
+
+//          Insert user role
+            GenericDao roleDao = new GenericDao(Role.class);
+            roleDao.insert(usersRole);
+
+            success = true;
+
+        } else {
+            success = false;
+            url = "/CreateUser.jsp";
 
 
-        Company companyObject = companyList.get(0);
+        }
 
-//      Create user object
-        User newUser = new User(firstName, lastName, userName, companyObject, password);
-
-//      Insert user into database
-
-        userDao.insert(newUser);
-
-        List<User> userList = userDao.getByPropertyEqual("userName", userName);
-        User user = userList.get(0);
-        int userId =  user.getUserId();
-
-//      TODO: Create page where admin gives out privileges
-        Role usersRole = new Role(user, "basic", userName);
-
-        GenericDao roleDao = new GenericDao(Role.class);
-        roleDao.insert(usersRole);
+        request.setAttribute("success", success);
 
         RequestDispatcher dispatcher = request.getRequestDispatcher(url);
 

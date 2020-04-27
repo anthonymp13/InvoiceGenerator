@@ -55,7 +55,6 @@ public class Product {
     /**
      * Instantiates a new Product.
      *
-     * @param id    the id
      * @param name  the name
      * @param price the price
      * @param vat   the vat

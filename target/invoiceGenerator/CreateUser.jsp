@@ -1,3 +1,5 @@
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+
 <html>
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -9,6 +11,14 @@
 <body>
 
 <h1>Invoice Generator</h1>
+
+<c:set var="success" scope="page" value="success" />
+<c:if test="${success} = false">
+    <div class="alert alert-danger" role="alert">
+        <p>Username has already been taken</p>
+    </div>
+</c:if>
+
 <p>Create account here:</p>
 
 <form action="CreateUser">

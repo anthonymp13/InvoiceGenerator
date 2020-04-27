@@ -2,7 +2,6 @@ package anthony.com.persistence;
 
 import anthony.com.entity.*;
 import test.util.Database;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -19,9 +18,10 @@ class CompanyDaoTest {
      * Sets up.
      */
 
-    @BeforeEach
+    @Test
     void setUp() {
-        companyDao = new GenericDao(Company.class);     Database database = Database.getInstance();
+        companyDao = new GenericDao(Company.class);
+        Database database = Database.getInstance();
         database.runSQL("sql.sql");
     }
 

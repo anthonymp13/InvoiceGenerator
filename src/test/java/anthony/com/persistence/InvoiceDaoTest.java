@@ -41,9 +41,10 @@ class InvoiceDaoTest {
         GenericDao productDao = new GenericDao(Product.class);
 
         User user = (User)userDao.getById(1);
-        Date date = new Date(2020, 2, 27);
         Customer customer = (Customer)customerDao.getById(1);
-        Invoice newInvoice = new Invoice(1500.00, "Upon completion", user, customer);
+        Date date = new Date();
+
+        Invoice newInvoice = new Invoice(1500.00, "Upon completion", date,customer);
         customer.addInvoice(newInvoice);
 
         Product product = (Product)productDao.getById(1);
@@ -56,7 +57,7 @@ class InvoiceDaoTest {
 
         assertNotEquals(0,id);
         Invoice insertedInvoice = (Invoice)invoiceDao.getById(id);
-        assertEquals(newInvoice, insertedInvoice);
+        assertEquals(newInvoice.getId(), insertedInvoice.getId());
         assertNotNull(insertedInvoice);
 
     }

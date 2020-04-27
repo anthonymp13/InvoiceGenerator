@@ -47,7 +47,6 @@ class UserDaoTest {
         assertEquals(company, insertedUser.getCompany());
     }
 
-
     /**
      * Verify successful delete of user and not company
      */
@@ -99,17 +98,10 @@ class UserDaoTest {
     @Test
     void getAllUsersSuccess() {
         List<User> users = userDao.getAll();
-        assertEquals(2, users.size());
+        assertEquals(3, users.size());
     }
 
-    /**
-     * Confirms gets user by last name success.
-     */
-//    @Test
-//    void getUserByLastNameSuccess() {
-//        List<User> users = dao.getUserByLastName("p");
-//        assertEquals(1, users.size());
-//    }
+
 
     /**
      * Verifies a user is returned correctly based on id search

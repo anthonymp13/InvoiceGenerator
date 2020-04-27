@@ -2,6 +2,8 @@ package anthony.com.controller;
 
 import anthony.com.entity.*;
 import anthony.com.persistence.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -10,8 +12,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.PreparedStatement;
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -25,8 +25,8 @@ import java.util.Date;
  * This servlet pulls data from the form that generates invoices
  */
 public class GenerateInvoice extends HttpServlet {
-
-
+    Logger logger = LogManager.getLogger(this.getClass());
+    private static GenericDao userDao = new GenericDao(User.class);
     private static GenericDao companyDao = new GenericDao(Company.class);
     private static GenericDao customerDao = new GenericDao(Customer.class);
     private static GenericDao productDao = new GenericDao(Product.class);
@@ -36,9 +36,13 @@ public class GenerateInvoice extends HttpServlet {
      */
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
-//        TODO: get user id
-        request.setAttribute("company", companyDao.getById(1));
 
+        String userName = System.getProperty("user.name");
+        User user = (User) userDao.getByPropertyEqual("userName", userName).get(0);
+        Company company = user.getCompany();
+        request.setAttribute("company", company);
+        logger.info("Working!");
+        logger.info("Company:::" + company);
 
         String url = "/generateInvoice/generateInvoice.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
@@ -62,7 +66,7 @@ public class GenerateInvoice extends HttpServlet {
         Customer customer = null;
         Date dt = null;
         SimpleDateFormat sdf = null;
-        String currentTime = null;
+        String currentDate = "";
 
 //      Retrieves terms and selected customer id from form
         terms = request.getParameter("termList");
@@ -89,18 +93,16 @@ public class GenerateInvoice extends HttpServlet {
 //      Get current date and format
         dt = new java.util.Date();
         sdf = new java.text.SimpleDateFormat("yyyy-MM-dd");
-        currentTime = sdf.format(dt);
-
-//      Create current date object
-        Date date = new Date(currentTime);
-
-//      TODO: Change user
-        GenericDao<User> userDao = new GenericDao(User.class);
-        User user = userDao.getById(1);
+        currentDate = sdf.format(dt);
 
 //      Create new invoice object
-        Invoice newInvoice = new Invoice(total, terms, user, customer);
+        Invoice newInvoice = new Invoice(total, terms, dt, customer);
 
+        GenericDao invoiceDao = new GenericDao(Invoice.class);
+        GenericDao productDao = new GenericDao(Product.class);
+        invoiceDao.insert(newInvoice);
+
+        GenericDao itemDao = new GenericDao(Item.class);
 //      Add invoice items and products into database
         for(int i = 0; i < descriptions.size(); i++) {
 //          Create a product that goes into the database permanently
@@ -111,12 +113,14 @@ public class GenerateInvoice extends HttpServlet {
             int quantity = Integer.parseInt(quantities.get(i));
             double cost = Double.valueOf(unitPrices.get(i)) * quantity;
             Item item = new Item(i, product, quantity, cost, newInvoice);
-
+            itemDao.insert(item);
             product.addItem(item);
             newInvoice.addItem(item);
         }
 
-        String url = "/InvoiceGenerator/generateInvoice/generateInvoice.jsp";
+
+
+        String url = "/admin/dashboard.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
     }

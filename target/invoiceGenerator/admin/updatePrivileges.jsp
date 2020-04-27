@@ -22,7 +22,7 @@
         <option value="basic">Basic</option>
         <option value="admin">Admin</option>
     </select>
-    <button type="submit" name="submit" value="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" name="Update" value="Update" class="btn btn-primary">Update</button>
 </form>
 
 </body>

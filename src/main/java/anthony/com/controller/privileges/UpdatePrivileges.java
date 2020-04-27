@@ -50,11 +50,10 @@ public class UpdatePrivileges extends HttpServlet {
 
         String newRole = request.getParameter("updateRole");
 
-        if(request.getParameter("submit").equals("submit")) {
-            List<Role> roleToUpdate = roleDao.getByPropertyEqual("userName", userName);
-            roleToUpdate.get(0).setRoleName(newRole);
-            roleDao.saveOrUpdate(roleToUpdate.get(0));
-        }
+
+        List<Role> roleToUpdate = roleDao.getByPropertyEqual("userName", userName);
+        roleToUpdate.get(0).setRoleName(newRole);
+        roleDao.saveOrUpdate(roleToUpdate.get(0));
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("admin/employeePrivileges.jsp");
 

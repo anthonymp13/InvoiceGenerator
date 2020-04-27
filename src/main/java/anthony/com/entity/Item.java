@@ -25,6 +25,9 @@ public class Item {
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name="native", strategy = "native")
     @Column(name = "id")
+    private int id;
+
+    @Column(name = "item")
     private int item;
 
     /** The product. */

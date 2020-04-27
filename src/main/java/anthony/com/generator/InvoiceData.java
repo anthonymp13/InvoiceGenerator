@@ -7,9 +7,11 @@ package anthony.com.generator;
 import java.util.Map;
 import java.util.TreeMap;
 
+import anthony.com.entity.Company;
 import anthony.com.entity.Customer;
 import anthony.com.entity.Invoice;
 import anthony.com.entity.Item;
+import anthony.com.persistence.GenericDao;
 import com.itextpdf.zugferd.profiles.BasicProfileImp;
 import com.itextpdf.zugferd.profiles.ComfortProfileImp;
 import com.itextpdf.zugferd.profiles.IBasicProfile;
@@ -70,6 +72,11 @@ public class InvoiceData {
      * @param invoice the invoice
      */
     public void importData(BasicProfileImp profileImp, Invoice invoice) {
+        GenericDao companyDao = new GenericDao(Company.class);
+//        TODO: Finish getting company data based on current user
+        Company company = (Company)companyDao.getById(1);
+
+        
         profileImp.setTest(true);
         profileImp.setId(String.format("I/%05d", invoice.getId()));
         profileImp.setId(String.format("I/%05d", invoice.getId()));

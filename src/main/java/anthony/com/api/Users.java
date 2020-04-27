@@ -20,14 +20,6 @@ public class Users {
         String output;
         String msg = "";
 
-//        if (userName != null) {
-//            list = userDao.getByPropertyEqual("userName", userName);
-//        } else {
-//            list = userDao.getAll();
-//        }
-
-
-
         for (User user: list) {
              msg +=
                 "Id: " + user.getUserId()
