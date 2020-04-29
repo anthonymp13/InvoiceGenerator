@@ -8,9 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="33b2a67e-7c08-4f57-9d65-77c2c24ad505" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/anthony/com/persistence/CompanyDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/anthony/com/persistence/CompanyDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/privileges/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/privileges/Dashboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/anthony/com/persistence/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/anthony/com/persistence/UserDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/anthony/com/persistence/CompanyDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/anthony/com/persistence/CompanyDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/anthony/com/persistence/UserDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/anthony/com/persistence/UserDaoTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +144,7 @@
       <recent name="C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CompanyDaoTest">
+  <component name="RunManager" selected="JUnit.All in invoiceGenerator">
     <configuration name="Driver" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="anthony.com.generator.Driver" />
       <module name="invoiceGenerator" />
@@ -233,7 +233,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InvoiceDaoTest.insertWithInvoiceAndProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserDaoTest.getUserRole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="invoiceGenerator" />
       <extension name="coverage">
         <pattern>
@@ -242,8 +242,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="anthony.com.persistence" />
-      <option name="MAIN_CLASS_NAME" value="anthony.com.persistence.InvoiceDaoTest" />
-      <option name="METHOD_NAME" value="insertWithInvoiceAndProduct" />
+      <option name="MAIN_CLASS_NAME" value="anthony.com.persistence.UserDaoTest" />
+      <option name="METHOD_NAME" value="getUserRole" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -326,20 +326,20 @@
     <list>
       <item itemvalue="Application.Driver" />
       <item itemvalue="JUnit.All in invoiceGenerator" />
-      <item itemvalue="JUnit.InvoiceDaoTest.insertWithInvoiceAndProduct" />
       <item itemvalue="TomEE Server.TomEE 9.0.3" />
       <item itemvalue="JUnit.CompanyDaoTest.deleteSuccess" />
       <item itemvalue="JUnit.CompanyDaoTest" />
       <item itemvalue="JUnit.CompanyDaoTest.getByIdSuccess" />
       <item itemvalue="JUnit.CompanyDaoTest.insertSuccess" />
+      <item itemvalue="JUnit.UserDaoTest.getUserRole" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserDaoTest.getUserRole" />
         <item itemvalue="JUnit.CompanyDaoTest" />
         <item itemvalue="JUnit.CompanyDaoTest.insertSuccess" />
         <item itemvalue="JUnit.CompanyDaoTest.getByIdSuccess" />
         <item itemvalue="JUnit.CompanyDaoTest.deleteSuccess" />
-        <item itemvalue="JUnit.InvoiceDaoTest.insertWithInvoiceAndProduct" />
       </list>
     </recent_temporary>
   </component>
@@ -440,7 +440,7 @@
       <workItem from="1588037339256" duration="6000" />
       <workItem from="1588109358925" duration="119000" />
       <workItem from="1588116583908" duration="7295000" />
-      <workItem from="1588189867503" duration="7127000" />
+      <workItem from="1588189867503" duration="7606000" />
     </task>
     <servers />
   </component>
@@ -531,22 +531,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="600" y="115" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588194250883" />
-    <state width="1323" height="276" key="GridCell.Tab.0.bottom" timestamp="1588196962829">
+    <state width="1323" height="276" key="GridCell.Tab.0.bottom" timestamp="1588197355023">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="276" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588196962829" />
-    <state width="1323" height="276" key="GridCell.Tab.0.center" timestamp="1588196962829">
+    <state width="1323" height="276" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588197355023" />
+    <state width="1323" height="276" key="GridCell.Tab.0.center" timestamp="1588197355023">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="276" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588196962829" />
-    <state width="1323" height="276" key="GridCell.Tab.0.left" timestamp="1588196962829">
+    <state width="1323" height="276" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588197355023" />
+    <state width="1323" height="276" key="GridCell.Tab.0.left" timestamp="1588197355023">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="276" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588196962829" />
-    <state width="1323" height="276" key="GridCell.Tab.0.right" timestamp="1588196962829">
+    <state width="1323" height="276" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588197355023" />
+    <state width="1323" height="276" key="GridCell.Tab.0.right" timestamp="1588197355023">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="276" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588196962829" />
+    <state width="1323" height="276" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588197355023" />
     <state width="905" height="322" key="GridCell.Tab.1.bottom" timestamp="1588196519993">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -49,6 +49,16 @@ public class Dashboard extends HttpServlet {
         Set<Customer> companyCustomers = userCompany.getCustomers();
 
 //      Get users roles
+//        Iterator users = companyUsers.iterator();
+//        while(users.hasNext()) {
+//            User currentUser = (User)users.next();
+//            Set<Role> userRole = currentUser.getRoles();
+//            Iterator roles = userRole.iterator();
+//            while(users.hasNext()) {
+//                Role currentRole = (Role)roles.next();
+//                currentRole.getRoleName();
+//            }
+//        }
 
 
 //      Set customers invoices to a ArrayList
@@ -62,6 +72,7 @@ public class Dashboard extends HttpServlet {
         request.setAttribute("invoices", invoices);
         request.setAttribute("customers", companyCustomers);
         request.setAttribute("companyUsers", companyUsers);
+
         RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/dashboard.jsp");
 
         dispatcher.forward(request, response);

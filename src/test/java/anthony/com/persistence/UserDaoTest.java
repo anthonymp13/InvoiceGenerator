@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Test;
 
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
@@ -137,7 +138,12 @@ class UserDaoTest {
     void getUserRole() {
         User user = (User) userDao.getById(1);
         Set<Role> roles = user.getRoles();
+        assertEquals(1, roles.size());
 
+        for (Iterator<Role> it = roles.iterator(); it.hasNext(); ) {
+            Role currentRole = it.next();
+            assertEquals("admin", currentRole.getRoleName());
+        }
     }
 
 }
