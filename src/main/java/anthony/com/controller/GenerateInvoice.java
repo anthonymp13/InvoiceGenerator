@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.net.http.HttpRequest;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -37,10 +38,11 @@ public class GenerateInvoice extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
 
-        String userName = System.getProperty("user.name");
+        String userName = request.getRemoteUser();
         User user = (User) userDao.getByPropertyEqual("userName", userName).get(0);
         Company company = user.getCompany();
         request.setAttribute("company", company);
+
         logger.info("Working!");
         logger.info("Company:::" + company);
 
@@ -103,6 +105,7 @@ public class GenerateInvoice extends HttpServlet {
         invoiceDao.insert(newInvoice);
 
         GenericDao itemDao = new GenericDao(Item.class);
+
 //      Add invoice items and products into database
         for(int i = 0; i < descriptions.size(); i++) {
 //          Create a product that goes into the database permanently
@@ -117,8 +120,6 @@ public class GenerateInvoice extends HttpServlet {
             product.addItem(item);
             newInvoice.addItem(item);
         }
-
-
 
         String url = "/admin/dashboard.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);

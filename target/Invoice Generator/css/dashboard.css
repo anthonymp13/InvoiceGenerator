@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+}
+
+.displayContainer {
+    width: 50em;
+    padding-top: 1.5em;
+    padding-bottom: .65em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.displayContainer form {
+    float: right;
+}
+
+.displayContainer button {
+    float: right;
+}
+
+.ch1 {
+    width: 15em;
+}
+
+.ch3 {
+    width: 15em;
+}

@@ -7,84 +7,100 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33b2a67e-7c08-4f57-9d65-77c2c24ad505" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/privileges/Dashboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/dashboard.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/anthony/com/entity/test.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/dashboard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/bc20a28d-9490-4ad8-970e-53b6b56b0781.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bc20a28d-9490-4ad8-970e-53b6b56b0781.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itextinvoice_product.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inserts.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/api/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/api/Users.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/CreateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/CreateUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/GenerateInvoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/GenerateInvoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/privileges/UpdatePrivileges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/privileges/UpdatePrivileges.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/entity/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/entity/Invoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/entity/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/entity/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/generator/InvoiceData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/generator/InvoiceData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/Theme.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/privileges/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/privileges/Dashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/entity/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/util/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/util/Database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/CreateUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CreateUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/updatePrivileges.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/updatePrivileges.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/utilities/PropertiesLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utilities/PropertiesLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/dashboard.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/generateInvoice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/generateInvoice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/anthony/com/persistence/CompanyDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/anthony/com/persistence/CompanyDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/anthony/com/persistence/InvoiceDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/anthony/com/persistence/InvoiceDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/anthony/com/persistence/ItemDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/anthony/com/persistence/ItemDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/anthony/com/persistence/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/anthony/com/persistence/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/util/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/util/Database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/sql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/sql.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Invoice Generator.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/CreateUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/CreateUser.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/api/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/api/Users.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/CreateUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/CreateUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/GenerateInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/GenerateInvoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/privileges/UpdatePrivileges.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/privileges/UpdatePrivileges.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/entity/Invoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/entity/Invoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/entity/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/entity/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/entity/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/generator/InvoiceData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/generator/InvoiceData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/Theme.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/privileges/Dashboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/privileges/Dashboard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/entity/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/entity/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/util/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/util/Database.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/database.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/admin/updatePrivileges.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/admin/updatePrivileges.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/barcodes-7.1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/font-asian-7.1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/forms-7.1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/hyph-7.1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/io-7.1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/kernel-7.1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/layout-7.1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/pdfa-7.1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/sign-7.1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/styled-xml-parser-7.1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/svg-7.1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/admin/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/admin/dashboard.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/js/generateInvoice.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/js/generateInvoice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/api/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/api/Users.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/controller/CreateUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/controller/CreateUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/controller/GenerateInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/controller/GenerateInvoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/controller/privileges/UpdatePrivileges.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/controller/privileges/UpdatePrivileges.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/entity/Invoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/entity/Invoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/entity/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/entity/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/entity/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/generator/InvoiceData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/generator/InvoiceData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/controller/Theme.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/controller/privileges/Dashboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/controller/privileges/Dashboard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/entity/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/entity/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/util/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/util/Database.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/invoiceGenerator.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/CreateUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/CreateUser.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/api/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/api/Users.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/CreateUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/CreateUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/GenerateInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/GenerateInvoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/privileges/UpdatePrivileges.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/privileges/UpdatePrivileges.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/entity/Invoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/entity/Invoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/entity/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/entity/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/entity/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/generator/InvoiceData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/generator/InvoiceData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/Theme.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/privileges/Dashboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/privileges/Dashboard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/entity/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/entity/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/util/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/util/Database.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/database.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/admin/updatePrivileges.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/admin/updatePrivileges.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/barcodes-7.1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/font-asian-7.1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/forms-7.1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/hyph-7.1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/io-7.1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/kernel-7.1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/layout-7.1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/pdfa-7.1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/sign-7.1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/styled-xml-parser-7.1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/svg-7.1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/admin/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/admin/dashboard.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/js/generateInvoice.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/js/generateInvoice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-anthony.com.persistence.CompanyDaoTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-anthony.com.persistence.CustomerDaoTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-anthony.com.persistence.InvoiceDaoTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-anthony.com.persistence.ProductDaoTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-anthony.com.persistence.RoleDaoTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-anthony.com.persistence.UserDaoTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/anthony.com.persistence.CompanyDaoTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/anthony.com.persistence.CustomerDaoTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/anthony.com.persistence.InvoiceDaoTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/anthony.com.persistence.ProductDaoTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/anthony.com.persistence.RoleDaoTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/anthony.com.persistence.UserDaoTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/anthony/com/persistence/CompanyDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/anthony/com/persistence/CompanyDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/anthony/com/persistence/InvoiceDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/anthony/com/persistence/InvoiceDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/anthony/com/persistence/ItemDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/anthony/com/persistence/ItemDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/anthony/com/persistence/UserDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/anthony/com/persistence/UserDaoTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/sql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/sql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/util/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/util/Database.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +154,6 @@
   </component>
   <component name="ExecutionTargetDialog">
     <checked>
-      <node key="bc20a28d-9490-4ad8-970e-53b6b56b0781" />
       <node key="b7ab5e37-1a5b-4ed1-a9cd-c36e91d3beae" />
     </checked>
   </component>
@@ -156,6 +171,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -169,9 +190,6 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
-  </component>
-  <component name="MavenRunner">
-    <option name="skipTests" value="true" />
   </component>
   <component name="ProjectId" id="1ZGvSN5zSDtKYQun0f0x7qIBAqZ" />
   <component name="ProjectLevelVcsManager">
@@ -189,12 +207,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/itextinvoice_product.sql" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/test/util" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -209,14 +227,14 @@
       <recent name="controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\test\java\test\util" />
+      <recent name="C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\test\java\utilities" />
       <recent name="C:\Users\Anthony\IdeaProjects\invoiceGenerator" />
       <recent name="C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\main" />
       <recent name="C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\main\resources" />
-      <recent name="C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\test\java" />
-      <recent name="C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.InvoiceDaoTest.insertWithInvoiceAndProduct">
+  <component name="RunManager" selected="JUnit.All in invoiceGenerator">
     <configuration name="Driver" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="anthony.com.generator.Driver" />
       <module name="invoiceGenerator" />
@@ -242,6 +260,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CompanyDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="invoiceGenerator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="anthony.com.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="anthony.com.persistence" />
+      <option name="MAIN_CLASS_NAME" value="anthony.com.persistence.CompanyDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompanyDaoTest.deleteSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="invoiceGenerator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="anthony.com.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="anthony.com.persistence" />
+      <option name="MAIN_CLASS_NAME" value="anthony.com.persistence.CompanyDaoTest" />
+      <option name="METHOD_NAME" value="deleteSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompanyDaoTest.getByIdSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="invoiceGenerator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="anthony.com.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="anthony.com.persistence" />
+      <option name="MAIN_CLASS_NAME" value="anthony.com.persistence.CompanyDaoTest" />
+      <option name="METHOD_NAME" value="getByIdSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CompanyDaoTest.insertSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="invoiceGenerator" />
       <extension name="coverage">
@@ -258,22 +323,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CompanyDaoTest.setUp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="invoiceGenerator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="anthony.com.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="anthony.com.persistence" />
-      <option name="MAIN_CLASS_NAME" value="anthony.com.persistence.CompanyDaoTest" />
-      <option name="METHOD_NAME" value="setUp" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="InvoiceDaoTest.insertWithInvoiceAndProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="invoiceGenerator" />
       <extension name="coverage">
@@ -285,38 +334,6 @@
       <option name="PACKAGE_NAME" value="anthony.com.persistence" />
       <option name="MAIN_CLASS_NAME" value="anthony.com.persistence.InvoiceDaoTest" />
       <option name="METHOD_NAME" value="insertWithInvoiceAndProduct" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDaoTest.getByPropertyEqualSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="invoiceGenerator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="anthony.com.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="anthony.com.persistence" />
-      <option name="MAIN_CLASS_NAME" value="anthony.com.persistence.UserDaoTest" />
-      <option name="METHOD_NAME" value="getByPropertyEqualSuccess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDaoTest.noDuplicateUserSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="invoiceGenerator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="anthony.com.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="anthony.com.persistence" />
-      <option name="MAIN_CLASS_NAME" value="anthony.com.persistence.UserDaoTest" />
-      <option name="METHOD_NAME" value="noDuplicateUserSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -400,19 +417,19 @@
       <item itemvalue="Application.Driver" />
       <item itemvalue="JUnit.All in invoiceGenerator" />
       <item itemvalue="JUnit.InvoiceDaoTest.insertWithInvoiceAndProduct" />
-      <item itemvalue="JUnit.UserDaoTest.noDuplicateUserSuccess" />
-      <item itemvalue="JUnit.CompanyDaoTest.insertSuccess" />
-      <item itemvalue="JUnit.CompanyDaoTest.setUp" />
-      <item itemvalue="JUnit.UserDaoTest.getByPropertyEqualSuccess" />
       <item itemvalue="TomEE Server.TomEE 9.0.3" />
+      <item itemvalue="JUnit.CompanyDaoTest.deleteSuccess" />
+      <item itemvalue="JUnit.CompanyDaoTest" />
+      <item itemvalue="JUnit.CompanyDaoTest.getByIdSuccess" />
+      <item itemvalue="JUnit.CompanyDaoTest.insertSuccess" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.InvoiceDaoTest.insertWithInvoiceAndProduct" />
-        <item itemvalue="JUnit.UserDaoTest.getByPropertyEqualSuccess" />
-        <item itemvalue="JUnit.CompanyDaoTest.setUp" />
         <item itemvalue="JUnit.CompanyDaoTest.insertSuccess" />
-        <item itemvalue="JUnit.UserDaoTest.noDuplicateUserSuccess" />
+        <item itemvalue="JUnit.CompanyDaoTest.getByIdSuccess" />
+        <item itemvalue="JUnit.CompanyDaoTest" />
+        <item itemvalue="JUnit.CompanyDaoTest.deleteSuccess" />
+        <item itemvalue="JUnit.InvoiceDaoTest.insertWithInvoiceAndProduct" />
       </list>
     </recent_temporary>
   </component>
@@ -430,6 +447,19 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="TomEE Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:iTextInvoice@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:iTextInvoice@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@465f719c" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:sample@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -495,7 +525,12 @@
       <workItem from="1587692768459" duration="4830000" />
       <workItem from="1587928990911" duration="5976000" />
       <workItem from="1587949851926" duration="8054000" />
-      <workItem from="1588022829150" duration="244000" />
+      <workItem from="1588022829150" duration="6987000" />
+      <workItem from="1588030296632" duration="219000" />
+      <workItem from="1588037339256" duration="6000" />
+      <workItem from="1588109358925" duration="119000" />
+      <workItem from="1588116583908" duration="7295000" />
+      <workItem from="1588189867503" duration="6807000" />
     </task>
     <servers />
   </component>
@@ -542,10 +577,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="436" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1585605248176" />
-    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1584501901752">
+    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1588190718391">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1584501901752" />
+    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1588190718391" />
     <state x="434" y="148" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1584558104438">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -574,78 +609,82 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="169" width="640" height="525" key="DUMP_DIALOG_DIMENSION_KEY/0.0.1366.728@0.0.1366.728" timestamp="1587951488119" />
-    <state x="481" y="66" key="ExecutionTargetDialog" timestamp="1587952209535">
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1588194959289">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="481" y="66" key="ExecutionTargetDialog/0.0.1366.728@0.0.1366.728" timestamp="1587952209535" />
-    <state x="600" y="115" key="FileChooserDialogImpl" timestamp="1587930289701">
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1588194959289" />
+    <state x="481" y="66" key="ExecutionTargetDialog" timestamp="1588195541098">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="600" y="115" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587930289701" />
-    <state width="1323" height="219" key="GridCell.Tab.0.bottom" timestamp="1588023116035">
+    <state x="481" y="66" key="ExecutionTargetDialog/0.0.1366.728@0.0.1366.728" timestamp="1588195541098" />
+    <state x="600" y="115" key="FileChooserDialogImpl" timestamp="1588194250883">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="219" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588023116035" />
-    <state width="1323" height="219" key="GridCell.Tab.0.center" timestamp="1588023116035">
+    <state x="600" y="115" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588194250883" />
+    <state width="1323" height="276" key="GridCell.Tab.0.bottom" timestamp="1588196738505">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="219" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588023116035" />
-    <state width="1323" height="219" key="GridCell.Tab.0.left" timestamp="1588023116034">
+    <state width="1323" height="276" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588196738505" />
+    <state width="1323" height="276" key="GridCell.Tab.0.center" timestamp="1588196738505">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="219" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588023116034" />
-    <state width="1323" height="219" key="GridCell.Tab.0.right" timestamp="1588023116035">
+    <state width="1323" height="276" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588196738505" />
+    <state width="1323" height="276" key="GridCell.Tab.0.left" timestamp="1588196738505">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="219" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588023116035" />
-    <state width="905" height="322" key="GridCell.Tab.1.bottom" timestamp="1588001449204">
+    <state width="1323" height="276" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588196738505" />
+    <state width="1323" height="276" key="GridCell.Tab.0.right" timestamp="1588196738505">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="322" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588001449204" />
-    <state width="905" height="322" key="GridCell.Tab.1.center" timestamp="1588001449204">
+    <state width="1323" height="276" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588196738505" />
+    <state width="905" height="322" key="GridCell.Tab.1.bottom" timestamp="1588196519993">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="322" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1588001449204" />
-    <state width="905" height="322" key="GridCell.Tab.1.left" timestamp="1588001449203">
+    <state width="905" height="322" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588196519993" />
+    <state width="905" height="322" key="GridCell.Tab.1.center" timestamp="1588196519993">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="322" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1588001449203" />
-    <state width="905" height="322" key="GridCell.Tab.1.right" timestamp="1588001449204">
+    <state width="905" height="322" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1588196519993" />
+    <state width="905" height="322" key="GridCell.Tab.1.left" timestamp="1588196519993">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="322" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1588001449204" />
-    <state width="905" height="322" key="GridCell.Tab.2.bottom" timestamp="1588001449205">
+    <state width="905" height="322" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1588196519993" />
+    <state width="905" height="322" key="GridCell.Tab.1.right" timestamp="1588196519993">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="322" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588001449205" />
-    <state width="905" height="322" key="GridCell.Tab.2.center" timestamp="1588001449205">
+    <state width="905" height="322" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1588196519993" />
+    <state width="905" height="322" key="GridCell.Tab.2.bottom" timestamp="1588196519993">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="322" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1588001449205" />
-    <state width="905" height="322" key="GridCell.Tab.2.left" timestamp="1588001449204">
+    <state width="905" height="322" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588196519993" />
+    <state width="905" height="322" key="GridCell.Tab.2.center" timestamp="1588196519993">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="322" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1588001449204" />
-    <state width="905" height="322" key="GridCell.Tab.2.right" timestamp="1588001449205">
+    <state width="905" height="322" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1588196519993" />
+    <state width="905" height="322" key="GridCell.Tab.2.left" timestamp="1588196519993">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="322" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1588001449205" />
-    <state width="905" height="148" key="GridCell.Tab.3.bottom" timestamp="1585668113570">
+    <state width="905" height="322" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1588196519993" />
+    <state width="905" height="322" key="GridCell.Tab.2.right" timestamp="1588196519993">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="148" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585668113570" />
-    <state width="905" height="148" key="GridCell.Tab.3.center" timestamp="1585668113570">
+    <state width="905" height="322" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1588196519993" />
+    <state width="905" height="322" key="GridCell.Tab.3.bottom" timestamp="1588196520008">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="148" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1585668113570" />
-    <state width="905" height="148" key="GridCell.Tab.3.left" timestamp="1585668113570">
+    <state width="905" height="322" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588196520008" />
+    <state width="905" height="322" key="GridCell.Tab.3.center" timestamp="1588196519993">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="148" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1585668113570" />
-    <state width="905" height="148" key="GridCell.Tab.3.right" timestamp="1585668113570">
+    <state width="905" height="322" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1588196519993" />
+    <state width="905" height="322" key="GridCell.Tab.3.left" timestamp="1588196519993">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="148" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1585668113570" />
+    <state width="905" height="322" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1588196519993" />
+    <state width="905" height="322" key="GridCell.Tab.3.right" timestamp="1588196519993">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="322" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1588196519993" />
     <state width="905" height="570" key="GridCell.Tab.7.bottom" timestamp="1585075652616">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -686,14 +725,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="377" y="63" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1585066412487" />
-    <state x="192" y="0" key="SettingsEditor" timestamp="1587952044264">
+    <state x="192" y="0" key="SettingsEditor" timestamp="1588028288288">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="192" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1587952044264" />
-    <state x="572" y="244" width="326" height="240" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1586222609401">
+    <state x="192" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1588028288288" />
+    <state x="572" y="244" width="326" height="240" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1588192409292">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="572" y="244" width="326" height="240" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.728@0.0.1366.728" timestamp="1586222609401" />
+    <state x="572" y="244" width="326" height="240" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.728@0.0.1366.728" timestamp="1588192409292" />
     <state x="413" y="169" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1587056377473">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -702,26 +741,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="479" y="189" width="408" height="346" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1366.728@0.0.1366.728" timestamp="1584536339607" />
-    <state x="719" y="31" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1587930401000">
+    <state x="719" y="31" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1588192266282">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="719" y="31" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1587930401000" />
+    <state x="719" y="31" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1588192266282" />
     <state x="541" y="0" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1584481193281">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="541" y="0" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1366.728@0.0.1366.728" timestamp="1584481193281" />
-    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1584559951761">
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1588196579920">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1584559951761" />
-    <state x="92" y="92" width="1182" height="544" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1587952656130">
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1588196579920" />
+    <state x="92" y="92" width="1182" height="544" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1588196685966">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="92" y="92" width="1182" height="544" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1587952656130" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1587929009896">
+    <state x="92" y="92" width="1182" height="544" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1588196685966" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1588189865274">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1587929009896" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1588189865274" />
     <state x="338" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1587952583493">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -730,18 +769,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="0" y="0" width="1339" height="715" key="dock-window-1/0.0.1366.728@0.0.1366.728" timestamp="1585616272204" />
-    <state x="65" y="59" key="new project wizard" timestamp="1585333612612">
+    <state x="65" y="59" key="new project wizard" timestamp="1588109480348">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="65" y="59" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1585333612612" />
+    <state x="65" y="59" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1588109480348" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1587913152321">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1587913152321" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1587954568679">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1588123371903">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1587954568679" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1588123371903" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

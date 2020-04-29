@@ -32,8 +32,29 @@
   <!-- Protect the invoice anthony.com.generator page. -->
   <security-constraint>
     <web-resource-collection>
-      <web-resource-name>search</web-resource-name>
-      <url-pattern>/generateInvoice/*</url-pattern>
+      <web-resource-name>invoiceGeneration</web-resource-name>
+      <url-pattern>/GenerateInvoice</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>basic</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <!-- Protect the dashboard -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>invoiceGeneration</web-resource-name>
+      <url-pattern>/Dashboard</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>basic</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>invoiceGeneration</web-resource-name>
+      <url-pattern>/dashboard.jsp</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>basic</role-name>

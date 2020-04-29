@@ -51,7 +51,7 @@
                 <a class="nav-link" href="#"></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Login</a>
+                <a class="nav-link" href="invoiceGenerator/Dashboard">Login</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="CreateUser.jsp">Sign Up</a>

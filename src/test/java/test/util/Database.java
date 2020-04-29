@@ -12,6 +12,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
+
 /**
  * Provides access the database
  * Created on 8/31/16.
@@ -34,16 +35,15 @@ public class Database {
         loadProperties();
 
     }
-
+    //    TODO create a properties interface for use with loading all project properties
     private void loadProperties() {
         properties = new Properties();
         try {
             properties.load (this.getClass().getResourceAsStream("/database.properties"));
         } catch (IOException ioe) {
-            logger.error("Database.loadProperties()...Cannot load the properties file");
-            ioe.printStackTrace();
+            logger.error("Database.loadProperties()...Cannot load the properties file", ioe);
         } catch (Exception e) {
-            logger.error("Database.loadProperties()..." + e);
+            logger.error("Database.loadProperties()...", e);
             e.printStackTrace();
         }
 
@@ -77,7 +77,7 @@ public class Database {
             try {
                 connection.close();
             } catch (SQLException e) {
-                logger.error("Cannot close connection" + e);
+                logger.error("Cannot close connection", e);
             }
         }
 
@@ -89,23 +89,26 @@ public class Database {
      *
      * @param sqlFile the sql file to be read and executed line by line
      */
+
     public void runSQL(String sqlFile) {
 
         Statement stmt = null;
         ClassLoader classloader = Thread.currentThread().getContextClassLoader();
         InputStream inputStream = classloader.getResourceAsStream(sqlFile);
-        try (BufferedReader br = new BufferedReader(new InputStreamReader(inputStream))) {
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(classloader.getResourceAsStream(sqlFile)))) {
 
-            Class.forName("com.mysql.cj.jdbc.Driver");
+            //Class.forName("com.mysql.cj.jdbc.Driver");
             connect();
             stmt = connection.createStatement();
-
-            while (true) {
-                String sql = br.readLine();
-                if (sql == null) {
-                    break;
+            String sql = "";
+            while (br.ready()) {
+                char inputValue = (char)br.read();
+                if(inputValue == ';') {
+                    stmt.executeUpdate(sql);
+                    sql = "";
+                } else {
+                    sql += inputValue;
                 }
-                stmt.executeUpdate(sql);
 
             }
 

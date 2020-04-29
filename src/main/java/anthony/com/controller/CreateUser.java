@@ -86,8 +86,6 @@ public class CreateUser extends HttpServlet {
         } else {
             success = false;
             url = "/CreateUser.jsp";
-
-
         }
 
         request.setAttribute("success", success);

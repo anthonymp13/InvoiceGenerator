@@ -4,8 +4,6 @@ $(document).ready(function() {
     let add_button      = $(".add_form_field");
     let submit_button   = $("#submit");
 
-
-
     let x = 1;
 
     $(document).on("change", function(e){
@@ -48,7 +46,7 @@ $(document).ready(function() {
                                 '<td><input type="text" class="unitPrice" name="unitPrice"/></td>' +
                                 '<td><p class="amount"></p></td>' +
                                 '<td><a href="#" class="delete">Delete</a><td>' +
-                '               </tr>');
+                               '</tr>');
         } else {
             alert('You Reached the limits')
         }

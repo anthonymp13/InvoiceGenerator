@@ -1,7 +1,7 @@
 package anthony.com.persistence;
 
 import anthony.com.entity.*;
-import test.util.Database;
+import anthony.com.util.Database;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -9,7 +9,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * The type User dao test.
+ * The Company dao tests.
  */
 class CompanyDaoTest {
 
