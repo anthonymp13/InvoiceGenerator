@@ -2,12 +2,14 @@ package anthony.com.persistence;
 
 import anthony.com.entity.Company;
 import anthony.com.entity.Customer;
+import anthony.com.entity.Role;
 import anthony.com.entity.User;
 import anthony.com.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
@@ -126,6 +128,16 @@ class UserDaoTest {
 
         customers.size();
         assertEquals(1, customers.size());
+    }
+
+    /**
+     * Test getting user and user role
+     */
+    @Test
+    void getUserRole() {
+        User user = (User) userDao.getById(1);
+        Set<Role> roles = user.getRoles();
+
     }
 
 }
