@@ -36,8 +36,6 @@ public class Dashboard extends HttpServlet {
         ArrayList<Invoice> invoices = new ArrayList<>();
 
         GenericDao userDao = new GenericDao(User.class);
-        GenericDao customerDao = new GenericDao(Customer.class);
-        GenericDao roleDao = new GenericDao(Role.class);
 
 //      Retrieve logged in users username
         String userName = request.getRemoteUser();
@@ -47,19 +45,6 @@ public class Dashboard extends HttpServlet {
         Company userCompany = user.getCompany();
         Set<User> companyUsers = userCompany.getUsers();
         Set<Customer> companyCustomers = userCompany.getCustomers();
-
-//      Get users roles
-//        Iterator users = companyUsers.iterator();
-//        while(users.hasNext()) {
-//            User currentUser = (User)users.next();
-//            Set<Role> userRole = currentUser.getRoles();
-//            Iterator roles = userRole.iterator();
-//            while(users.hasNext()) {
-//                Role currentRole = (Role)roles.next();
-//                currentRole.getRoleName();
-//            }
-//        }
-
 
 //      Set customers invoices to a ArrayList
         Iterator customers = companyCustomers.iterator();
@@ -71,7 +56,7 @@ public class Dashboard extends HttpServlet {
 //      Set request attributes
         request.setAttribute("invoices", invoices);
         request.setAttribute("customers", companyCustomers);
-        request.setAttribute("companyUsers", companyUsers);
+        request.setAttribute("users", companyUsers);
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/dashboard.jsp");
 

@@ -23,13 +23,12 @@ import java.util.Set;
 @WebServlet (
         urlPatterns= {"/UpdatePrivileges"}
 )
+/**
+ *  The UpdatePrivileges servlet interacts with the updatePrivileges webpage and
+ *  database to update employee privileges.
+ */
 public class UpdatePrivileges extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
-
-
-    public void init(ServletConfig config) {
-
-    }
 
     /**
      *  Handles HTTP GET requests.
@@ -46,16 +45,15 @@ public class UpdatePrivileges extends HttpServlet {
         GenericDao roleDao = new GenericDao(Role.class);
 
         HttpSession session = request.getSession();
+
         String userName = request.getParameter("userName");
-
         String newRole = request.getParameter("updateRole");
-
 
         List<Role> roleToUpdate = roleDao.getByPropertyEqual("userName", userName);
         roleToUpdate.get(0).setRoleName(newRole);
         roleDao.saveOrUpdate(roleToUpdate.get(0));
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("admin/employeePrivileges.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("admin/updatePrivileges.jsp");
 
         dispatcher.forward(request, response);
 

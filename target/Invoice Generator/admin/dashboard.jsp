@@ -1,34 +1,14 @@
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://kit.fontawesome.com/8648d72440.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/8648d72440.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="generateInvoice.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="css/masterstylesheet.css">
-    <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
+<jsp:include page="/template/head.jsp" />
+<link rel="stylesheet" type="text/css" href="/css/dashboard.css">
 </head>
 <body>
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
-
-<script src="" async defer></script>
-<h1>Invoice Generator</h1>
+<jsp:include page="/template/navbar.jsp"/>
 
 <div class="displayContainer" id="usersContainer">
     <form>
@@ -43,11 +23,15 @@
             <th class="ch3">Actions</th>
         </tr>
 
-        <tr>
-            <td>Anthony Poleski</td>
-            <td>Admin</td>
-            <td><a href="#">Update</a><a href="#">Delete</a></td>
-        </tr>
+        <c:forEach var="user" items="${users}">
+            <tr>
+                <td>${user.firstName} ${user.lastName}</td>
+                <c:forEach var="role" items="${user.roles}">
+                    <td>${role.roleName}</td>
+                </c:forEach>
+                <td><a href="/admin/updatePrivileges.jsp?userId=${user.userId}">Update privileges</a></td>
+            </tr>
+        </c:forEach>
 
     </table>
 </div>
@@ -64,11 +48,13 @@
             <th>Invoice Date</th>
             <th class="ch3">Actions</th>
         </tr>
-        <tr>
-            <td>Anthony Poleski</td>
-            <td>4/16/2020</td>
-            <td><a href="#">Edit</a><a href="#">Delete</a></td>
-        </tr>
+        <c:forEach var="invoice" items="${invoices}">
+            <tr>
+                <td>${invoice.customer.firstName} ${invoice.customer.lastName}</td>
+                <td><fmt:formatDate value="${invoice.invoiceDate}" pattern="dd-MM-yyyy" /></td>
+                <td><a href="/basic/updateInvoice.jsp?invoidId=${invoice.id}">Edit Invoice</a></td>
+            </tr>
+        </c:forEach>
     </table>
     <button>Add Invoice</button>
 </div>
@@ -85,11 +71,13 @@
             <th>Address</th>
             <th class="ch3">Actions</th>
         </tr>
-        <tr>
-            <td>Anthony Poleski</td>
-            <td>5941 State Road</td>
-            <td><a href="#">Edit</a><a href="#">Delete</a></td>
-        </tr>
+        <c:forEach var="customer" items="${customers}">
+            <tr>
+                <td>${customer.firstName}, ${customer.lastName}</td>
+                <td>${customer.street}, ${customer.state} ${customer.postalcode}</td>
+                <td><a href="/basic/updateCustomer.jsp?customerId=${customer.id}">Edit Customer</a></td>
+            </tr>
+        </c:forEach>
     </table>
     <button>Add Customer</button>
 </div>

@@ -5,12 +5,16 @@
   Time: 5:18 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
-<c:set var="title" value="Update Privileges" />
-<%@include file="/template/head.jsp"%>
+
+<!DOCTYPE html>
+<jsp:include page="/template/head.jsp" />
+
 <body>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<jsp:include page="/template/navbar.jsp"/>
 
 <h1>Update Employee Privileges</h1>
 <h2>Employee information:</h2>

@@ -37,6 +37,7 @@
     </web-resource-collection>
     <auth-constraint>
       <role-name>basic</role-name>
+      <role-name>admin</role-name>
     </auth-constraint>
   </security-constraint>
 
@@ -48,6 +49,7 @@
     </web-resource-collection>
     <auth-constraint>
       <role-name>basic</role-name>
+      <role-name>admin</role-name>
     </auth-constraint>
   </security-constraint>
 
@@ -58,6 +60,7 @@
     </web-resource-collection>
     <auth-constraint>
       <role-name>basic</role-name>
+      <role-name>admin</role-name>
     </auth-constraint>
   </security-constraint>
 

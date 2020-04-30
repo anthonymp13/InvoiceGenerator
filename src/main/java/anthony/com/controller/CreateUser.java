@@ -54,9 +54,8 @@ public class CreateUser extends HttpServlet {
         String companyName = request.getParameter("company");
 
         List<User> users = userDao.getByPropertyEqual("userName", userName);
-        User user = users.get(0);
 
-        if(user.equals(null)) {
+        if(users.isEmpty()) {
             url = "/login.jsp";
 
 //          Get company user entered
@@ -75,7 +74,7 @@ public class CreateUser extends HttpServlet {
             int userId =  insertedUser.getUserId();
 
 //          Create user role
-            Role usersRole = new Role(user, "basic", userName);
+            Role usersRole = new Role(newUser, "basic", userName);
 
 //          Insert user role
             GenericDao roleDao = new GenericDao(Role.class);
