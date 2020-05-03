@@ -79,7 +79,7 @@
     </table>
     <select form="invoiceForm" name="customerSelectBox" id="customerSelectBox">
         <c:forEach var="customer" items="${company.customers}">
-            <option form="" value="${customer.id}">
+            <option value="${customer.id}">
                     ${customer.firstName} ${customer.lastName},
                 Address: ${customer.street}, ${customer.city}, ${customer.state} ${customer.postalcode}
             </option>

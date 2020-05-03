@@ -4,32 +4,16 @@
  */
 package anthony.com.generator;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.sql.SQLException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.List;
-
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.TransformerException;
-
-import com.itextpdf.kernel.pdf.filespec.PdfFileSpec;
-import com.itextpdf.zugferd.InvoiceDOM;
-import com.itextpdf.zugferd.ZugferdConformanceLevel;
-import com.itextpdf.zugferd.ZugferdDocument;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.xml.sax.SAXException;
-
+import anthony.com.entity.Invoice;
+import anthony.com.entity.Item;
+import anthony.com.entity.Product;
 import com.itextpdf.kernel.font.PdfFont;
 import com.itextpdf.kernel.font.PdfFontFactory;
 import com.itextpdf.kernel.pdf.PdfDictionary;
 import com.itextpdf.kernel.pdf.PdfName;
 import com.itextpdf.kernel.pdf.PdfOutputIntent;
 import com.itextpdf.kernel.pdf.PdfWriter;
+import com.itextpdf.kernel.pdf.filespec.PdfFileSpec;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.borders.Border;
 import com.itextpdf.layout.element.Cell;
@@ -38,12 +22,26 @@ import com.itextpdf.layout.element.Table;
 import com.itextpdf.layout.element.Text;
 import com.itextpdf.layout.property.TextAlignment;
 import com.itextpdf.layout.property.UnitValue;
+import com.itextpdf.zugferd.InvoiceDOM;
+import com.itextpdf.zugferd.ZugferdConformanceLevel;
+import com.itextpdf.zugferd.ZugferdDocument;
 import com.itextpdf.zugferd.exceptions.DataIncompleteException;
 import com.itextpdf.zugferd.exceptions.InvalidCodeException;
-import anthony.com.entity.Invoice;
-import anthony.com.entity.Item;
-import anthony.com.entity.Product;
 import com.itextpdf.zugferd.profiles.IBasicProfile;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.xml.sax.SAXException;
+
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.TransformerException;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.sql.SQLException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
 
 /**
  * Reads invoice data from a test database and creates ZUGFeRD invoices
@@ -81,19 +79,30 @@ public class PdfInvoicesBasic {
      * @throws DataIncompleteException the data incomplete exception
      * @throws InvalidCodeException the invalid code exception
      */
-    public void generateInvoice() throws IOException, ParserConfigurationException, SQLException, SAXException, TransformerException, ParseException, DataIncompleteException, InvalidCodeException {
+    public void generateInvoice(List<Invoice> invoices) {
 //        LicenseKey.loadLicenseFile(System.getenv("ITEXT7_LICENSEKEY") + "/itextkey-html2pdf_typography.xml");
 
 
         File file = new File(DEST);
         file.getParentFile().mkdirs();
         PdfInvoicesBasic app = new PdfInvoicesBasic();
-        PojoFactory factory = PojoFactory.getInstance();
-        List<Invoice> invoices = factory.getInvoices();
-        for (Invoice invoice : invoices) {
-            app.createPdf(invoice);
+        PojoFactory factory = null;
+//        List<Invoice> invoices = null;
+
+//        try {
+//            factory = PojoFactory.getInstance();
+//            invoices = factory.getInvoices();
+//        } catch (SQLException sqlException) {
+//            sqlException.printStackTrace();
+//        }
+
+        try {
+            for (Invoice invoice : invoices) {
+                app.createPdf(invoice);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        factory.close();
 
     }
 
@@ -177,6 +186,9 @@ public class PdfInvoicesBasic {
      * @return the address table
      */
     public Table getAddressTable(IBasicProfile basic, PdfFont bold) {
+//        GenericDao customerDao = new GenericDao(Customer.class);
+
+
         Table table = new Table(new UnitValue[]{
                 new UnitValue(UnitValue.PERCENT, 50),
                 new UnitValue(UnitValue.PERCENT, 50)})

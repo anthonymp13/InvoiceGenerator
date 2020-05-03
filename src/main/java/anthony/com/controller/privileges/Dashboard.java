@@ -1,6 +1,7 @@
 package anthony.com.controller.privileges;
 
 import anthony.com.entity.*;
+import anthony.com.generator.PdfInvoicesBasic;
 import anthony.com.persistence.GenericDao;
 
 import javax.servlet.RequestDispatcher;
@@ -12,7 +13,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
+import anthony.com.generator.Driver;
 
 
 /**
@@ -36,6 +39,7 @@ public class Dashboard extends HttpServlet {
         ArrayList<Invoice> invoices = new ArrayList<>();
 
         GenericDao userDao = new GenericDao(User.class);
+        GenericDao invoiceDao = new GenericDao(Invoice.class);
 
 //      Retrieve logged in users username
         String userName = request.getRemoteUser();
@@ -57,6 +61,18 @@ public class Dashboard extends HttpServlet {
         request.setAttribute("invoices", invoices);
         request.setAttribute("customers", companyCustomers);
         request.setAttribute("users", companyUsers);
+
+//      Download invoice
+
+            Driver driver = new Driver();
+            int invoiceId = 1;
+            if(request.getParameter("invoiceId") != "") {
+                String[] invoiceToDownload = new String[invoiceId];
+                driver.main(invoiceToDownload);
+            }
+
+//        int invoiceId = Integer.parseInt(request.getParameter("invoiceId"));
+
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/dashboard.jsp");
 

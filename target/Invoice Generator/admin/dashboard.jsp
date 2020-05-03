@@ -1,4 +1,5 @@
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt" %>
 
 <!DOCTYPE html>
 <jsp:include page="/template/head.jsp" />
@@ -52,7 +53,11 @@
             <tr>
                 <td>${invoice.customer.firstName} ${invoice.customer.lastName}</td>
                 <td><fmt:formatDate value="${invoice.invoiceDate}" pattern="dd-MM-yyyy" /></td>
-                <td><a href="/basic/updateInvoice.jsp?invoidId=${invoice.id}">Edit Invoice</a></td>
+                <td>
+                    <a href="/basic/updateInvoice.jsp?invoiceId=${invoice.id}">Edit Invoice</a>
+                    <a href="/Dashboard?invoiceId=${invoice.id}">Download Invoice</a>
+                    <button></button>
+                </td>
             </tr>
         </c:forEach>
     </table>
@@ -75,7 +80,9 @@
             <tr>
                 <td>${customer.firstName}, ${customer.lastName}</td>
                 <td>${customer.street}, ${customer.state} ${customer.postalcode}</td>
-                <td><a href="/basic/updateCustomer.jsp?customerId=${customer.id}">Edit Customer</a></td>
+                <td>
+                    <a href="/basic/updateCustomer.jsp?customerId=${customer.id}">Edit Customer</a>
+                </td>
             </tr>
         </c:forEach>
     </table>

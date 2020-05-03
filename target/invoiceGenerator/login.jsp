@@ -24,13 +24,10 @@
             <TR><TH><INPUT TYPE="SUBMIT" class="btn btn-primary" VALUE="Log In">
         </TABLE>
     </FORM>
+    <a href="#">Forgot username/password?</a>
+    <a href="createUser.jsp">Sign Up</a>
+
 </div>
-
-
-<%--TODO: Add forgot username and/or password button--%>
-
-<a href="#">Forgot username/password?</a>
-<a href="createUser.jsp">Sign Up</a>
 
 </body>
 </html>
