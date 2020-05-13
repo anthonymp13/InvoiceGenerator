@@ -1,37 +1,33 @@
-<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../css/generateInvoice.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script type="text/javascript" src="../js/generateInvoice.js"> </script>
+<c:import url="../template/head.jsp" /n>
+<link rel="stylesheet" type="text/css" href="/invoiceGenerator/css/generateInvoice.css">
+<link rel="stylesheet" type="text/css" href="/invoiceGenerator/css/viewInvoice.css">
 
 </head>
-
 <body>
+<c:import url="../template/navbar.jsp"/>
 
-
+<script src="../js/generateInvoice.jsp"></script>
 <h1>Invoice Generator</h1>
 <p>Welcome to the Invoice Generator</p>
 
-<div id="tables">
-    <table class="table  table-bordered">
-        <tablehead>
-            <tr class="bg-primary">
-                <th scope="col">Invoice #</th>
-                <th scope="col">Date</th>
-            </tr>
-        </tablehead>
-        <tbody>
-        <tr>
-
-            <td scope="row">1</td>
-            <td>2/28/2020</td>
-        </tr>
-        </tbody>
-
-    </table>
-    <form id="invoiceForm">
+    <div id="tables">
+        <table class="table  table-bordered">
+            <tablehead>
+                <tr class="bg-primary">
+                    <th scope="col">Invoice #</th>
+                    <th scope="col">Date</th>
+                </tr>
+            </tablehead>
+            <tbody>
+                <tr>
+                    <td scope="row">1</td>
+                    <td>2/28/2020</td>
+                </tr>
+            </tbody>
+        </table>
 
         <table class="table  table-bordered">
             <tablehead>
@@ -53,18 +49,10 @@
                 </td>
             </tr>
             </tbody>
-
         </table>
-    </form>
-</div>
-
-<p>Image place holder</p>
-
-
-
-<form action="GenerateInvoice" method="POST">
-
-
+    </div>
+<form method="POST" action="GenerateInvoice" id="invoiceForm">
+    <p>Image place holder</p>
     <div class="companyInfo">
         <td>${company.companyId}</td>
         <td>${company.companyName}</td>
@@ -79,13 +67,29 @@
             </tr>
         </tablehead>
     </table>
-    <select id="customerSelectBox">
-        <c:forEach var="customer" items="${company.customers}">
-            <option value="${customer.id}">
+    <select form="invoiceForm" name="customerSelectBox" id="customerSelectBox">
+        <c:if test="${customer != null}">
+            <option value="${customer.id}" selected>
                     ${customer.firstName} ${customer.lastName},
                 Address: ${customer.street}, ${customer.city}, ${customer.state} ${customer.postalcode}
             </option>
-        </c:forEach>
+            <c:forEach var="customer" items="${company.customers}">
+                <option value="${customer.id}">
+                        ${customer.firstName} ${customer.lastName},
+                    Address: ${customer.street}, ${customer.city}, ${customer.state} ${customer.postalcode}
+                </option>
+            </c:forEach>
+        </c:if>
+
+        <c:if test="${customer == null}">
+            <c:forEach var="customer" items="${company.customers}">
+                <option value="${customer.id}">
+                        ${customer.firstName} ${customer.lastName},
+                    Address: ${customer.street}, ${customer.city}, ${customer.state} ${customer.postalcode}
+                </option>
+            </c:forEach>
+        </c:if>
+
     </select>
 
     <br/>
@@ -101,26 +105,27 @@
 
         <tr class="descriptionRow">
             <td><label for="description">Description</label>
-                <input type="text" id="description" class="description" name="mytext[]"></td>
+                <input type="text" id="description" class="description" name="description"></td>
             <td>
                 <label for="quantity">Quantity</label>
-                <input type="text" id="quantity" class="quantity" name="mytext[]">
+                <input type="text" id="quantity" class="quantity" name="quantity">
             </td>
             <td>
                 <label for="unitPrice">Unit Price</label>
-                <input type="text" id="unitPrice" class="unitPrice" name="mytext[]">
+                <input type="text" id="unitPrice" class="unitPrice" name="unitPrice">
             </td>
             <td>
                 <p class="amount"></p>
             </td>
+
             <td><a href="#" class="delete">Delete</a></td>
         </tr>
     </table>
-
+    <input type="submit" id="submit" value="Submit"/>
 </form>
 
 <button class="add_form_field">Add New Field &nbsp; <span style="font-size:16px; font-weight:bold;">+ </span></button>
-<button id="submit">Submit</button>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </form>
 

@@ -18,6 +18,28 @@
     </form-login-config>
   </login-config>
 
+  <!-- Protect the create customer page. -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>invoiceGeneration</web-resource-name>
+      <url-pattern>/newCustomer.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>basic</role-name>
+      <role-name>admin</role-name>
+    </auth-constraint>
+  </security-constraint>
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>invoiceGeneration</web-resource-name>
+      <url-pattern>/CreateCustomer</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>basic</role-name>
+      <role-name>admin</role-name>
+    </auth-constraint>
+  </security-constraint>
+
   <!-- Protect the user search page. -->
   <security-constraint>
     <web-resource-collection>
@@ -32,11 +54,46 @@
   <!-- Protect the invoice anthony.com.generator page. -->
   <security-constraint>
     <web-resource-collection>
-      <web-resource-name>search</web-resource-name>
-      <url-pattern>/generateInvoice/*</url-pattern>
+      <web-resource-name>invoiceGeneration</web-resource-name>
+      <url-pattern>/GenerateInvoice</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>basic</role-name>
+      <role-name>admin</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <!-- Protect the dashboard -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>invoiceGeneration</web-resource-name>
+      <url-pattern>/Dashboard</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>basic</role-name>
+      <role-name>admin</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <!--Protect update users page-->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>invoiceGeneration</web-resource-name>
+      <url-pattern>/ViewEmployee</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>admin</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>invoiceGeneration</web-resource-name>
+      <url-pattern>/dashboard.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>basic</role-name>
+      <role-name>admin</role-name>
     </auth-constraint>
   </security-constraint>
 
@@ -46,5 +103,7 @@
   <security-role>
     <role-name>admin</role-name>
   </security-role>
+
+
 </web-app>
 

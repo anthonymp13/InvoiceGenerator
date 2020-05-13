@@ -33,6 +33,7 @@ public class Invoice {
 
     /** The invoice date. */
     @Column(name = "invoiceDate")
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     private Date invoiceDate;
 
     @Column(name = "terms")
@@ -53,16 +54,14 @@ public class Invoice {
     /**
      * Instantiates a new Invoice.
      *
-     * @param date     the date
      * @param total    the total
      * @param terms    the terms
-     * @param user     the user
      * @param customer the customer
      */
-    public Invoice(Date date, double total, String terms, User user, Customer customer) {
-        this.invoiceDate = date;
+    public Invoice(double total, String terms, Date date, Customer customer) {
         this.terms = terms;
         this.total = total;
+        this.invoiceDate = date;
         this.customer = customer;
     }
 
