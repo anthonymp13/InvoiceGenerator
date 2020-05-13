@@ -9,8 +9,6 @@
   <version>1.0-SNAPSHOT</version>
 
   <name>invoiceGenerator</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
 
   <properties>
     <hibernate-version>5.8.0.Final</hibernate-version>
@@ -29,14 +27,7 @@
     <itext.version>RELEASE</itext.version>
     <jersey-version>2.29.1</jersey-version>
   </properties>
-  <!-- All add-ons and iText 7 core-->
-  <repositories>
-    <repository>
-      <id>itext-releases</id>
-      <name>iText Repository - releases</name>
-      <url>https://repo.itextsupport.com/releases</url>
-    </repository>
-  </repositories>
+
   <dependencies>
     <!-- c3p0 - used to handle connection pooling with hibernate -->
     <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-c3p0 -->
@@ -70,6 +61,11 @@
       <scope>test</scope>
     </dependency>
     <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+    </dependency>
+    <dependency>
       <groupId>javax</groupId>
       <artifactId>javaee-web-api</artifactId>
       <version>${javax.version}</version>
@@ -81,17 +77,11 @@
       <version>${mysql-version}</version>
     </dependency>
     <dependency>
-      <groupId>jstl</groupId>
-      <artifactId>jstl</artifactId>
-      <version>${jstl-version}</version>
-    </dependency>
-    <!-- next 2 dependencies are for log4j -->
-
-    <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-api</artifactId>
       <version>${log4j-version}</version>
     </dependency>
+    <!-- next 2 dependencies are for log4j -->
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-core</artifactId>
@@ -103,7 +93,8 @@
       <version>1.0.0</version>
       <scope>compile</scope>
     </dependency>
-    <!--    Adding all iText modules-->
+
+    <!-- always needed -->
     <dependency>
       <groupId>com.itextpdf</groupId>
       <artifactId>itext7-core</artifactId>
@@ -111,25 +102,6 @@
       <type>pom</type>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/com.itextpdf/itext-licensekey -->
-    <dependency>
-      <groupId>com.itextpdf</groupId>
-      <artifactId>itext-licensekey</artifactId>
-      <version>3.0.0</version>
-    </dependency>
-
-    <!-- https://mvnrepository.com/artifact/com.itextpdf/zugferd -->
-    <dependency>
-      <groupId>com.itextpdf</groupId>
-      <artifactId>zugferd</artifactId>
-      <version>2.0.1</version>
-    </dependency>
-
-    <dependency>
-      <groupId>com.itextpdf</groupId>
-      <artifactId>itext-pdfa</artifactId>
-      <version>5.5.11</version>
-    </dependency>
 
     <dependency>
       <groupId>org.glassfish.jersey.containers</groupId>

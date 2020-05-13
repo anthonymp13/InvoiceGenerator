@@ -1,6 +1,6 @@
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <c:set var="title" value="Search Results" />
-<%@include file="/template/head.jsp"%>
+<c:import url="/template/head.jsp" />
 <html>
 <body>
 <%--TODO: pull company name from databases and display in h2--%>

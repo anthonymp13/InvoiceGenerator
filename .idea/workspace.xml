@@ -12,6 +12,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
     <option name="GROUP_DATA_SOURCES" value="true" />
@@ -39,15 +42,14 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="itextinvoice: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="iTextInvoice@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="itextinvoice: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="user_role: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
+  </component>
+  <component name="ExecutionTargetDialog">
+    <checked>
+      <node key="bc20a28d-9490-4ad8-970e-53b6b56b0781" />
+      <node key="b7ab5e37-1a5b-4ed1-a9cd-c36e91d3beae" />
+    </checked>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -55,20 +57,27 @@
         <option value="jsf" />
         <option value="AnnotationType" />
         <option value="JavaScript File" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="CSS File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
-    <option name="CUSTOM_FILTER" />
+    <option name="CUSTOM_FILTER" value="" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -96,16 +105,18 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../week9-API/src/main/java" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\test" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="anthony.com.controller.user" />
+      <recent name="anthony.com.controller.customer" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="anthony.com" />
@@ -116,11 +127,11 @@
       <recent name="controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\test\java\test\util" />
+      <recent name="C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\test\java\utilities" />
       <recent name="C:\Users\Anthony\IdeaProjects\invoiceGenerator" />
       <recent name="C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\main" />
-      <recent name="C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\main\resources" />
-      <recent name="C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\test\java" />
-      <recent name="C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\test" />
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.TomEE 9.0.3">
@@ -149,7 +160,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RoleDaoTest.getByPropertyLikeSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CompanyDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="invoiceGenerator" />
       <extension name="coverage">
         <pattern>
@@ -158,14 +169,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="anthony.com.persistence" />
-      <option name="MAIN_CLASS_NAME" value="anthony.com.persistence.RoleDaoTest" />
-      <option name="METHOD_NAME" value="getByPropertyLikeSuccess" />
+      <option name="MAIN_CLASS_NAME" value="anthony.com.persistence.CompanyDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompanyDaoTest.deleteSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="invoiceGenerator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="anthony.com.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="anthony.com.persistence" />
+      <option name="MAIN_CLASS_NAME" value="anthony.com.persistence.CompanyDaoTest" />
+      <option name="METHOD_NAME" value="deleteSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RoleDaoTest.getRoleByUserId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CompanyDaoTest.insertSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="invoiceGenerator" />
       <extension name="coverage">
         <pattern>
@@ -174,46 +200,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="anthony.com.persistence" />
-      <option name="MAIN_CLASS_NAME" value="anthony.com.persistence.RoleDaoTest" />
-      <option name="METHOD_NAME" value="getRoleByUserId" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RoleDaoTest.getRoleByUserName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="invoiceGenerator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="anthony.com.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="anthony.com.persistence" />
-      <option name="MAIN_CLASS_NAME" value="anthony.com.persistence.RoleDaoTest" />
-      <option name="METHOD_NAME" value="getRoleByUserName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RoleDaoTest.insertSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="invoiceGenerator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="anthony.com.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="anthony.com.persistence" />
-      <option name="MAIN_CLASS_NAME" value="anthony.com.persistence.RoleDaoTest" />
+      <option name="MAIN_CLASS_NAME" value="anthony.com.persistence.CompanyDaoTest" />
       <option name="METHOD_NAME" value="insertSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDaoTest.getCustomersByUserId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserDaoTest.getUserRole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="invoiceGenerator" />
       <extension name="coverage">
         <pattern>
@@ -223,8 +217,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="anthony.com.persistence" />
       <option name="MAIN_CLASS_NAME" value="anthony.com.persistence.UserDaoTest" />
-      <option name="METHOD_NAME" value="getCustomersByUserId" />
+      <option name="METHOD_NAME" value="getUserRole" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="anthony.com in invoiceGenerator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="invoiceGenerator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="anthony.com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="anthony.com" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -306,20 +314,20 @@
     <list>
       <item itemvalue="Application.Driver" />
       <item itemvalue="JUnit.All in invoiceGenerator" />
-      <item itemvalue="JUnit.UserDaoTest.getCustomersByUserId" />
-      <item itemvalue="JUnit.RoleDaoTest.getRoleByUserId" />
-      <item itemvalue="JUnit.RoleDaoTest.getRoleByUserName" />
-      <item itemvalue="JUnit.RoleDaoTest.getByPropertyLikeSuccess" />
-      <item itemvalue="JUnit.RoleDaoTest.insertSuccess" />
+      <item itemvalue="JUnit.CompanyDaoTest.deleteSuccess" />
+      <item itemvalue="JUnit.CompanyDaoTest" />
+      <item itemvalue="JUnit.CompanyDaoTest.insertSuccess" />
+      <item itemvalue="JUnit.UserDaoTest.getUserRole" />
+      <item itemvalue="JUnit.anthony.com in invoiceGenerator" />
       <item itemvalue="TomEE Server.TomEE 9.0.3" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RoleDaoTest.insertSuccess" />
-        <item itemvalue="JUnit.RoleDaoTest.getByPropertyLikeSuccess" />
-        <item itemvalue="JUnit.RoleDaoTest.getRoleByUserName" />
-        <item itemvalue="JUnit.RoleDaoTest.getRoleByUserId" />
-        <item itemvalue="JUnit.UserDaoTest.getCustomersByUserId" />
+        <item itemvalue="JUnit.anthony.com in invoiceGenerator" />
+        <item itemvalue="JUnit.CompanyDaoTest.deleteSuccess" />
+        <item itemvalue="JUnit.UserDaoTest.getUserRole" />
+        <item itemvalue="JUnit.CompanyDaoTest" />
+        <item itemvalue="JUnit.CompanyDaoTest.insertSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -336,7 +344,8 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="TomEE Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Failed" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+       
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
@@ -392,6 +401,40 @@
       <workItem from="1585860334610" duration="261000" />
       <workItem from="1585865012044" duration="321000" />
       <workItem from="1586203694320" duration="12000" />
+      <workItem from="1586216271276" duration="4885000" />
+      <workItem from="1586221265552" duration="3390000" />
+      <workItem from="1586239282999" duration="1153000" />
+      <workItem from="1586240506331" duration="3223000" />
+      <workItem from="1586378175946" duration="191000" />
+      <workItem from="1586399945457" duration="3383000" />
+      <workItem from="1586983266898" duration="93000" />
+      <workItem from="1586984090114" duration="881000" />
+      <workItem from="1587007427586" duration="9936000" />
+      <workItem from="1587413315271" duration="1639000" />
+      <workItem from="1587433967263" duration="16000" />
+      <workItem from="1587692768459" duration="4830000" />
+      <workItem from="1587928990911" duration="5976000" />
+      <workItem from="1587949851926" duration="8054000" />
+      <workItem from="1588022829150" duration="6987000" />
+      <workItem from="1588030296632" duration="219000" />
+      <workItem from="1588037339256" duration="6000" />
+      <workItem from="1588109358925" duration="119000" />
+      <workItem from="1588116583908" duration="7295000" />
+      <workItem from="1588189867503" duration="30814000" />
+      <workItem from="1588545204460" duration="1471000" />
+      <workItem from="1588546976978" duration="2796000" />
+      <workItem from="1588623149742" duration="11033000" />
+      <workItem from="1588703156490" duration="2912000" />
+      <workItem from="1588977984318" duration="5311000" />
+      <workItem from="1589147076574" duration="15296000" />
+      <workItem from="1589167047077" duration="6878000" />
+      <workItem from="1589213141240" duration="6691000" />
+      <workItem from="1589221103000" duration="5698000" />
+      <workItem from="1589233774786" duration="357000" />
+      <workItem from="1589247471463" duration="844000" />
+      <workItem from="1589255282455" duration="6884000" />
+      <workItem from="1589319420811" duration="5335000" />
+      <workItem from="1589339087009" duration="18613000" />
     </task>
     <servers />
   </component>
@@ -406,10 +449,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="280" y="0" key="#All_in_invoiceGenerator/0.0.1366.728@0.0.1366.728" timestamp="1584495192558" />
-    <state x="275" y="22" key="#Assign_Data_Sources" timestamp="1584496251747">
+    <state x="275" y="22" key="#Assign_Data_Sources" timestamp="1586240536080">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="22" key="#Assign_Data_Sources/0.0.1366.728@0.0.1366.728" timestamp="1584496251747" />
+    <state x="275" y="22" key="#Assign_Data_Sources/0.0.1366.728@0.0.1366.728" timestamp="1586240536080" />
+    <state x="275" y="22" key="#Auto_Import" timestamp="1589347488670">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="22" key="#Auto_Import/0.0.1366.728@0.0.1366.728" timestamp="1589347488669" />
     <state x="600" y="172" key="#BuildArtifactsBeforeRunChooser" timestamp="1584559290692">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -418,22 +465,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="412" y="25" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1584555668749" />
+    <state x="275" y="22" key="#SQL_Dialects" timestamp="1586242101861">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="22" key="#SQL_Dialects/0.0.1366.728@0.0.1366.728" timestamp="1586242101861" />
     <state x="275" y="16" key="#TomEE_Server" timestamp="1584558365794">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="16" key="#TomEE_Server/0.0.1366.728@0.0.1366.728" timestamp="1584558365794" />
-    <state x="274" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585592838380">
+    <state x="274" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587950431938">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="274" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1585592838380" />
+    <state x="274" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1587950431938" />
+    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1587055729006">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1587055729006" />
     <state x="436" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585605248176">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="436" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1585605248176" />
-    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1584501901752">
+    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1588190718391">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1584501901752" />
+    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1588190718391" />
     <state x="434" y="148" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1584558104438">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -442,90 +497,106 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="412" y="25" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1366.728@0.0.1366.728" timestamp="1584556663504" />
-    <state x="505" y="289" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1585605498861">
+    <state x="505" y="289" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1586240210259">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="505" y="289" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1585605498861" />
-    <state x="479" y="223" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585328483598">
+    <state x="505" y="289" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1586240210259" />
+    <state x="479" y="223" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589340029888">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="479" y="223" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1585328483598" />
+    <state x="479" y="223" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1589340029888" />
     <state x="479" y="244" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1585605430444">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="479" y="244" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728@0.0.1366.728" timestamp="1585605430444" />
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588628453870">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1588628453870" />
     <state x="441" y="226" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1584536498433">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="441" y="226" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1584536498433" />
-    <state x="600" y="115" key="FileChooserDialogImpl" timestamp="1585066407333">
+    <state x="363" y="169" width="640" height="525" key="DUMP_DIALOG_DIMENSION_KEY" timestamp="1587951488119">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="600" y="115" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585066407333" />
-    <state width="490" height="168" key="GridCell.Tab.0.bottom" timestamp="1585866487120">
+    <state x="363" y="169" width="640" height="525" key="DUMP_DIALOG_DIMENSION_KEY/0.0.1366.728@0.0.1366.728" timestamp="1587951488119" />
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1588194959289">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="490" height="168" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585866487120" />
-    <state width="490" height="168" key="GridCell.Tab.0.center" timestamp="1585866487119">
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1588194959289" />
+    <state x="481" y="66" key="ExecutionTargetDialog" timestamp="1588198651799">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="490" height="168" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585866487119" />
-    <state width="490" height="168" key="GridCell.Tab.0.left" timestamp="1585866487119">
+    <state x="481" y="66" key="ExecutionTargetDialog/0.0.1366.728@0.0.1366.728" timestamp="1588198651799" />
+    <state x="600" y="115" key="FileChooserDialogImpl" timestamp="1588194250883">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="490" height="168" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585866487119" />
-    <state width="490" height="168" key="GridCell.Tab.0.right" timestamp="1585866487119">
+    <state x="600" y="115" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588194250883" />
+    <state width="905" height="316" key="GridCell.Tab.0.bottom" timestamp="1589391189737">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="490" height="168" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585866487119" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1585668113629">
+    <state width="905" height="316" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589391189737" />
+    <state width="905" height="316" key="GridCell.Tab.0.center" timestamp="1589391189737">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585668113629" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1585668113628">
+    <state width="905" height="316" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1589391189737" />
+    <state width="905" height="316" key="GridCell.Tab.0.left" timestamp="1589391189737">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1585668113628" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1585668113628">
+    <state width="905" height="316" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1589391189737" />
+    <state width="905" height="316" key="GridCell.Tab.0.right" timestamp="1589391189737">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1585668113628" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1585668113629">
+    <state width="905" height="316" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1589391189737" />
+    <state width="905" height="316" key="GridCell.Tab.1.bottom" timestamp="1589391189738">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1585668113629" />
-    <state width="905" height="148" key="GridCell.Tab.2.bottom" timestamp="1585668113570">
+    <state width="905" height="316" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589391189738" />
+    <state width="905" height="316" key="GridCell.Tab.1.center" timestamp="1589391189738">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="148" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585668113570" />
-    <state width="905" height="148" key="GridCell.Tab.2.center" timestamp="1585668113569">
+    <state width="905" height="316" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1589391189738" />
+    <state width="905" height="316" key="GridCell.Tab.1.left" timestamp="1589391189738">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="148" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1585668113569" />
-    <state width="905" height="148" key="GridCell.Tab.2.left" timestamp="1585668113569">
+    <state width="905" height="316" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1589391189738" />
+    <state width="905" height="316" key="GridCell.Tab.1.right" timestamp="1589391189738">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="148" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1585668113569" />
-    <state width="905" height="148" key="GridCell.Tab.2.right" timestamp="1585668113569">
+    <state width="905" height="316" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1589391189738" />
+    <state width="905" height="316" key="GridCell.Tab.2.bottom" timestamp="1589391189738">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="148" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1585668113569" />
-    <state width="905" height="148" key="GridCell.Tab.3.bottom" timestamp="1585668113570">
+    <state width="905" height="316" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589391189738" />
+    <state width="905" height="316" key="GridCell.Tab.2.center" timestamp="1589391189738">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="148" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585668113570" />
-    <state width="905" height="148" key="GridCell.Tab.3.center" timestamp="1585668113570">
+    <state width="905" height="316" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1589391189738" />
+    <state width="905" height="316" key="GridCell.Tab.2.left" timestamp="1589391189738">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="148" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1585668113570" />
-    <state width="905" height="148" key="GridCell.Tab.3.left" timestamp="1585668113570">
+    <state width="905" height="316" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1589391189738" />
+    <state width="905" height="316" key="GridCell.Tab.2.right" timestamp="1589391189738">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="148" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1585668113570" />
-    <state width="905" height="148" key="GridCell.Tab.3.right" timestamp="1585668113570">
+    <state width="905" height="316" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1589391189738" />
+    <state width="905" height="316" key="GridCell.Tab.3.bottom" timestamp="1589343622822">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="148" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1585668113570" />
+    <state width="905" height="316" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589343622822" />
+    <state width="905" height="316" key="GridCell.Tab.3.center" timestamp="1589343622822">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="316" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1589343622822" />
+    <state width="905" height="316" key="GridCell.Tab.3.left" timestamp="1589343622822">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="316" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1589343622822" />
+    <state width="905" height="316" key="GridCell.Tab.3.right" timestamp="1589343622822">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="316" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1589343622822" />
     <state width="905" height="570" key="GridCell.Tab.7.bottom" timestamp="1585075652616">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -558,62 +629,86 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="905" height="570" key="GridCell.Tab.8.right/0.0.1366.728@0.0.1366.728" timestamp="1585075652103" />
-    <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1584558398600">
+    <state width="905" height="322" key="GridCell.Tab.9.bottom" timestamp="1588527958288">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="213" y="19" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1584558398600" />
+    <state width="905" height="322" key="GridCell.Tab.9.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588527958288" />
+    <state width="905" height="322" key="GridCell.Tab.9.center" timestamp="1588527958288">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="322" key="GridCell.Tab.9.center/0.0.1366.728@0.0.1366.728" timestamp="1588527958288" />
+    <state width="905" height="322" key="GridCell.Tab.9.left" timestamp="1588527958288">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="322" key="GridCell.Tab.9.left/0.0.1366.728@0.0.1366.728" timestamp="1588527958288" />
+    <state width="905" height="322" key="GridCell.Tab.9.right" timestamp="1588527958288">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="322" key="GridCell.Tab.9.right/0.0.1366.728@0.0.1366.728" timestamp="1588527958288" />
+    <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1588704953258">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="213" y="19" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1588704953258" />
     <state x="377" y="63" key="NewModule_or_Project.wizard" timestamp="1585066412487">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="377" y="63" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1585066412487" />
-    <state x="192" y="0" key="SettingsEditor" timestamp="1585592873378">
+    <state x="192" y="0" key="SettingsEditor" timestamp="1589344428206">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="192" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585592873378" />
-    <state x="572" y="244" width="326" height="240" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1585328211382">
+    <state x="192" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1589344428206" />
+    <state x="572" y="244" width="326" height="240" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1588192409292">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="572" y="244" width="326" height="240" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.728@0.0.1366.728" timestamp="1585328211382" />
+    <state x="572" y="244" width="326" height="240" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.728@0.0.1366.728" timestamp="1588192409292" />
+    <state x="413" y="169" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1587056377473">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="169" key="com.intellij.database.dbimport.ImportUtil.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1587056377473" />
     <state x="479" y="189" width="408" height="346" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1584536339607">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="479" y="189" width="408" height="346" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1366.728@0.0.1366.728" timestamp="1584536339607" />
-    <state x="719" y="86" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1585328188459">
+    <state x="719" y="31" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1589351654870">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="719" y="86" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1585328188459" />
+    <state x="719" y="31" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1589351654870" />
     <state x="541" y="0" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1584481193281">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="541" y="0" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1366.728@0.0.1366.728" timestamp="1584481193281" />
-    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1584559951761">
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1588196579920">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1584559951761" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1586203698738">
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1588196579920" />
+    <state x="92" y="92" width="1182" height="544" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589390938867">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586203698738" />
-    <state x="338" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1584727394923">
+    <state x="92" y="92" width="1182" height="544" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1589390938867" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1589339087102">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="338" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1584727394923" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1589339087102" />
+    <state x="338" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1587952583493">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="338" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1587952583493" />
     <state x="0" y="0" width="1339" height="715" key="dock-window-1" timestamp="1585616272204">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="0" y="0" width="1339" height="715" key="dock-window-1/0.0.1366.728@0.0.1366.728" timestamp="1585616272204" />
-    <state x="65" y="59" key="new project wizard" timestamp="1585333612612">
+    <state x="65" y="59" key="new project wizard" timestamp="1588109480348">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="65" y="59" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1585333612612" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1585614767827">
+    <state x="65" y="59" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1588109480348" />
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1589340860361">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1585614767827" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1585349472828">
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1589340860361" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1589346629215">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1585349472828" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1589346629215" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

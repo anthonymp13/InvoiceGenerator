@@ -25,6 +25,9 @@ public class Item {
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name="native", strategy = "native")
     @Column(name = "id")
+    private int id;
+
+    @Column(name = "item")
     private int item;
 
     /** The product. */
@@ -33,7 +36,7 @@ public class Item {
     private Product product;
 
     /** The quantity. */
-    private int quantity;
+    private double quantity;
 
     private double cost;
 
@@ -57,10 +60,11 @@ public class Item {
      * @param quantity the quantity
      * @param invoice  the invoice
      */
-    public Item(int item, Product product, int quantity, Invoice invoice) {
+    public Item(int item, Product product, int quantity, double cost, Invoice invoice) {
         this.item = item;
         this.product = product;
         this.quantity = quantity;
+        this.cost = cost;
         this.invoice = invoice;
     }
 
@@ -131,7 +135,7 @@ public class Item {
      *
      * @return the quantity
      */
-    public int getQuantity() {
+    public double getQuantity() {
         return quantity;
     }
 
@@ -140,7 +144,7 @@ public class Item {
      *
      * @param quantity the new quantity
      */
-    public void setQuantity(int quantity) {
+    public void setQuantity(double quantity) {
         this.quantity = quantity;
     }
 

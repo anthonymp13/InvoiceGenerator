@@ -29,25 +29,25 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name="native", strategy = "native")
     @Column(name = "id")
-    protected int id;
+    private int id;
 
     /**
      * The name.
      */
     @Column(name = "name")
-    protected String name;
+    private String name;
 
     /**
      * The price.
      */
     @Column(name = "price")
-    protected double price;
+    private double price;
 
     /**
      * The vat.
      */
     @Column(name = "vat")
-    protected double vat;
+    private double vat;
 
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Item> items = new HashSet<>();
@@ -55,13 +55,11 @@ public class Product {
     /**
      * Instantiates a new Product.
      *
-     * @param id    the id
      * @param name  the name
      * @param price the price
      * @param vat   the vat
      */
-    public Product(int id, String name, double price, double vat) {
-        this.id = id;
+    public Product(String name, double price, double vat) {
         this.name = name;
         this.price = price;
         this.vat = vat;

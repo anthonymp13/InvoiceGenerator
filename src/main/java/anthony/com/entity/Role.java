@@ -16,18 +16,17 @@ public class Role {
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
+    @Column(name="userName")
+    private String userName;
+
+    @Column(name="role_name")
+    private String roleName;
+
     @ManyToOne
     @JoinColumn(name = "userId",
             foreignKey = @ForeignKey(name = "user_roles_user_id_fk")
     )
     private User user;
-
-    @Column(name="userName")
-    private String userName;
-
-
-    @Column(name="role_name")
-    private String roleName;
 
     /**
      * Instantiates a new Role.

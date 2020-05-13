@@ -2,12 +2,15 @@ package anthony.com.persistence;
 
 import anthony.com.entity.Company;
 import anthony.com.entity.Customer;
+import anthony.com.entity.Role;
 import anthony.com.entity.User;
 import anthony.com.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
@@ -46,7 +49,6 @@ class UserDaoTest {
         assertNotNull(insertedUser.getUserId());
         assertEquals(company, insertedUser.getCompany());
     }
-
 
     /**
      * Verify successful delete of user and not company
@@ -102,14 +104,7 @@ class UserDaoTest {
         assertEquals(2, users.size());
     }
 
-    /**
-     * Confirms gets user by last name success.
-     */
-//    @Test
-//    void getUserByLastNameSuccess() {
-//        List<User> users = dao.getUserByLastName("p");
-//        assertEquals(1, users.size());
-//    }
+
 
     /**
      * Verifies a user is returned correctly based on id search
@@ -134,6 +129,21 @@ class UserDaoTest {
 
         customers.size();
         assertEquals(1, customers.size());
+    }
+
+    /**
+     * Test getting user and user role
+     */
+    @Test
+    void getUserRole() {
+        User user = (User) userDao.getById(1);
+        Set<Role> roles = user.getRoles();
+        assertEquals(1, roles.size());
+
+        for (Iterator<Role> it = roles.iterator(); it.hasNext(); ) {
+            Role currentRole = it.next();
+            assertEquals("admin", currentRole.getRoleName());
+        }
     }
 
 }

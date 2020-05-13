@@ -327,6 +327,26 @@ public class Customer {
     }
 
     /**
+     * Add invoice.
+     *
+     * @param invoice the invoice
+     */
+    public void addInvoice(Invoice invoice) {
+        invoices.add(invoice);
+        invoice.setCustomer(this);
+    }
+
+    /**
+     * Remove invoice.
+     *
+     * @param invoice the invoice
+     */
+    public void removeInvoice(Invoice invoice) {
+        invoices.remove(invoice);
+        invoice.setCustomer(null);
+    }
+
+    /**
      * Sets invoices.
      *
      * @param invoices the invoices

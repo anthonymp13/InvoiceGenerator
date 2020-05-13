@@ -2,6 +2,8 @@ package anthony.com.persistence;
 
 import anthony.com.entity.*;
 import anthony.com.util.Database;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -15,6 +17,8 @@ import static org.junit.jupiter.api.Assertions.*;
  * The type User dao test.
  */
 class InvoiceDaoTest {
+
+    private final Logger logger = LogManager.getLogger(this.getClass());
 
     GenericDao invoiceDao;
     /**
@@ -33,23 +37,27 @@ class InvoiceDaoTest {
     @Test
     void insertWithInvoiceAndProduct() {
         GenericDao userDao= new GenericDao(User.class);
-        User user = (User)userDao.getById(1);
         GenericDao customerDao = new GenericDao(Customer.class);
-        Customer customer = (Customer)customerDao.getById(1);
-        Date date = new Date(2020, 2, 27);
-        Invoice newInvoice = new Invoice(date, 1500.00, "Upon completion", user, customer);
-
         GenericDao productDao = new GenericDao(Product.class);
-        Product product = (Product) productDao.getById(1);
 
+        User user = (User)userDao.getById(1);
+        Customer customer = (Customer)customerDao.getById(1);
+        Date date = new Date();
 
-        Item item = new Item(1, product, 5, newInvoice);
+        Invoice newInvoice = new Invoice(3000.00, "Upon completion", date,customer);
+        customer.addInvoice(newInvoice);
+
+        Product product = (Product)productDao.getById(1);
+
+        Item item = new Item(1, product, 5, 15, newInvoice );
         newInvoice.addItem(item);
 
         int id = userDao.insert(newInvoice);
+
+
         assertNotEquals(0,id);
         Invoice insertedInvoice = (Invoice)invoiceDao.getById(id);
-        assertEquals(newInvoice, insertedInvoice);
+        assertEquals(newInvoice.getId(), insertedInvoice.getId());
         assertNotNull(insertedInvoice);
 
     }

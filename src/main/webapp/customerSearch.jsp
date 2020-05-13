@@ -6,7 +6,8 @@
 --%>
 
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
-<%@include file="/template/head.jsp"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@include file="template/head.jsp"%>
 <html>
 <body>
 <h2>Customers</h2>
