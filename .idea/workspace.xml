@@ -6,63 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33b2a67e-7c08-4f57-9d65-77c2c24ad505" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bc20a28d-9490-4ad8-970e-53b6b56b0781.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bc20a28d-9490-4ad8-970e-53b6b56b0781.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/Dashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/company/NewCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/company/NewCompany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/customer/CreateCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/customer/CreateCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/DeleteInvoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/DeleteInvoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/GenerateInvoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/GenerateInvoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/user/CreateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/user/CreateUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/entity/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/entity/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/CreateUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CreateUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/dashboard.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/editInvoice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editInvoice.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/generateInvoice/generateInvoice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/generateInvoice/generateInvoice.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/newCustomer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/newCustomer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/CreateUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/CreateUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/Dashboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/Dashboard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/company/NewCompany.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/company/NewCompany.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/customer/CreateCustomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/customer/CreateCustomer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/invoice/DeleteInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/invoice/DeleteInvoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/invoice/GenerateInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/invoice/GenerateInvoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/user/CreateUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/user/CreateUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/entity/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/entity/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/generator/PdfInvoicesBasic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/generator/PdfInvoicesBasic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/admin/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/admin/dashboard.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/css/viewInvoice.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/css/viewInvoice.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/editInvoice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/editInvoice.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/generateInvoice/generateInvoice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/generateInvoice/generateInvoice.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/invoice/viewInvoice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/invoice/viewInvoice.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/newCustomer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/newCustomer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/controller/Dashboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/controller/Dashboard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/controller/company/NewCompany.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/controller/company/NewCompany.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/controller/customer/CreateCustomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/controller/customer/CreateCustomer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/controller/invoice/DeleteInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/controller/invoice/DeleteInvoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/controller/invoice/GenerateInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/controller/invoice/GenerateInvoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/controller/user/CreateUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/controller/user/CreateUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/entity/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/entity/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/generator/PdfInvoicesBasic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/generator/PdfInvoicesBasic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/CreateUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/CreateUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/Dashboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/Dashboard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/company/NewCompany.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/company/NewCompany.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/customer/CreateCustomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/customer/CreateCustomer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/invoice/DeleteInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/invoice/DeleteInvoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/invoice/GenerateInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/invoice/GenerateInvoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/user/CreateUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/user/CreateUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/entity/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/entity/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/generator/PdfInvoicesBasic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/generator/PdfInvoicesBasic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/admin/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/admin/dashboard.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/css/viewInvoice.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/css/viewInvoice.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/editInvoice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/editInvoice.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/generateInvoice/generateInvoice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/generateInvoice/generateInvoice.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/invoice/viewInvoice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/invoice/viewInvoice.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/newCustomer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/newCustomer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-    </list>
+    <list default="true" id="33b2a67e-7c08-4f57-9d65-77c2c24ad505" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -414,11 +358,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:iTextInvoice@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:iTextInvoice@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@7f3005a0" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -502,7 +441,7 @@
       <workItem from="1589247471463" duration="844000" />
       <workItem from="1589255282455" duration="6884000" />
       <workItem from="1589319420811" duration="5335000" />
-      <workItem from="1589339087009" duration="18110000" />
+      <workItem from="1589339087009" duration="18613000" />
     </task>
     <servers />
   </component>
