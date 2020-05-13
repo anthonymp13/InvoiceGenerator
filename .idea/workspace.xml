@@ -115,6 +115,7 @@
   </component>
   <component name="RecentsManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Anthony\IdeaProjects\invoiceGenerator\src\test" />
 =======
@@ -122,6 +123,11 @@
       <recent name="anthony.com.controller.user" />
       <recent name="anthony.com.controller.customer" />
 >>>>>>> update-invoice-branch
+=======
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="anthony.com.controller.user" />
+      <recent name="anthony.com.controller.customer" />
+>>>>>>> b1598cd0b615c91e3aacb382ecc6cfe10fa09ebf
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="anthony.com" />
@@ -350,6 +356,7 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="TomEE Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
@@ -358,6 +365,10 @@
                 <item name="TomEE Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
 >>>>>>> update-invoice-branch
                 <item name="Failed" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+=======
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+       
+>>>>>>> b1598cd0b615c91e3aacb382ecc6cfe10fa09ebf
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
