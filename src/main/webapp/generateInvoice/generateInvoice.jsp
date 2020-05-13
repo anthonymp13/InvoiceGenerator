@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Generate Invoice</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/8648d72440.js" crossorigin="anonymous"></script>
@@ -114,7 +114,7 @@
             <td><a href="#" class="delete">Delete</a></td>
         </tr>
     </table>
-    <input type="submit" id="submit">Submit</input>
+    <input type="submit" id="submit" value="Submit"/>
 </form>
 
 <button class="add_form_field">Add New Field &nbsp; <span style="font-size:16px; font-weight:bold;">+ </span></button>

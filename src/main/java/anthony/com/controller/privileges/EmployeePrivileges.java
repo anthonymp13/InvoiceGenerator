@@ -3,13 +3,11 @@ package anthony.com.controller.privileges;
 import anthony.com.entity.Company;
 import anthony.com.entity.Role;
 import anthony.com.entity.User;
+import anthony.com.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import anthony.com.persistence.*;
-import org.hibernate.Session;
 
 import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -38,11 +36,16 @@ public class EmployeePrivileges extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        //      Retrieve logged in users username
         GenericDao userDao = new GenericDao(User.class);
+        String userName = request.getRemoteUser();
+        User user = (User) userDao.getByPropertyEqual("userName", userName).get(0);
+        request.setAttribute("user", user);
+
         GenericDao roleDao = new GenericDao(Role.class);
 
         // TODO: Get userId from session variables
-        User user = (User) userDao.getById(1);
+        User updateUser = (User) userDao.getById(1);
         Company company = user.getCompany();
         Set<User> employees = company.getUsers();
 

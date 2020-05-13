@@ -3,7 +3,7 @@
 
 <!DOCTYPE html>
 <jsp:include page="/template/head.jsp" />
-<link rel="stylesheet" type="text/css" href="/css/dashboard.css">
+<link rel="stylesheet" type="text/css" href="/invoiceGenerator/css/dashboard.css">
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -30,7 +30,7 @@
                 <c:forEach var="role" items="${user.roles}">
                     <td>${role.roleName}</td>
                 </c:forEach>
-                <td><a href="/admin/updatePrivileges.jsp?userId=${user.userId}">Update privileges</a></td>
+                <td><a href="/invoiceGenerator/ViewEmployee?userId=${user.userId}">Edit</a></td>
             </tr>
         </c:forEach>
 
@@ -52,16 +52,16 @@
         <c:forEach var="invoice" items="${invoices}">
             <tr>
                 <td>${invoice.customer.firstName} ${invoice.customer.lastName}</td>
-                <td><fmt:formatDate value="${invoice.invoiceDate}" pattern="dd-MM-yyyy" /></td>
+                <td>${invoice.invoiceDate}</td>
                 <td>
-                    <a href="/basic/updateInvoice.jsp?invoiceId=${invoice.id}">Edit Invoice</a>
-                    <a href="/Dashboard?invoiceId=${invoice.id}">Download Invoice</a>
-                    <button></button>
+                    <a href="/basic/updateInvoice.jsp?invoiceId=${invoice.id}">Edit</a>
+                    <p> | </p>
+                    <a href="/Dashboard?invoiceId=${invoice.id}">Download</a>
                 </td>
             </tr>
         </c:forEach>
     </table>
-    <button>Add Invoice</button>
+    <a href="/invoiceGenerator/GenerateInvoice">Add Invoice</a>
 </div>
 
 <div class="displayContainer" id="customerContainer">
@@ -81,12 +81,12 @@
                 <td>${customer.firstName}, ${customer.lastName}</td>
                 <td>${customer.street}, ${customer.state} ${customer.postalcode}</td>
                 <td>
-                    <a href="/basic/updateCustomer.jsp?customerId=${customer.id}">Edit Customer</a>
+                    <a href="/basic/updateCustomer.jsp?customerId=${customer.id}">Edit</a>
                 </td>
             </tr>
         </c:forEach>
     </table>
-    <button>Add Customer</button>
+    <a href="newCustomer.jsp">Add Customer</a>
 </div>
 </body>
 </html>

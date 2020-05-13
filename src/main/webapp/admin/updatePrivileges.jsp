@@ -21,7 +21,8 @@
 <p>Employee Name: ${employee.firstName} ${employee.lastName}</p>
 <p>Current Role: ${role.roleName}</p>
 
-<form action="/invoiceGenerator/UpdatePrivileges">
+<form  action="/invoiceGenerator/UpdatePrivileges?userId=${employee.userId}">
+    <input type="text" value="${employee.userId}" name="userId" style="display:none">
     <select name="updateRole">
         <option value="basic">Basic</option>
         <option value="admin">Admin</option>

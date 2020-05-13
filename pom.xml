@@ -10,7 +10,7 @@
 
   <name>invoiceGenerator</name>
   <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>http://www.invoiceGenerator.com</url>
 
   <properties>
     <hibernate-version>5.8.0.Final</hibernate-version>
@@ -29,14 +29,7 @@
     <itext.version>RELEASE</itext.version>
     <jersey-version>2.29.1</jersey-version>
   </properties>
-  <!-- All add-ons and iText 7 core-->
-  <repositories>
-    <repository>
-      <id>itext-releases</id>
-      <name>iText Repository - releases</name>
-      <url>https://repo.itextsupport.com/releases</url>
-    </repository>
-  </repositories>
+
   <dependencies>
     <!-- c3p0 - used to handle connection pooling with hibernate -->
     <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-c3p0 -->
@@ -107,34 +100,11 @@
     <!-- always needed -->
     <dependency>
       <groupId>com.itextpdf</groupId>
-      <artifactId>kernel</artifactId>
+      <artifactId>itext7-core</artifactId>
       <version>${itext.version}</version>
-    </dependency>
-    <!-- always needed -->
-    <dependency>
-      <groupId>com.itextpdf</groupId>
-      <artifactId>io</artifactId>
-      <version>${itext.version}</version>
-    </dependency>
-    <!-- always needed -->
-    <dependency>
-      <groupId>com.itextpdf</groupId>
-      <artifactId>layout</artifactId>
-      <version>${itext.version}</version>
-    </dependency>
-    <!-- only needed for PDF/A -->
-    <dependency>
-      <groupId>com.itextpdf</groupId>
-      <artifactId>pdfa</artifactId>
-      <version>${itext.version}</version>
+      <type>pom</type>
     </dependency>
 
-    <!-- only needed for PDF/A -->
-    <dependency>
-      <groupId>com.itextpdf</groupId>
-      <artifactId>zugferd</artifactId>
-      <version>2.0.1</version>
-    </dependency>
 
     <dependency>
       <groupId>org.glassfish.jersey.containers</groupId>

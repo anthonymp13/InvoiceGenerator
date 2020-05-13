@@ -16,6 +16,11 @@ label {
     text-align: center;
 }
 
+input {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 a {
     text-align: center;
     display: block;

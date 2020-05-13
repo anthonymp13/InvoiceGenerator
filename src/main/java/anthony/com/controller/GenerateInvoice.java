@@ -1,7 +1,7 @@
 package anthony.com.controller;
 
 import anthony.com.entity.*;
-import anthony.com.persistence.*;
+import anthony.com.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -12,8 +12,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.net.http.HttpRequest;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
@@ -26,7 +24,7 @@ import java.util.Date;
  * This servlet pulls data from the form that generates invoices
  */
 public class GenerateInvoice extends HttpServlet {
-    Logger logger = LogManager.getLogger(this.getClass());
+    private Logger logger = LogManager.getLogger(this.getClass());
     private static GenericDao userDao = new GenericDao(User.class);
     private static GenericDao companyDao = new GenericDao(Company.class);
     private static GenericDao customerDao = new GenericDao(Customer.class);
@@ -35,7 +33,8 @@ public class GenerateInvoice extends HttpServlet {
      *  The doGet() method handles GET Requests
      *
      */
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
 
         String userName = request.getRemoteUser();
@@ -44,7 +43,7 @@ public class GenerateInvoice extends HttpServlet {
         request.setAttribute("company", company);
 
         logger.info("Working!");
-        logger.info("Company:::" + company);
+        logger.info("Company:" + company);
 
         String url = "/generateInvoice/generateInvoice.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
@@ -55,20 +54,19 @@ public class GenerateInvoice extends HttpServlet {
      *  The doPost() method handles POST Requests
      *
      */
-    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException  {
         int total = 0;
-        String[] descriptionsList = null;
-        String[] quantityList = null;
-        String[] unitPriceList = null;
-        ArrayList<String> descriptions = null;
-        ArrayList<String> quantities = null;
-        ArrayList<String> unitPrices = null;
-        String customerId = null;
-        String terms = null;
-        Customer customer = null;
-        Date dt = null;
-        SimpleDateFormat sdf = null;
-        String currentDate = "";
+        String[] descriptionsList;
+        String[] quantityList;
+        String[] unitPriceList;
+        ArrayList<String> descriptions;
+        ArrayList<String> quantities;
+        ArrayList<String> unitPrices;
+        String customerId;
+        String terms;
+        Customer customer;
+        Date dt;
 
 //      Retrieves terms and selected customer id from form
         terms = request.getParameter("termList");
@@ -79,9 +77,9 @@ public class GenerateInvoice extends HttpServlet {
         descriptionsList = request.getParameterValues("description");
         quantityList = request.getParameterValues("quantity");
         unitPriceList = request.getParameterValues("unitPrice");
-        descriptions = new ArrayList<String>(Arrays.asList(descriptionsList));
-        quantities = new ArrayList<String>(Arrays.asList(quantityList));
-        unitPrices = new ArrayList<String>(Arrays.asList(unitPriceList));
+        descriptions = new ArrayList<>(Arrays.asList(descriptionsList));
+        quantities = new ArrayList<>(Arrays.asList(quantityList));
+        unitPrices = new ArrayList<>(Arrays.asList(unitPriceList));
 
 //      Calculate total
         for(int i = 0; i < descriptions.size(); i++) {
@@ -94,8 +92,7 @@ public class GenerateInvoice extends HttpServlet {
 
 //      Get current date and format
         dt = new java.util.Date();
-        sdf = new java.text.SimpleDateFormat("yyyy-MM-dd");
-        currentDate = sdf.format(dt);
+
 
 //      Create new invoice object
         Invoice newInvoice = new Invoice(total, terms, dt, customer);
@@ -121,7 +118,7 @@ public class GenerateInvoice extends HttpServlet {
             newInvoice.addItem(item);
         }
 
-        String url = "/admin/dashboard.jsp";
+        String url = "/Dashboard";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
     }

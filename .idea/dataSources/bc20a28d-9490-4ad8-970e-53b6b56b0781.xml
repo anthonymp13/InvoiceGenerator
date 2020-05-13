@@ -1219,7 +1219,6 @@
     <column id="306" parent="286" name="countryId">
       <Position>7</Position>
       <DataType>varchar(32)|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="307" parent="286" name="state">

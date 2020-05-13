@@ -56,11 +56,16 @@ public class CreateUser extends HttpServlet {
         List<User> users = userDao.getByPropertyEqual("userName", userName);
 
         if(users.isEmpty()) {
-            url = "/login.jsp";
+            url = "/index.jsp";
 
 //          Get company user entered
-            List<Company> companyList = companyDao.getByPropertyLike("companyName", companyName);
-            Company companyObject = companyList.get(0);
+            List<Company> companyList = companyDao.getByPropertyEqual("companyName", companyName);
+            Company companyObject = null;
+            if(companyList.isEmpty()) {
+                url = "/CreateUser.jsp";
+            } else {
+                companyObject = companyList.get(0);
+            }
 
             // Create user
             User newUser = new User(firstName, lastName, userName, companyObject, password);

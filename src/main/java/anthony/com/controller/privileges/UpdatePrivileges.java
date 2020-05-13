@@ -1,34 +1,69 @@
 package anthony.com.controller.privileges;
 
-import anthony.com.entity.Company;
 import anthony.com.entity.Role;
 import anthony.com.entity.User;
+import anthony.com.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import anthony.com.persistence.*;
-import org.hibernate.Session;
 
 import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.List;
-import java.util.Set;
 
 @WebServlet (
         urlPatterns= {"/UpdatePrivileges"}
 )
 /**
- *  The UpdatePrivileges servlet interacts with the updatePrivileges webpage and
- *  database to update employee privileges.
+ *  The UpdatePrivileges servlet interacts with the updatePrivileges jsp and
+ *  database to update selected employee privileges.
  */
 public class UpdatePrivileges extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
+    private GenericDao userDao = new GenericDao(User.class);
+    private int id;
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+
+        GenericDao roleDao = new GenericDao(Role.class);
+
+
+//      Get user
+        int id = Integer.parseInt(request.getParameter("userId"));
+        User user = (User)userDao.getById(id);
+
+//      Set employee that needs to be updated
+        User employee = (User)userDao.getById(id);
+        request.setAttribute("employee", employee);
+        String roleName = request.getParameter("updateRole");
+
+//      Update users role
+        Role role = (Role)roleDao.getByPropertyEqual("userName", user.getUserName()).get(0);
+        role.setRoleName(roleName);
+
+//      Get other data from form
+        String userName = request.getParameter("userName");
+        String firstName = request.getParameter("firstName");
+        String lastName = request.getParameter("lastName");
+
+//      Update user
+        user.setUserName(userName);
+        user.setFirstName(firstName);
+        user.setLastName(lastName);
+        role.setUser(user);
+
+        userDao.saveOrUpdate(user);
+        roleDao.saveOrUpdate(role);
+
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/Dashboard");
+
+        dispatcher.forward(request, response);
+
+}
 
     /**
      *  Handles HTTP GET requests.
@@ -42,18 +77,12 @@ public class UpdatePrivileges extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        GenericDao roleDao = new GenericDao(Role.class);
+//      Set employee that needs to be updated
+        id = Integer.parseInt(request.getParameter("userId"));
+        User user = (User)userDao.getById(id);
+        request.setAttribute("employee", user);
 
-        HttpSession session = request.getSession();
-
-        String userName = request.getParameter("userName");
-        String newRole = request.getParameter("updateRole");
-
-        List<Role> roleToUpdate = roleDao.getByPropertyEqual("userName", userName);
-        roleToUpdate.get(0).setRoleName(newRole);
-        roleDao.saveOrUpdate(roleToUpdate.get(0));
-
-        RequestDispatcher dispatcher = request.getRequestDispatcher("admin/updatePrivileges.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/viewEmployee.jsp");
 
         dispatcher.forward(request, response);
 

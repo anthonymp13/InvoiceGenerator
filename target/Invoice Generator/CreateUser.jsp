@@ -1,8 +1,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
     <jsp:include page="/template/head.jsp" />
-
-    <link rel="stylesheet" type="text/css" href="/css/createUser.css">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/invoiceGenerator/css/createUser.css">
 </head>
 <body>
 <jsp:include page="/template/navbar.jsp"/>
@@ -16,34 +16,38 @@
 <p>Create account here:</p>
 
 <form action="CreateUser">
+
     <div class="form-group">
-        <label for="company">Organization</label>
-        <input type="text" class="form-control" placeholder="Organization" id="company" name="company">
+        <label for="userName">Username</label>
+        <input type="text" required="required"  class="form-control" placeholder="Username" id="userName" name="userName">
     </div>
     <div class="form-group">
-        <label for="company">Organization</label>
-        <input type="text" class="form-control" placeholder="Username" id="userName" name="userName">
+        <label for="firstName">First Name</label>
+        <input type="text" required="required"  class="form-control" placeholder="First name" id="firstName" name="firstName">
     </div>
     <div class="form-group">
-        <label for="firstName">First Name:</label>
-        <input type="text" class="form-control" placeholder="First name" id="firstName" name="firstName">
-    </div>
-    <div class="form-group">
-        <label for="lastName">Last Name:</label>
-        <input type="text" class="form-control" placeholder="Last name" id="lastName" name="lastName">
+        <label for="lastName">Last Name</label>
+        <input type="text" required="required" class="form-control" placeholder="Last name" id="lastName" name="lastName">
     </div>
     <div class="form-group">
         <label for="email">Email address</label>
-        <input type="email" class="form-control" placeholder="Email" id="email" name="email">
+        <input type="email" required="required" class="form-control" placeholder="Email" id="email" name="email">
     </div>
     <div class="form-group">
         <label for="pwd">Password</label>
-        <input type="password" class="form-control" placeholder="Password" id="pwd" name="password">
+        <input type="password" required="required" class="form-control" placeholder="Password" id="pwd" name="password">
     </div>
     <div class="form-group">
         <label for="pwdConf">Confirm Password</label>
-        <input type="password" class="form-control" placeholder="Confirm password" id="pwdConf" name="passwordConfirmation">
+        <input type="password" required="required" class="form-control" placeholder="Confirm password" id="pwdConf" name="passwordConfirmation">
     </div>
+
+    <div class="form-group">
+        <label for="company">Company Name</label>
+        <input type="text" required="required" class="form-control" placeholder="Organization" id="company" name="company">
+    </div>
+
+
     <!-- <div class="form-group form-check">
       <label class="form-check-label">
         <input class="form-check-input" type="checkbox"> Remember me

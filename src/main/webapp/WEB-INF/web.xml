@@ -18,6 +18,28 @@
     </form-login-config>
   </login-config>
 
+  <!-- Protect the create customer page. -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>invoiceGeneration</web-resource-name>
+      <url-pattern>/newCustomer.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>basic</role-name>
+      <role-name>admin</role-name>
+    </auth-constraint>
+  </security-constraint>
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>invoiceGeneration</web-resource-name>
+      <url-pattern>/CreateCustomer</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>basic</role-name>
+      <role-name>admin</role-name>
+    </auth-constraint>
+  </security-constraint>
+
   <!-- Protect the user search page. -->
   <security-constraint>
     <web-resource-collection>
@@ -49,6 +71,17 @@
     </web-resource-collection>
     <auth-constraint>
       <role-name>basic</role-name>
+      <role-name>admin</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <!--Protect update users page-->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>invoiceGeneration</web-resource-name>
+      <url-pattern>/ViewEmployee</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
       <role-name>admin</role-name>
     </auth-constraint>
   </security-constraint>

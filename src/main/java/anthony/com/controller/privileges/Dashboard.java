@@ -1,7 +1,9 @@
 package anthony.com.controller.privileges;
 
-import anthony.com.entity.*;
-import anthony.com.generator.PdfInvoicesBasic;
+import anthony.com.entity.Company;
+import anthony.com.entity.Customer;
+import anthony.com.entity.Invoice;
+import anthony.com.entity.User;
 import anthony.com.persistence.GenericDao;
 
 import javax.servlet.RequestDispatcher;
@@ -10,12 +12,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Set;
-import anthony.com.generator.Driver;
 
 
 /**
@@ -45,6 +46,10 @@ public class Dashboard extends HttpServlet {
         String userName = request.getRemoteUser();
         User user = (User) userDao.getByPropertyEqual("userName", userName).get(0);
 
+//      Set logged in user to session attributes
+        HttpSession session = request.getSession();
+        session.setAttribute("user", user);
+
 //      Get info based on username
         Company userCompany = user.getCompany();
         Set<User> companyUsers = userCompany.getUsers();
@@ -64,15 +69,23 @@ public class Dashboard extends HttpServlet {
 
 //      Download invoice
 
-            Driver driver = new Driver();
-            int invoiceId = 1;
-            if(request.getParameter("invoiceId") != "") {
-                String[] invoiceToDownload = new String[invoiceId];
-                driver.main(invoiceToDownload);
-            }
+//            int invoiceId = 1;
+//            if(request.getParameter("invoiceId") != "") {
+////                String[] invoiceToDownload = new String[invoiceId];
+////                driver.main(invoiceToDownload);
+//                try {
+//                    PdfInvoicesBasic generate = new PdfInvoicesBasic();
+//                    List<Invoice> list = new ArrayList<Invoice>();
+//                    Invoice invoice = (Invoice) invoiceDao.getById(invoiceId);
+//                    list.add(invoice);
+//                    generate.generateInvoice(list);
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                }
+//
+//            }
 
 //        int invoiceId = Integer.parseInt(request.getParameter("invoiceId"));
-
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/dashboard.jsp");
 

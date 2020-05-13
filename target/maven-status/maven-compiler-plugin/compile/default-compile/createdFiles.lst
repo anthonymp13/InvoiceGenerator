@@ -1,5 +1,6 @@
 anthony\com\controller\privileges\Dashboard.class
 anthony\com\api\Users.class
+anthony\com\controller\privileges\ViewEmployee.class
 anthony\com\controller\CreateUser.class
 anthony\com\entity\Company.class
 anthony\com\controller\SearchCustomers.class
@@ -10,15 +11,16 @@ anthony\com\generator\InvoiceData.class
 anthony\com\controller\UserLogin.class
 anthony\com\generator\PdfInvoicesBasic.class
 anthony\com\controller\SearchUsers.class
+anthony\com\controller\NewCompany.class
 anthony\com\entity\Invoice.class
 anthony\com\persistence\GenericDao.class
 anthony\com\entity\Customer.class
 anthony\com\controller\privileges\UpdatePrivileges.class
 anthony\com\generator\Driver.class
 anthony\com\persistence\SessionFactoryProvider.class
+anthony\com\controller\CreateCustomer.class
 anthony\com\entity\Role.class
 anthony\com\api\UserApplication.class
-anthony\com\generator\PojoFactory.class
 anthony\com\controller\GenerateInvoice.class
 anthony\com\entity\Product.class
 anthony\com\controller\privileges\EmployeePrivileges.class

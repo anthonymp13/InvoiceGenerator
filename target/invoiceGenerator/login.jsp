@@ -5,7 +5,7 @@
   Time: 10:58 AM
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<link rel="stylesheet" type="text/css" href="/css/login.css">
+<link rel="stylesheet" type="text/css" href="/invoiceGenerator/css/login.css">
 </head>
 
 <html>
