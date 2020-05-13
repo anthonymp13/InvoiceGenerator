@@ -1,3 +1,5 @@
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%--
   Created by IntelliJ IDEA.
   User: Anthony
@@ -5,13 +7,14 @@
   Time: 9:47 PM
   To change this template use File | Settings | File Templates.
 --%>
-<jsp:include page="/template/head.jsp" />
+<c:import url="../template/head.jsp" />
 <link rel="stylesheet" type="text/css" href="invoiceGenerator/css/viewEmployee.css">
 </head>
+
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
-<jsp:include page="/template/navbar.jsp"/>
+<c:import url="../template/navbar.jsp"/>
 </head>
 <body>
 <h1>Update Information:</h1>

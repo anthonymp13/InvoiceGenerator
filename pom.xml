@@ -9,8 +9,6 @@
   <version>1.0-SNAPSHOT</version>
 
   <name>invoiceGenerator</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.invoiceGenerator.com</url>
 
   <properties>
     <hibernate-version>5.8.0.Final</hibernate-version>
