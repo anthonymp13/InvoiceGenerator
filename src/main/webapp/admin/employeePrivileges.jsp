@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+
 <c:set var="title" value="Search Results" />
 <%@include file="/template/head.jsp"%>
 <html>

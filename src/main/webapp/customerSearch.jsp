@@ -5,7 +5,7 @@
   Time: 3:31 PM
 --%>
 
-<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+
 <%@include file="/template/head.jsp"%>
 <html>
 <body>
