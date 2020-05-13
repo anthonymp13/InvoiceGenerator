@@ -1,9 +1,6 @@
 package anthony.com.controller.invoice;
 
-import anthony.com.entity.Customer;
-import anthony.com.entity.Invoice;
-import anthony.com.entity.Item;
-import anthony.com.entity.Product;
+import anthony.com.entity.*;
 import anthony.com.persistence.GenericDao;
 
 import javax.servlet.RequestDispatcher;
@@ -95,16 +92,22 @@ public class UpdateInvoice extends HttpServlet {
         }
 
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("Dashboard");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("ViewInvoice?invoiceId=" + newInvoice.getId());
         dispatcher.forward(req, resp);
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         GenericDao<Invoice> invoiceDao = new GenericDao(Invoice.class);
+        GenericDao userDao = new GenericDao(User.class);
         req.setAttribute("invoice", invoiceDao.getById(Integer.valueOf(req.getParameter("invoiceId"))));
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/generateInvoice.jsp");
+        String userName = req.getRemoteUser();
+        User user = (User) userDao.getByPropertyEqual("userName", userName).get(0);
+        Company company = user.getCompany();
+        req.setAttribute("company", company);
+
+        RequestDispatcher dispatcher = req.getRequestDispatcher("generateInvoice/generateInvoice.jsp");
         dispatcher.forward(req, resp);
     }
 }

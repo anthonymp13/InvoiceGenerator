@@ -30,7 +30,10 @@
                 <c:forEach var="role" items="${user.roles}">
                     <td>${role.roleName}</td>
                 </c:forEach>
-                <td><a href="/invoiceGenerator/ViewEmployee?userId=${user.userId}">Edit</a></td>
+                <td>
+                    <a href="/invoiceGenerator/EditEmployee?userId=${user.userId}">Edit</a>
+                    <a href="/invoiceGenerator/DeleteUser?userId=${user.userId}">Edit</a>
+                </td>
             </tr>
         </c:forEach>
 
@@ -54,10 +57,8 @@
                 <td>${invoice.customer.firstName} ${invoice.customer.lastName}</td>
                 <td>${invoice.invoiceDate}</td>
                 <td>
-                    <a href="UpdateInvoice?invoiceId=${invoice.id}">Edit</a>
-                    <p> | </p>
-<%--                    <a href="Dashboard?invoiceId=${invoice.id}">Download</a>--%>
-<%--                    <p> | </p>--%>
+                    <a href="updateInvoice?invoiceId=${invoice.id}">Edit</a>
+                    <a href="ViewInvoice?invoiceId=${invoice.id}">View</a>
                     <a href="DeleteInvoice?invoiceId=${invoice.id}">Delete</a>
 
                 </td>
@@ -85,6 +86,7 @@
                 <td>${customer.street}, ${customer.state} ${customer.postalcode}</td>
                 <td>
                     <a href="updateCustomer.jsp?customerId=${customer.id}">Edit</a>
+                    <a href="DeleteCustomer.jsp?customerId=${customer.id}">Delete</a>
                 </td>
             </tr>
         </c:forEach>

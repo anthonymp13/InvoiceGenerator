@@ -7,35 +7,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33b2a67e-7c08-4f57-9d65-77c2c24ad505" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/DeleteInvoice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/UpdateInvoice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/customer/DeleteCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/customer/ViewCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/ViewInvoice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/user/DeleteUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/viewInvoice.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/editInvoice.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/invoice/viewInvoice.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/CreateCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/customer/CreateCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/CreateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/user/CreateUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/GenerateInvoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/GenerateInvoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/NewCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/company/NewCompany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/SearchCustomers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/customer/SearchCustomers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/SearchUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/user/SearchUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/UserLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/user/UserLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/privileges/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/Dashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/privileges/EmployeePrivileges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/user/EmployeePrivileges.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/privileges/UpdatePrivileges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/user/UpdatePrivileges.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/privileges/ViewEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/user/ViewEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/CreateUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CreateUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/UpdateInvoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/UpdateInvoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/user/ViewEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/user/EditEmployee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/dashboard.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/employeePrivileges.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/employeePrivileges.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/updatePrivileges.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/updatePrivileges.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/viewEmployee.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/viewEmployee.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/createCompany.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/createCompany.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/customerSearch.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/customerSearch.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/newCustomer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/newCustomer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/results.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/results.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/search.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/template/head.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/template/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/template/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/invoice/UpdateInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/invoice/UpdateInvoice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/user/ViewEmployee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/admin/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/admin/dashboard.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/admin/viewEmployee.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/admin/viewEmployee.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/template/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/template/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/controller/invoice/UpdateInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/controller/invoice/UpdateInvoice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/controller/user/ViewEmployee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,9 +90,9 @@
         <option value="jsf" />
         <option value="AnnotationType" />
         <option value="JavaScript File" />
-        <option value="Jsp File" />
-        <option value="CSS File" />
         <option value="Class" />
+        <option value="CSS File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -137,7 +140,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -145,6 +148,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="anthony.com.controller.user" />
       <recent name="anthony.com.controller.customer" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -466,7 +470,7 @@
       <workItem from="1589247471463" duration="844000" />
       <workItem from="1589255282455" duration="6884000" />
       <workItem from="1589319420811" duration="5335000" />
-      <workItem from="1589339087009" duration="4319000" />
+      <workItem from="1589339087009" duration="10115000" />
     </task>
     <servers />
   </component>
@@ -485,6 +489,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#Assign_Data_Sources/0.0.1366.728@0.0.1366.728" timestamp="1586240536080" />
+    <state x="275" y="22" key="#Auto_Import" timestamp="1589347488670">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="22" key="#Auto_Import/0.0.1366.728@0.0.1366.728" timestamp="1589347488669" />
     <state x="600" y="172" key="#BuildArtifactsBeforeRunChooser" timestamp="1584559290692">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -561,70 +569,70 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="600" y="115" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588194250883" />
-    <state width="905" height="316" key="GridCell.Tab.0.bottom" timestamp="1589343483274">
+    <state width="905" height="316" key="GridCell.Tab.0.bottom" timestamp="1589349067278">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="316" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589343483274" />
-    <state width="905" height="316" key="GridCell.Tab.0.center" timestamp="1589343483274">
+    <state width="905" height="316" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589349067278" />
+    <state width="905" height="316" key="GridCell.Tab.0.center" timestamp="1589349067278">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="316" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1589343483274" />
-    <state width="905" height="316" key="GridCell.Tab.0.left" timestamp="1589343483274">
+    <state width="905" height="316" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1589349067278" />
+    <state width="905" height="316" key="GridCell.Tab.0.left" timestamp="1589349067278">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="316" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1589343483274" />
-    <state width="905" height="316" key="GridCell.Tab.0.right" timestamp="1589343483274">
+    <state width="905" height="316" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1589349067278" />
+    <state width="905" height="316" key="GridCell.Tab.0.right" timestamp="1589349067278">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="316" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1589343483274" />
-    <state width="905" height="316" key="GridCell.Tab.1.bottom" timestamp="1589343483276">
+    <state width="905" height="316" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1589349067278" />
+    <state width="905" height="316" key="GridCell.Tab.1.bottom" timestamp="1589349067278">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="316" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589343483276" />
-    <state width="905" height="316" key="GridCell.Tab.1.center" timestamp="1589343483274">
+    <state width="905" height="316" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589349067278" />
+    <state width="905" height="316" key="GridCell.Tab.1.center" timestamp="1589349067278">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="316" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1589343483274" />
-    <state width="905" height="316" key="GridCell.Tab.1.left" timestamp="1589343483274">
+    <state width="905" height="316" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1589349067278" />
+    <state width="905" height="316" key="GridCell.Tab.1.left" timestamp="1589349067278">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="316" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1589343483274" />
-    <state width="905" height="316" key="GridCell.Tab.1.right" timestamp="1589343483276">
+    <state width="905" height="316" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1589349067278" />
+    <state width="905" height="316" key="GridCell.Tab.1.right" timestamp="1589349067278">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="316" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1589343483276" />
-    <state width="905" height="316" key="GridCell.Tab.2.bottom" timestamp="1589343483276">
+    <state width="905" height="316" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1589349067278" />
+    <state width="905" height="316" key="GridCell.Tab.2.bottom" timestamp="1589349067278">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="316" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589343483276" />
-    <state width="905" height="316" key="GridCell.Tab.2.center" timestamp="1589343483276">
+    <state width="905" height="316" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589349067278" />
+    <state width="905" height="316" key="GridCell.Tab.2.center" timestamp="1589349067278">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="316" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1589343483276" />
-    <state width="905" height="316" key="GridCell.Tab.2.left" timestamp="1589343483276">
+    <state width="905" height="316" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1589349067278" />
+    <state width="905" height="316" key="GridCell.Tab.2.left" timestamp="1589349067278">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="316" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1589343483276" />
-    <state width="905" height="316" key="GridCell.Tab.2.right" timestamp="1589343483276">
+    <state width="905" height="316" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1589349067278" />
+    <state width="905" height="316" key="GridCell.Tab.2.right" timestamp="1589349067278">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="316" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1589343483276" />
-    <state width="905" height="316" key="GridCell.Tab.3.bottom" timestamp="1589343483276">
+    <state width="905" height="316" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1589349067278" />
+    <state width="905" height="316" key="GridCell.Tab.3.bottom" timestamp="1589343622822">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="316" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589343483276" />
-    <state width="905" height="316" key="GridCell.Tab.3.center" timestamp="1589343483276">
+    <state width="905" height="316" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589343622822" />
+    <state width="905" height="316" key="GridCell.Tab.3.center" timestamp="1589343622822">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="316" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1589343483276" />
-    <state width="905" height="316" key="GridCell.Tab.3.left" timestamp="1589343483276">
+    <state width="905" height="316" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1589343622822" />
+    <state width="905" height="316" key="GridCell.Tab.3.left" timestamp="1589343622822">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="316" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1589343483276" />
-    <state width="905" height="316" key="GridCell.Tab.3.right" timestamp="1589343483276">
+    <state width="905" height="316" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1589343622822" />
+    <state width="905" height="316" key="GridCell.Tab.3.right" timestamp="1589343622822">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="316" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1589343483276" />
+    <state width="905" height="316" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1589343622822" />
     <state width="905" height="570" key="GridCell.Tab.7.bottom" timestamp="1585075652616">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -681,10 +689,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="377" y="63" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1585066412487" />
-    <state x="192" y="0" key="SettingsEditor" timestamp="1589256354329">
+    <state x="192" y="0" key="SettingsEditor" timestamp="1589344428206">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="192" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1589256354329" />
+    <state x="192" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1589344428206" />
     <state x="572" y="244" width="326" height="240" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1588192409292">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -709,10 +717,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1588196579920" />
-    <state x="92" y="92" width="1182" height="544" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589324118769">
+    <state x="92" y="92" width="1182" height="544" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589344862355">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="92" y="92" width="1182" height="544" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1589324118769" />
+    <state x="92" y="92" width="1182" height="544" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1589344862355" />
     <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1589339087102">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -733,10 +741,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1589340860361" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1589323597943">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1589346629215">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1589323597943" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1589346629215" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -752,6 +760,11 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/webapp/CreateUser.jsp</url>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/generateInvoice/generateInvoice.jsp</url>
+          <line>92</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

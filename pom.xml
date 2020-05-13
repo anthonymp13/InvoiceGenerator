@@ -61,6 +61,11 @@
       <scope>test</scope>
     </dependency>
     <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+    </dependency>
+    <dependency>
       <groupId>javax</groupId>
       <artifactId>javaee-web-api</artifactId>
       <version>${javax.version}</version>
@@ -72,17 +77,11 @@
       <version>${mysql-version}</version>
     </dependency>
     <dependency>
-      <groupId>jstl</groupId>
-      <artifactId>jstl</artifactId>
-      <version>${jstl-version}</version>
-    </dependency>
-    <!-- next 2 dependencies are for log4j -->
-
-    <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-api</artifactId>
       <version>${log4j-version}</version>
     </dependency>
+    <!-- next 2 dependencies are for log4j -->
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-core</artifactId>
