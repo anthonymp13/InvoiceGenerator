@@ -61,14 +61,12 @@
                 <th colspan="4" scope="col">Bill To:</th>
             </tr>
         </tablehead>
-        <tablebody>
             <tr>
-            ${invoice.customer.firstName} ${invoice.customer.lastName}<br/>
-            Address: ${invoice.customer.street}, ${invoice.customer.city}, ${invoice.customer.state} ${invoice.customer.postalcode}<br/>
-            Phone Number: ${invoice.customer.phoneNumber}<br>
-            Email: ${invoice.customer.email}<br>
+                <td>${invoice.customer.firstName} ${invoice.customer.lastName}</td>
+                <td>${invoice.customer.street}, ${invoice.customer.city}, ${invoice.customer.state} ${invoice.customer.postalcode}</td>
+                <td>${invoice.customer.phoneNumber}</td>
+                <td>${invoice.customer.email}</td>
             </tr>
-        </tablebody>
     </table>
 
 
@@ -81,7 +79,6 @@
             <th>Qty</th>
             <th>Unit Price</th>
             <th>Amount</th>
-            <th>Remove row</th>
         </tr>
 
         <c:forEach var="item" items="${invoice.items}">
@@ -103,7 +100,8 @@
     </table>
 
     <h2>Total: ${invoice.total} (Taxes are calculated upon download of invoices)</h2>
-
+    <a href="updateInvoice?invoiceId=${invoice.id}">Edit</a>
+    <a href="DeleteInvoice?invoiceId=${invoice.id}">Delete</a>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </form>
 

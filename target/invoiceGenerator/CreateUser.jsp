@@ -8,7 +8,7 @@
 <body>
 <c:import url="template/navbar.jsp"/>
 
-<c:if test="${success} = false">
+<c:if test="${success = false}">
     <div class="alert alert-danger" role="alert">
         <p>Username has already been taken</p>
     </div>

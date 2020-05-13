@@ -30,7 +30,7 @@ public class DeleteInvoice extends HttpServlet {
         GenericDao<Invoice> invoiceDao = new GenericDao(Invoice.class);
         invoiceDao.delete(invoiceDao.getById(Integer.valueOf(req.getParameter("invoiceId"))));
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("Dashboard");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/Dashboard");
         dispatcher.forward(req, resp);
     }
 

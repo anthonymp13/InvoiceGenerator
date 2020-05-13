@@ -36,7 +36,7 @@ public class Item {
     private Product product;
 
     /** The quantity. */
-    private int quantity;
+    private double quantity;
 
     private double cost;
 
@@ -135,7 +135,7 @@ public class Item {
      *
      * @return the quantity
      */
-    public int getQuantity() {
+    public double getQuantity() {
         return quantity;
     }
 
@@ -144,7 +144,7 @@ public class Item {
      *
      * @param quantity the new quantity
      */
-    public void setQuantity(int quantity) {
+    public void setQuantity(double quantity) {
         this.quantity = quantity;
     }
 

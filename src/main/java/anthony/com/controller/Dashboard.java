@@ -87,7 +87,7 @@ public class Dashboard extends HttpServlet {
 
 //        int invoiceId = Integer.parseInt(request.getParameter("invoiceId"));
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/dashboard.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("admin/dashboard.jsp");
 
         dispatcher.forward(request, response);
     }

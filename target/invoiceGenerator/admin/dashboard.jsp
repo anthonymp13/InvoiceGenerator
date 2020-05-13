@@ -11,6 +11,8 @@
 <![endif]-->
 <c:import url="../template/navbar.jsp"/>
 
+
+<%-- TODO: add deleted customer confirmation--%>
 <div class="displayContainer" id="usersContainer">
     <form>
         <label for="userSearch">Users</label>
@@ -32,7 +34,7 @@
                 </c:forEach>
                 <td>
                     <a href="/invoiceGenerator/EditEmployee?userId=${user.userId}">Edit</a>
-                    <a href="/invoiceGenerator/DeleteUser?userId=${user.userId}">Edit</a>
+                    <a href="/invoiceGenerator/DeleteUser?userId=${user.userId}">Delete</a>
                 </td>
             </tr>
         </c:forEach>
@@ -82,11 +84,11 @@
         </tr>
         <c:forEach var="customer" items="${customers}">
             <tr>
-                <td>${customer.firstName}, ${customer.lastName}</td>
-                <td>${customer.street}, ${customer.state} ${customer.postalcode}</td>
+                <td>${customer.firstName} ${customer.lastName}</td>
+                <td>${customer.street} ${customer.city}, ${customer.state} ${customer.postalcode}</td>
                 <td>
-                    <a href="updateCustomer.jsp?customerId=${customer.id}">Edit</a>
-                    <a href="DeleteCustomer.jsp?customerId=${customer.id}">Delete</a>
+                    <a href="updateCustomer?customerId=${customer.id}">Edit</a>
+                    <a href="DeleteCustomer?customerId=${customer.id}">Delete</a>
                 </td>
             </tr>
         </c:forEach>

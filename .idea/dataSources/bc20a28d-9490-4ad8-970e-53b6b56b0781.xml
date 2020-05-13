@@ -1327,7 +1327,7 @@
     </column>
     <column id="326" parent="288" name="quantity">
       <Position>5</Position>
-      <DataType>int|0s</DataType>
+      <DataType>double|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>

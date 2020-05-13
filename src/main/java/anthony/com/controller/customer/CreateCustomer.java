@@ -60,6 +60,16 @@ public class CreateCustomer extends HttpServlet {
         Customer newCustomer = new Customer(firstName, lastName, address, city, state, zipcode, phoneNumber, company, countryId, email);
         customerDao.insert(newCustomer);
 
+        Boolean insertStatus = null;
+        if(customerDao.getById(newCustomer.getId()) != null) {
+            insertStatus = true;
+
+        } else {
+            insertStatus = false;
+        }
+
+        request.setAttribute("customer", newCustomer);
+        request.setAttribute("insertStatus", insertStatus);
         RequestDispatcher dispatcher = request.getRequestDispatcher(url);
 
         dispatcher.forward(request, response);

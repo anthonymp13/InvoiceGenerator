@@ -62,7 +62,7 @@ public class CreateUser extends HttpServlet {
             List<Company> companyList = companyDao.getByPropertyEqual("companyName", companyName);
             Company companyObject = null;
             if(companyList.isEmpty()) {
-                url = "/CreateUser.jsp";
+                url = "/index.jsp";
             } else {
                 companyObject = companyList.get(0);
             }

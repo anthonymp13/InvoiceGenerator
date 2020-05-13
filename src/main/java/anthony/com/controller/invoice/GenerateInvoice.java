@@ -36,6 +36,12 @@ public class GenerateInvoice extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
+        String customer = null;
+
+        if(request.getParameter("customerId")!=null) {
+            GenericDao customerDao = new GenericDao(Customer.class);
+            request.setAttribute("customer", customerDao.getById(Integer.parseInt(request.getParameter("customerId"))));
+        }
 
         String userName = request.getRemoteUser();
         User user = (User) userDao.getByPropertyEqual("userName", userName).get(0);
@@ -81,7 +87,7 @@ public class GenerateInvoice extends HttpServlet {
 //      Calculate total
         for(int i = 0; i < descriptions.size(); i++) {
 //          Calculate total
-            total += Integer.parseInt(quantities.get(i)) * Integer.parseInt(unitPrices.get(i));
+            total += Double.parseDouble(quantities.get(i)) * Double.parseDouble(unitPrices.get(i));
         }
 
 //      Get selected customer object

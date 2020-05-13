@@ -72,7 +72,7 @@ public class NewCompany extends HttpServlet {
         }
 
         if(users.isEmpty()) {
-            url = "/index.jsp";
+            url = "index.jsp";
 
             // Create user
             User newUser = new User(firstName, lastName, userName, company, password);
@@ -96,7 +96,7 @@ public class NewCompany extends HttpServlet {
 
         } else {
             success = false;
-            url = "/createCompany.jsp";
+            url = "createCompany.jsp";
         }
 
         request.setAttribute("success", success);

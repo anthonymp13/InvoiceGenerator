@@ -2,16 +2,27 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <c:import url="template/head.jsp" />
-<title></title>
+<title>New Customer | InvoiceGenerator</title>
 <link rel="stylesheet" type="text/css" href="/invoiceGenerator/css/newCustomer.css">
 </head>
 <body>
 <c:import url="template/navbar.jsp"/>
 
-<p>New Customer:</p>
+<c:if test="${insertStatus == true}">
+<div class="alert alert-success" role="alert">
+    Yay! ${customer.firstName} ${customer.lastName} was successfully created. Want to create an invoice for them?
+    <a style="text-decoration: underline" href="GenerateInvoice?customerId=${customer.id}">Click here!</a>
+</div>
+</c:if>
+<c:if test="${insertStatus == false}">
+    <div class="alert alert-danger" role="alert">
+        Oh no! The customer was unable to be created.
+    </div>
+</c:if>
+
+<h1>New Customer:</h1>
 
 <form action="CreateCustomer">
-
     <div class="form-group">
         <label for="firstName">First Name</label>
         <input type="text" required="required"  class="form-control" placeholder="First name" id="firstName" name="firstName">
