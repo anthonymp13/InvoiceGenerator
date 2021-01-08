@@ -3,6 +3,12 @@
     <output-path>$PROJECT_DIR$/target</output-path>
     <root id="archive" name="invoiceGenerator.war">
       <element id="artifact" artifact-name="invoiceGenerator:war exploded" />
+      <element id="javaee-facet-resources" facet="InvoiceGenerator/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="InvoiceGenerator" />
+        </element>
+      </element>
     </root>
   </artifact>
 </component>
