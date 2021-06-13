@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<c:import url="../template/head.jsp" /n>
+<c:import url="../template/head.jsp" />
 <link rel="stylesheet" type="text/css" href="/invoiceGenerator/css/generateInvoice.css">
 <link rel="stylesheet" type="text/css" href="/invoiceGenerator/css/viewInvoice.css">
 
