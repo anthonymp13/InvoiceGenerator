@@ -38,14 +38,23 @@ public class GenerateInvoice extends HttpServlet {
         response.setContentType("text/html");
         String customer = null;
 
+//      Tests if customerId is available
         if(request.getParameter("customerId")!=null) {
+//          Sets an attribute for the customer associated with the customerId
             GenericDao customerDao = new GenericDao(Customer.class);
             request.setAttribute("customer", customerDao.getById(Integer.parseInt(request.getParameter("customerId"))));
         }
 
+//      Request remote user
         String userName = request.getRemoteUser();
+
+//      Retrieve the user associated with the logged in user
         User user = (User) userDao.getByPropertyEqual("userName", userName).get(0);
+
+//      Retrieve the company associated with the user
         Company company = user.getCompany();
+
+//      Set the users company to an attribute
         request.setAttribute("company", company);
 
         String url = "/generateInvoice/generateInvoice.jsp";
@@ -55,7 +64,7 @@ public class GenerateInvoice extends HttpServlet {
 
     /**
      *  The doPost() method handles POST Requests
-     *
+     *  Inserts invoices into database and sends user back to dashboard
      */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException  {
@@ -74,6 +83,7 @@ public class GenerateInvoice extends HttpServlet {
 //      Retrieves terms and selected customer id from form
         terms = request.getParameter("termList");
         customerId = request.getParameter("customerSelectBox");
+        logger.info("CustomerId is " + customerId);
 
 //      Inspired by: https://stackoverflow.com/questions/46203250/how-to-get-all-the-html-input-values-in-the-same-name-to-the-servlet-by-arraylis
 //      Retrieves all descriptions, quantities, and unitPrice for all products listed in the invoice and adds them to there own lists

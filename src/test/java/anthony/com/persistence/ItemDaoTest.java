@@ -46,7 +46,7 @@ class ItemDaoTest {
         itemDao.insert(item);
 
         Item insertedItem = (Item)itemDao.getById(2);
-        logger.info(insertedItem);
+        logger.info("inserted item" + insertedItem);
         assertEquals(item, insertedItem);
 
     }

@@ -1,0 +1,7 @@
+anthony\com\persistence\UserDaoTest.class
+anthony\com\persistence\ProductDaoTest.class
+anthony\com\persistence\RoleDaoTest.class
+anthony\com\persistence\InvoiceDaoTest.class
+anthony\com\persistence\CompanyDaoTest.class
+anthony\com\persistence\CustomerDaoTest.class
+anthony\com\persistence\ItemDaoTest.class
