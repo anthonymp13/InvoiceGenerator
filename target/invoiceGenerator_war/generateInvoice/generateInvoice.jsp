@@ -44,7 +44,7 @@
                         <option value="Terms of Sale">Terms of Sale</option>
                         <option value="Due upon completion">Payment in Advance</option>
                         <option value="Due upon completion">Immediate Payment</option>
-                        <%--                    TODO: Add more options button... and/or custom option input--%>
+                        <%-- TODO: Add more options button... and/or custom option input --%>
                     </select>
                 </td>
             </tr>

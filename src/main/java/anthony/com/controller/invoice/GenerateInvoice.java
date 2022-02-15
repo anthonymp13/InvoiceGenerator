@@ -29,6 +29,7 @@ public class GenerateInvoice extends HttpServlet {
     private static GenericDao companyDao = new GenericDao(Company.class);
     private static GenericDao customerDao = new GenericDao(Customer.class);
     private static GenericDao productDao = new GenericDao(Product.class);
+
     /**
      *  The doGet() method handles GET Requests
      *

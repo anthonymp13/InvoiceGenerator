@@ -36,6 +36,50 @@ public class CreateCustomer extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html");
 
+//        String url = "/newCustomer.jsp";
+//        GenericDao<User> userDao = new GenericDao(User.class);
+//
+////      Get users company
+//        String userName = request.getRemoteUser();
+//        User user = (User) userDao.getByPropertyEqual("userName", userName).get(0);
+//        Company company = user.getCompany();
+//
+////      Get all entered data from form
+//        String firstName = request.getParameter("firstName");
+//        String lastName = request.getParameter("lastName");
+//        String address = request.getParameter("address");
+//        String city = request.getParameter("city");
+//        String state = request.getParameter("state");
+//        int zipcode = Integer.parseInt(request.getParameter("zipcode"));
+//        String phoneNumber = request.getParameter("phoneNumber");
+//        String email = request.getParameter("email");
+//        String countryId = "BE";
+//
+////      Create and insert new customer
+//        GenericDao<Customer> customerDao = new GenericDao(Customer.class);
+//        Customer newCustomer = new Customer(firstName, lastName, address, city, state, zipcode, phoneNumber, company, countryId, email);
+//        customerDao.insert(newCustomer);
+//
+//        Boolean insertStatus = null;
+//        if(customerDao.getById(newCustomer.getId()) != null) {
+//            insertStatus = true;
+//
+//        } else {
+//            insertStatus = false;
+//        }
+//
+//        request.setAttribute("customer", newCustomer);
+//        request.setAttribute("insertStatus", insertStatus);
+//        RequestDispatcher dispatcher = request.getRequestDispatcher(url);
+//
+//        dispatcher.forward(request, response);
+
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+        throws ServletException, IOException {
+
         String url = "/newCustomer.jsp";
         GenericDao<User> userDao = new GenericDao(User.class);
 
@@ -70,6 +114,8 @@ public class CreateCustomer extends HttpServlet {
 
         request.setAttribute("customer", newCustomer);
         request.setAttribute("insertStatus", insertStatus);
+
+
         RequestDispatcher dispatcher = request.getRequestDispatcher(url);
 
         dispatcher.forward(request, response);

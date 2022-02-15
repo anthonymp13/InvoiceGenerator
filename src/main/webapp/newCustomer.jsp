@@ -22,7 +22,7 @@
 
 <h1>New Customer:</h1>
 
-<form action="CreateCustomer">
+<form action="CreateCustomer" method="POST">
     <div class="form-group">
         <label for="firstName">First Name</label>
         <input type="text" required="required"  class="form-control" placeholder="First name" id="firstName" name="firstName">

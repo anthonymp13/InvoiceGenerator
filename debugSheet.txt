@@ -29,7 +29,11 @@ Restarted IntelliJ
 Problem persists...
 Tests are still passing
 
-*MySQL Connector is no longer in target lib file*
+
+
+Error:
+    MySQL Connector is no longer in target lib file
+
 
 Changed MySQL version from 8.0.23 to 8.0.21 and reverted back after jar still wasn't added to lib file.
 Added Mysql-connector to artifact
@@ -38,11 +42,17 @@ Site is now able to interact with database
 
 *Login fails*
 
-Error: org.apache.catalina.realm.JDBCRealm.authenticate Exception performing authentication
+Error:
+    org.apache.catalina.realm.JDBCRealm.authenticate Exception performing authentication
 	java.sql.SQLException: com.mysql.cj.jdbc.Driver
 
-Added mysql-connector-8.0.13 jar file to tomcat/lib
 
-Desc: JDBCRealm cannot find JDBC Driver
+******************************
+
+Resolution:
+    Added mysql-connector-8.0.13 jar file to tomcat/lib
+
+Error:
+    405 error on Generator Invoice
 
 
