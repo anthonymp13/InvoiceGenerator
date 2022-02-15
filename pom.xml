@@ -11,7 +11,7 @@
   <name>invoiceGenerator</name>
 
   <properties>
-    <hibernate-version>5.8.0.Final</hibernate-version>
+    <hibernate-version>5.4.4.Final</hibernate-version>
     <javax.version>7.0</javax.version>
     <jstl-version>1.2</jstl-version>
     <junit-platform-runner-version>1.0.0</junit-platform-runner-version>
@@ -22,7 +22,7 @@
     <maven.compiler.release>11</maven.compiler.release>
     <maven-compiler-plugin-version>3.8.1</maven-compiler-plugin-version>
     <maven-surefire-plugin-version>2.19</maven-surefire-plugin-version>
-    <mysql-version>8.0.16</mysql-version>
+    <mysql-version>8.0.26</mysql-version>
     <project-version>7.1.10</project-version>
     <itext.version>RELEASE</itext.version>
     <jersey-version>2.29.1</jersey-version>
@@ -34,6 +34,12 @@
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-c3p0</artifactId>
+      <version>${hibernate-version}</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
       <version>5.4.4.Final</version>
     </dependency>
     <dependency>

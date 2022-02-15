@@ -1,0 +1,41 @@
+org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection
+
+Confirmed credentials in hibernate.cfg.xml are correct
+Tested connection using IntelliJ database tools
+Confirmed mysql server status is running
+- systemctl status mysql
+
+Restarted mysql > ran tests > Error persisted
+
+Upgraded MySQL to 8.0.26
+Restarted mysql
+Confirmed mysql is running.
+
+Problem has been resolved...
+
+
+
+
+
+
+
+
+org.hibernate.boot.registry.classloading.spi.ClassLoadingException: HHH010003: JDBC Driver class not found: com.mysql.cj.jdbc.Driver
+
+
+
+Verified all tests are passing.
+Restarted IntelliJ
+Problem persists...
+Tests are still passing
+
+*MySQL Connector is no longer in target lib file*
+
+Changed MySQL version from 8.0.23 to 8.0.21 and reverted back after jar still wasn't added to lib file.
+Added Mysql-connector to artifact
+
+Site is now able to interact with database!!!
+
+Login still fails.
+
+

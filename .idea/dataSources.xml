@@ -4,14 +4,43 @@
     <data-source source="LOCAL" name="iTextInvoice@localhost" uuid="bc20a28d-9490-4ad8-970e-53b6b56b0781">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/iTextInvoice</jdbc-url>
     </data-source>
     <data-source source="LOCAL" name="sample@localhost" uuid="b7ab5e37-1a5b-4ed1-a9cd-c36e91d3beae">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/sample</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="testuser@localhost" uuid="d43ddfbd-63b5-4525-9708-747eb77a863a">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
+      <driver-properties>
+        <property name="autoReconnect" value="true" />
+        <property name="zeroDateTimeBehavior" value="CONVERT_TO_NULL" />
+        <property name="tinyInt1isBit" value="false" />
+        <property name="characterEncoding" value="utf8" />
+        <property name="characterSetResults" value="utf8" />
+        <property name="yearIsDateType" value="false" />
+      </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate.cfg.xml/Hibernate" uuid="c71f5a16-d4e5-443c-b9f9-4b63310fec58">
+      <imported>true</imported>
+      <configured-by-url>true</configured-by-url>
+      <remarks>Hibernate
+
+/home/student/InvoiceGenerator/src/main/resources/hibernate.cfg.xml</remarks>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/iTextInvoice</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="com.mysql.cj.jdbc.Data Source - jdbc:mysql://localhost:3306/iTextInvoice" uuid="0f3c313c-f17b-4907-8773-4ad1ba6c12e8">
+      <synchronize>true</synchronize>
+      <configured-by-url>true</configured-by-url>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/iTextInvoice</jdbc-url>
     </data-source>
   </component>
 </project>

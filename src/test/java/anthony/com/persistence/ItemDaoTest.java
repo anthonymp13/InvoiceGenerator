@@ -35,7 +35,6 @@ class ItemDaoTest {
      */
     @Test
     void insertProduct() {
-
         // int id, String name, double price, double vat
         GenericDao productDao = new GenericDao(Product.class);
         GenericDao invoiceDao = new GenericDao(Invoice.class);

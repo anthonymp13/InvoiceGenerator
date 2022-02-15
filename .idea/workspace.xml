@@ -2,26 +2,268 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="invoiceGenerator" />
+      <artifact name="invoiceGenerator:war" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b77e9ab-3360-47d8-986f-b223f4b20263" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/invoiceGenerator.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bc20a28d-9490-4ad8-970e-53b6b56b0781.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bc20a28d-9490-4ad8-970e-53b6b56b0781.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/invoiceGenerator_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debugSheet.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/about.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/about.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/invoiceGenerator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/invoiceGenerator_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/invoiceGenerator_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/GenerateInvoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/GenerateInvoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/invoiceGenerator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/invoiceGenerator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/generator/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/generator/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/generator/PdfInvoicesBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/generator/PdfInvoicesBasic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/template/navbar.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/anthony/com/persistence/ItemDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/anthony/com/persistence/ItemDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/invoice/GenerateInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/invoice/GenerateInvoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/log4j2.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/generateInvoice/generateInvoice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/generateInvoice/generateInvoice.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/sql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/sql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/CreateUser.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/META-INF/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/api/UserApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/api/Users.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/Dashboard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/company/NewCompany.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/customer/CreateCustomer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/customer/DeleteCustomer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/customer/SearchCustomers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/customer/ViewCustomer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/invoice/DeleteInvoice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/invoice/GenerateInvoice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/invoice/UpdateInvoice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/invoice/ViewInvoice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/user/CreateUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/user/DeleteUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/user/EditEmployee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/user/EmployeePrivileges.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/user/SearchUsers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/user/UpdatePrivileges.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/controller/user/UserLogin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/entity/Company.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/entity/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/entity/Invoice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/entity/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/entity/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/entity/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/generator/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/generator/InvoiceData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/generator/PdfInvoicesBasic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/persistence/GenericDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/persistence/SessionFactoryProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/anthony/com/util/Database.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/color/sRGB_CS_profile.icm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/database.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/fonts/OpenSans-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/fonts/OpenSans-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/classes/log4j2.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/FastInfoset-1.2.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/apiguardian-api-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/bcpkix-jdk15on-1.64.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/bcprov-jdk15on-1.64.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/byte-buddy-1.9.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/c3p0-0.9.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/classmate-1.3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/dom4j-2.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/hibernate-c3p0-5.4.4.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/hibernate-core-5.4.4.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/jandex-2.0.5.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/javassist-3.24.0-GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/jaxb-api-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/jaxb-runtime-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/junit-platform-commons-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/log4j-api-2.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/log4j-core-2.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/mchange-commons-java-0.2.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/mysql-connector-java-8.0.16.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/protobuf-java-3.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/slf4j-api-1.7.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/stax-ex-1.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/lib/txw2-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/admin/dashboard.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/admin/employeePrivileges.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/admin/updatePrivileges.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/admin/viewEmployee.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/api/searchUsers.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/basic/editInvoice.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/createCompany.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/css/createCompany.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/css/createUser.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/css/dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/css/generateInvoice.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/css/masterstylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/css/newCustomer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/css/viewEmployee.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/css/viewInvoice.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/customerSearch.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/editInvoice.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/generateInvoice/generateInvoice.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/images/invoice.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/invoice/viewInvoice.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/js/generateInvoice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/loginError.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/newCustomer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/results.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/search.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/template/head.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Invoice Generator/template/navbar.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/controller/invoice/GenerateInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/controller/invoice/GenerateInvoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/invoice/GenerateInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/invoice/GenerateInvoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/log4j2.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/generator/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/generator/PdfInvoicesBasic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/CreateUser.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/META-INF/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/api/UserApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/api/Users.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/Dashboard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/company/NewCompany.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/customer/CreateCustomer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/customer/DeleteCustomer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/customer/SearchCustomers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/customer/ViewCustomer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/invoice/DeleteInvoice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/invoice/GenerateInvoice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/invoice/UpdateInvoice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/invoice/ViewInvoice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/user/CreateUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/user/DeleteUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/user/EditEmployee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/user/EmployeePrivileges.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/user/SearchUsers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/user/UpdatePrivileges.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/user/UserLogin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/entity/Company.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/entity/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/entity/Invoice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/entity/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/entity/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/entity/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/generator/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/generator/InvoiceData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/generator/PdfInvoicesBasic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/persistence/GenericDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/persistence/SessionFactoryProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/util/Database.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/color/sRGB_CS_profile.icm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/database.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/fonts/OpenSans-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/fonts/OpenSans-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/log4j2.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/FastInfoset-1.2.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/apiguardian-api-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/bcpkix-jdk15on-1.64.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/bcprov-jdk15on-1.64.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/byte-buddy-1.9.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/c3p0-0.9.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/classmate-1.3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/dom4j-2.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/hibernate-c3p0-5.4.4.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/hibernate-core-5.4.4.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/jandex-2.0.5.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/javassist-3.24.0-GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/jaxb-api-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/jaxb-runtime-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/junit-platform-commons-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/log4j-api-2.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/log4j-core-2.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/mchange-commons-java-0.2.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/mysql-connector-java-8.0.16.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/protobuf-java-3.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/slf4j-api-1.7.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/stax-ex-1.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/txw2-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/admin/dashboard.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/admin/employeePrivileges.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/admin/updatePrivileges.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/admin/viewEmployee.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/api/searchUsers.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/basic/editInvoice.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/createCompany.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/css/createCompany.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/css/createUser.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/css/dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/css/generateInvoice.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/css/masterstylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/css/newCustomer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/css/viewEmployee.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/css/viewInvoice.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/customerSearch.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/editInvoice.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/generateInvoice/generateInvoice.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/images/invoice.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/invoice/viewInvoice.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/js/generateInvoice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/loginError.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/newCustomer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/results.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/search.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/template/head.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/template/navbar.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-anthony.com.persistence.CompanyDaoTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-anthony.com.persistence.CustomerDaoTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-anthony.com.persistence.InvoiceDaoTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-anthony.com.persistence.ItemDaoTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-anthony.com.persistence.ProductDaoTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-anthony.com.persistence.RoleDaoTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-anthony.com.persistence.UserDaoTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/anthony.com.persistence.CompanyDaoTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/anthony.com.persistence.CustomerDaoTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/anthony.com.persistence.InvoiceDaoTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/anthony.com.persistence.ItemDaoTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/anthony.com.persistence.ProductDaoTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/anthony.com.persistence.RoleDaoTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/anthony.com.persistence.UserDaoTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/anthony/com/persistence/ItemDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/anthony/com/persistence/ItemDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/sql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/sql.sql" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,28 +283,66 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="iTextInvoice@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="iTextInvoice@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="iTextInvoice@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="itextinvoice: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="iTextInvoice@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="itextinvoice: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="user: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="sample@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
     </expand>
     <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/about.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="32" selection-start-line="32" selection-end-line="32" selection-end-column="37" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/css/about.css">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="375">
+                  <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/template/navbar.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/template/footer.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="300">
+                  <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -71,14 +351,44 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>mysql</find>
+      <find>hibernate</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/anthony/com/generator/PdfInvoicesBasic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/anthony/com/generator/Driver.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/sql.sql" />
+        <option value="$PROJECT_DIR$/../tomcat/conf/tomcat-users.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/basic/editInvoice.jsp" />
+        <option value="$PROJECT_DIR$/invoiceGenerator.iml" />
+        <option value="$PROJECT_DIR$/src/test/java/anthony/com/persistence/ItemDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/database.properties" />
+        <option value="$PROJECT_DIR$/src/test/resources/database.properties" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0f3c313c-f17b-4907-8773-4ad1ba6c12e8/debugging" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/target/invoiceGenerator/login.jsp" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/debugSheet.txt" />
+        <option value="$PROJECT_DIR$/src/main/webapp/template/footer.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/about.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/template/navbar.jsp" />
+      </list>
+    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
     <option name="FILTER_INFO" value="false" />
-    <option name="FILTER_DEBUG" value="true" />
+    <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
@@ -88,10 +398,83 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="invoiceGenerator" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="13" />
+    <option name="width" value="569" />
+    <option name="height" value="451" />
+  </component>
   <component name="ProjectId" id="1uoFmGwDyEMeZ98NCHKYJgIZ3JE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="InvoiceGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InvoiceGenerator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InvoiceGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InvoiceGenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InvoiceGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InvoiceGenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InvoiceGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InvoiceGenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InvoiceGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InvoiceGenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InvoiceGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InvoiceGenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -99,17 +482,61 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql&#10;com.mysql.cj.jdbc.Driver" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.30689654" />
+    <property name="project.structure.side.proportion" value="0.35327965" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
-  <component name="RunManager" selected="TomEE Server.TomEE 9.0.3">
-    <configuration name="InvoiceDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="TomEE Server.TomEE 8.5.41">
+    <configuration name="All in invoiceGenerator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="invoiceGenerator" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerDaoTest.insertSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="invoiceGenerator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="anthony.com.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="anthony.com.persistence" />
+      <option name="MAIN_CLASS_NAME" value="anthony.com.persistence.CustomerDaoTest" />
+      <option name="METHOD_NAME" value="insertSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InvoiceDaoTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="invoiceGenerator" />
       <extension name="coverage">
         <pattern>
@@ -140,10 +567,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TomEE 9.0.3" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 9.0.3" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="mysql-connector-java-8.0.16.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/mysql-connector-java-8.0.16.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="slf4j-api-1.7.31.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/slf4j-api-1.7.31.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TomEE 8.5.41" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 8.5.41" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/invoiceGenerator" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="invoiceGenerator">
+        <artifact name="invoiceGenerator:war">
           <settings>
             <option name="CONTEXT_PATH" value="/invoiceGenerator" />
           </settings>
@@ -209,14 +645,26 @@
         <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean" />
         <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="install" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="invoiceGenerator" />
+          <artifact name="invoiceGenerator:war" />
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JAR Application.mysql-connector-java-8.0.16.jar" />
+      <item itemvalue="JAR Application.slf4j-api-1.7.31.jar" />
+      <item itemvalue="JUnit.InvoiceDaoTest" />
+      <item itemvalue="JUnit.ItemDaoTest.insertProduct" />
+      <item itemvalue="JUnit.CustomerDaoTest.insertSuccess" />
+      <item itemvalue="JUnit.All in invoiceGenerator" />
+      <item itemvalue="TomEE Server.TomEE 8.5.41" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CustomerDaoTest.insertSuccess" />
+        <item itemvalue="JUnit.All in invoiceGenerator" />
         <item itemvalue="JUnit.ItemDaoTest.insertProduct" />
-        <item itemvalue="JUnit.InvoiceDaoTest" />
+        <item itemvalue="JAR Application.slf4j-api-1.7.31.jar" />
+        <item itemvalue="JAR Application.mysql-connector-java-8.0.16.jar" />
       </list>
     </recent_temporary>
   </component>
@@ -254,8 +702,106 @@
       <updated>1610144981052</updated>
       <workItem from="1610144988870" duration="2277000" />
       <workItem from="1625324194183" duration="8155000" />
+      <workItem from="1644342115620" duration="1568000" />
+      <workItem from="1644355985182" duration="545000" />
+      <workItem from="1644631886480" duration="328000" />
+      <workItem from="1644633859742" duration="4140000" />
+      <workItem from="1644851852193" duration="11806000" />
+      <workItem from="1644873344534" duration="5693000" />
+      <workItem from="1644880003612" duration="6149000" />
+      <workItem from="1644886425360" duration="3022000" />
+      <workItem from="1644892148484" duration="124000" />
+      <workItem from="1644892292166" duration="2045000" />
+      <workItem from="1644894358289" duration="1601000" />
     </task>
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="All_in_invoiceGenerator - 2022.02.14 at 20h 18m 05s.xml">
+      <configuration name="All in invoiceGenerator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_invoiceGenerator - 2022.02.14 at 20h 18m 19s.xml">
+      <configuration name="All in invoiceGenerator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_invoiceGenerator - 2022.02.14 at 20h 19m 36s.xml">
+      <configuration name="All in invoiceGenerator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_invoiceGenerator - 2022.02.14 at 20h 30m 35s.xml">
+      <configuration name="All in invoiceGenerator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_invoiceGenerator - 2022.02.14 at 20h 32m 50s.xml">
+      <configuration name="All in invoiceGenerator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_invoiceGenerator - 2022.02.14 at 20h 45m 03s.xml">
+      <configuration name="All in invoiceGenerator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_invoiceGenerator - 2022.02.14 at 21h 02m 11s.xml">
+      <configuration name="All in invoiceGenerator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_invoiceGenerator - 2022.02.14 at 21h 04m 20s.xml">
+      <configuration name="All in invoiceGenerator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InvoiceDaoTest - 2022.02.14 at 21h 08m 00s.xml">
+      <configuration name="InvoiceDaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerDaoTest_insertSuccess - 2022.02.14 at 21h 17m 38s.xml">
+      <configuration name="CustomerDaoTest.insertSuccess" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="37021000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="top" id="Database" order="0" weight="0.32890365" />
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="1" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info id="Persistence" order="7" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="8" visible="true" weight="0.24626453" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4997233" visible="true" weight="0.46179402" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39956802" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32937366" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32937366" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32937366" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5002767" side_tool="true" weight="0.46220303" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32937366" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32937366" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32937366" />
+      <window_info anchor="bottom" id="Database Changes" order="14" weight="0.32937366" />
+      <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.32937366" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32982844" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="JSF" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="CDI" order="9" weight="0.32982844" />
+      <window_info anchor="right" id="Bean Validation" order="10" weight="0.32982844" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -325,5 +871,392 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1625329870400" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/anthony/com/entity/Customer.java</url>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/about.jsp</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/anthony/com/generator/InvoiceData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anthony/com/generator/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#571#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anthony/com/generator/PdfInvoicesBasic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="844">
+          <caret line="115" column="68" selection-start-line="115" selection-start-column="68" selection-end-line="115" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tomcat/conf/tomcat-users.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="79" selection-start-line="32" selection-start-column="79" selection-end-line="32" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar!/javax/servlet/http/HttpServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#9302#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/basic/editInvoice.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/editInvoice.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/invoiceGenerator.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/Invoice Generator/META-INF/MANIFEST.MF" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d43ddfbd-63b5-4525-9708-747eb77a863a/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/sql.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/anthony/com/persistence/CustomerDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/utilities/PropertiesLoader.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/anthony/com/persistence/ItemDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="80" column="9" selection-start-line="52" selection-start-column="2" selection-end-line="88" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anthony/com/util/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anthony/com/persistence/SessionFactoryProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/web.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/anthony/com/persistence/GenericDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="154" column="38" selection-start-line="154" selection-start-column="38" selection-end-line="154" selection-end-column="38" />
+          <folding>
+            <element signature="e#4677#4678#0" expanded="true" />
+            <element signature="e#4756#4757#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/invoiceGenerator.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml" />
+    <entry file="file://$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/customer/CreateCustomer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#2561#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/database.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anthony/com/entity/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0f3c313c-f17b-4907-8773-4ad1ba6c12e8/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/invoiceGenerator/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0f3c313c-f17b-4907-8773-4ad1ba6c12e8/debugging">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="uml://DATABASE/0f3c313c-f17b-4907-8773-4ad1ba6c12e8">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>0f3c313c-f17b-4907-8773-4ad1ba6c12e8</OriginalElement>
+          <nodes>
+            <node x="" y="">0f3c313c-f17b-4907-8773-4ad1ba6c12e8.TABLE:iTextInvoice.product</node>
+            <node x="" y="">0f3c313c-f17b-4907-8773-4ad1ba6c12e8.TABLE:iTextInvoice.invoice</node>
+            <node x="" y="">0f3c313c-f17b-4907-8773-4ad1ba6c12e8.TABLE:iTextInvoice.user_role</node>
+            <node x="" y="">0f3c313c-f17b-4907-8773-4ad1ba6c12e8.TABLE:iTextInvoice.user</node>
+            <node x="" y="">0f3c313c-f17b-4907-8773-4ad1ba6c12e8.TABLE:iTextInvoice.item</node>
+            <node x="" y="">0f3c313c-f17b-4907-8773-4ad1ba6c12e8.TABLE:iTextInvoice.company</node>
+            <node x="" y="">0f3c313c-f17b-4907-8773-4ad1ba6c12e8.TABLE:iTextInvoice.customer</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.8568788501026695" x="713.0" y="821.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/invoiceGenerator/META-INF/context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="55" selection-start-column="55" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" selection-start-column="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/invoiceGenerator/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/database.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="80" selection-start-column="80" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/debugSheet.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/about.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/footer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/about.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="32" selection-start-line="32" selection-end-line="32" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/navbar.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>invoiceGenerator:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.35327965" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Hibernate (invoiceGenerator)|Hibernate</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.35327965" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.35327965" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.35327965" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>invoiceGenerator</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.35327965" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: mysql:mysql-connector-java:8.0.26</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.35327965" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
