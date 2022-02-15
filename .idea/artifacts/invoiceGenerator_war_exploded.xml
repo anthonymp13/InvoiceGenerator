@@ -68,6 +68,8 @@
           <element id="library" level="project" name="Maven: org.glassfish.hk2:hk2-api:2.6.1" />
           <element id="library" level="project" name="Maven: org.glassfish.hk2:hk2-utils:2.6.1" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.26" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.11.4" />
+          <element id="library" level="project" name="Maven: javax:javaee-web-api:7.0" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="invoiceGenerator/web/Web" />
