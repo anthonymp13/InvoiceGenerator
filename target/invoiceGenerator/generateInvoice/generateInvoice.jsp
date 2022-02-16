@@ -51,7 +51,7 @@
             </tbody>
         </table>
     </div>
-<form method="POST" action="GenerateInvoice" id="invoiceForm">
+<form action="updateInvoice" method="POST"  id="invoiceForm">
     <p>Image place holder</p>
     <div class="companyInfo">
         <td>${company.companyId}</td>

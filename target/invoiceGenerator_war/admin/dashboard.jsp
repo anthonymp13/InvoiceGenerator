@@ -59,7 +59,7 @@
                 <td>${invoice.customer.firstName} ${invoice.customer.lastName}</td>
                 <td>${invoice.invoiceDate}</td>
                 <td>
-                    <a href="updateInvoice?invoiceId=${invoice.id}">Edit</a>
+                    <a href="GenerateInvoice?invoiceId=${invoice.id}">Edit</a>
                     <a href="ViewInvoice?invoiceId=${invoice.id}">View</a>
                     <a href="DeleteInvoice?invoiceId=${invoice.id}">Delete</a>
 

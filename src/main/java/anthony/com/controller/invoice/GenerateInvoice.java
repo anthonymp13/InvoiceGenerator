@@ -66,76 +66,90 @@ public class GenerateInvoice extends HttpServlet {
     /**
      *  The doPost() method handles POST Requests
      *  Inserts invoices into database and sends user back to dashboard
-     */
+//     */
+//    @Override
+//    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException  {
+//        int total = 0;
+//        String[] descriptionsList;
+//        String[] quantityList;
+//        String[] unitPriceList;
+//        ArrayList<String> descriptions;
+//        ArrayList<String> quantities;
+//        ArrayList<String> unitPrices;
+//        String customerId;
+//        String terms;
+//        Customer customer;
+//        Date dt;
+//
+////      Retrieves terms and selected customer id from form
+//        terms = request.getParameter("termList");
+//        customerId = request.getParameter("customerSelectBox");
+//        logger.info("CustomerId is " + customerId);
+//
+////      Inspired by: https://stackoverflow.com/questions/46203250/how-to-get-all-the-html-input-values-in-the-same-name-to-the-servlet-by-arraylis
+////      Retrieves all descriptions, quantities, and unitPrice for all products listed in the invoice and adds them to there own lists
+//        descriptionsList = request.getParameterValues("description");
+//        quantityList = request.getParameterValues("quantity");
+//        unitPriceList = request.getParameterValues("unitPrice");
+//        descriptions = new ArrayList<>(Arrays.asList(descriptionsList));
+//        quantities = new ArrayList<>(Arrays.asList(quantityList));
+//        unitPrices = new ArrayList<>(Arrays.asList(unitPriceList));
+//
+////      Calculate total
+//        for(int i = 0; i < descriptions.size(); i++) {
+////          Calculate total
+//            total += Double.parseDouble(quantities.get(i)) * Double.parseDouble(unitPrices.get(i));
+//        }
+//
+////      Get selected customer object
+//        customer = (Customer)customerDao.getById(Integer.parseInt(customerId));
+//
+////      Get current date and format
+//        dt = new java.util.Date();
+//
+//
+////      Create new invoice object
+//        Invoice newInvoice = new Invoice(total, terms, dt, customer);
+//
+//        GenericDao invoiceDao = new GenericDao(Invoice.class);
+//        GenericDao productDao = new GenericDao(Product.class);
+//        invoiceDao.insert(newInvoice);
+//
+//        GenericDao itemDao = new GenericDao(Item.class);
+//
+////      Add invoice items and products into database
+//        for(int i = 0; i < descriptions.size(); i++) {
+////          Create a product that goes into the database permanently
+//            Product product = new Product(descriptions.get(i), Double.parseDouble(unitPrices.get(i)), 20);
+//            productDao.insert(product);
+//
+////          Create an item that represents an item in the invoice
+//            int quantity = Integer.parseInt(quantities.get(i));
+//            double cost = Double.valueOf(unitPrices.get(i)) * quantity;
+//            Item item = new Item(i, product, quantity, cost, newInvoice);
+//            itemDao.insert(item);
+//            product.addItem(item);
+//            newInvoice.addItem(item);
+//        }
+//
+//        String url = "/Dashboard";
+//        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
+//        dispatcher.forward(request, response);
+//    }
+
+
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException  {
-        int total = 0;
-        String[] descriptionsList;
-        String[] quantityList;
-        String[] unitPriceList;
-        ArrayList<String> descriptions;
-        ArrayList<String> quantities;
-        ArrayList<String> unitPrices;
-        String customerId;
-        String terms;
-        Customer customer;
-        Date dt;
-
-//      Retrieves terms and selected customer id from form
-        terms = request.getParameter("termList");
-        customerId = request.getParameter("customerSelectBox");
-        logger.info("CustomerId is " + customerId);
-
-//      Inspired by: https://stackoverflow.com/questions/46203250/how-to-get-all-the-html-input-values-in-the-same-name-to-the-servlet-by-arraylis
-//      Retrieves all descriptions, quantities, and unitPrice for all products listed in the invoice and adds them to there own lists
-        descriptionsList = request.getParameterValues("description");
-        quantityList = request.getParameterValues("quantity");
-        unitPriceList = request.getParameterValues("unitPrice");
-        descriptions = new ArrayList<>(Arrays.asList(descriptionsList));
-        quantities = new ArrayList<>(Arrays.asList(quantityList));
-        unitPrices = new ArrayList<>(Arrays.asList(unitPriceList));
-
-//      Calculate total
-        for(int i = 0; i < descriptions.size(); i++) {
-//          Calculate total
-            total += Double.parseDouble(quantities.get(i)) * Double.parseDouble(unitPrices.get(i));
-        }
-
-//      Get selected customer object
-        customer = (Customer)customerDao.getById(Integer.parseInt(customerId));
-
-//      Get current date and format
-        dt = new java.util.Date();
-
-
-//      Create new invoice object
-        Invoice newInvoice = new Invoice(total, terms, dt, customer);
-
-        GenericDao invoiceDao = new GenericDao(Invoice.class);
-        GenericDao productDao = new GenericDao(Product.class);
-        invoiceDao.insert(newInvoice);
-
-        GenericDao itemDao = new GenericDao(Item.class);
-
-//      Add invoice items and products into database
-        for(int i = 0; i < descriptions.size(); i++) {
-//          Create a product that goes into the database permanently
-            Product product = new Product(descriptions.get(i), Double.parseDouble(unitPrices.get(i)), 20);
-            productDao.insert(product);
-
-//          Create an item that represents an item in the invoice
-            int quantity = Integer.parseInt(quantities.get(i));
-            double cost = Double.valueOf(unitPrices.get(i)) * quantity;
-            Item item = new Item(i, product, quantity, cost, newInvoice);
-            itemDao.insert(item);
-            product.addItem(item);
-            newInvoice.addItem(item);
-        }
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
 
         String url = "/Dashboard";
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
-        dispatcher.forward(request, response);
-    }
 
+
+
+        RequestDispatcher dispatcher = request.getRequestDispatcher(url);
+
+        dispatcher.forward(request, response);
+
+    }
 
 }
