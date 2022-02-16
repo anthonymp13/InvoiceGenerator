@@ -3,6 +3,16 @@ body {
     text-align: center;
 }
 
+.displayContainer {
+    width: 50em;
+    padding-top: 1.5em;
+    padding-bottom: .65em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
 .navbar-nav {
     text-align: right;
 

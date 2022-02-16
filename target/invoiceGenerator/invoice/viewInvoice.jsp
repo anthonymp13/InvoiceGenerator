@@ -6,15 +6,16 @@
 <link rel="stylesheet" type="text/css" href="css/viewInvoice.css">
 </head>
 <body>
-<!--[if lt IE 7]>
-<p class="browsehappy">You are using an <strxong>outdated</strxong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
 
-<script src="" async defer></script>
+    <p class="browsehappy">You are using an <strxong>outdated</strxong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
 
-<c:import url="../template/navbar.jsp"/>
 
-<div id="tables">
+    <c:import url="../template/navbar.jsp"/>
+
+
+    <div class="displayContainer">
+
+    <div id="tables">
     <table class="table  table-bordered">
         <tablehead>
             <tr class="bg-primary">
@@ -69,8 +70,6 @@
             </tr>
     </table>
 
-
-
     <br/>
     <br/>
     <table class="table  table-bordered" id="table">
@@ -102,8 +101,12 @@
     <h2>Total: ${invoice.total} (Taxes are calculated upon download of invoices)</h2>
     <a href="GenerateInvoice?invoiceId=${invoice.id}">Edit</a>
     <a href="DeleteInvoice?invoiceId=${invoice.id}">Delete</a>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-</form>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    </div>
+
 
 </body>
 </html>

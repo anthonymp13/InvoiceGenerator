@@ -7,20 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b77e9ab-3360-47d8-986f-b223f4b20263" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/generateInvoice/webapp structure" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/Dashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/GenerateInvoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/GenerateInvoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/UpdateInvoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/UpdateInvoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/ViewInvoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/ViewInvoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/generateInvoice.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/generateInvoice.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/masterstylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/masterstylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/viewInvoice.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/viewInvoice.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/generateInvoice/generateInvoice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/generateInvoice/generateInvoice.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/generateInvoice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/generateInvoice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/invoice/viewInvoice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/invoice/viewInvoice.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Invoice Generator.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/controller/Dashboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/controller/Dashboard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/controller/invoice/GenerateInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/controller/invoice/GenerateInvoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/controller/invoice/UpdateInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/controller/invoice/UpdateInvoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/controller/invoice/ViewInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/controller/invoice/ViewInvoice.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/CreateUser.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/META-INF/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/META-INF/context.xml" beforeDir="false" />
@@ -144,10 +138,12 @@
       <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/customerSearch.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/editInvoice.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/generateInvoice/generateInvoice.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/generateInvoice/webapp structure" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/images/invoice.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/index.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/invoice/viewInvoice.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/js/generateInvoice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/js/test.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/login.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/loginError.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/newCustomer.jsp" beforeDir="false" />
@@ -280,10 +276,12 @@
       <change beforePath="$PROJECT_DIR$/target/invoiceGenerator_war/customerSearch.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/invoiceGenerator_war/editInvoice.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/invoiceGenerator_war/generateInvoice/generateInvoice.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator_war/generateInvoice/webapp structure" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/invoiceGenerator_war/images/invoice.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/invoiceGenerator_war/index.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/invoiceGenerator_war/invoice/viewInvoice.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/invoiceGenerator_war/js/generateInvoice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator_war/js/test.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/invoiceGenerator_war/login.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/invoiceGenerator_war/loginError.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/invoiceGenerator_war/newCustomer.jsp" beforeDir="false" />
@@ -329,43 +327,64 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/generateInvoice/generateInvoice.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="84" lean-forward="true" selection-start-line="5" selection-start-column="84" selection-end-line="5" selection-end-column="84" />
+            <state relative-caret-position="420">
+              <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
               <folding>
-                <element signature="n#style#0;n#span#0;n#button#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#form#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/basic/editInvoice.jsp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/template/head.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/invoice/viewInvoice.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" selection-start-line="23" selection-end-line="23" selection-end-column="77" />
+            <state relative-caret-position="375">
+              <caret line="25" column="15" lean-forward="true" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+              <folding>
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#table#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#tablehead#0;n#table#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#table#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/generateInvoice.js">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/viewInvoice.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/generateInvoice.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/dashboard.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/test.js">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/masterstylesheet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+            <state relative-caret-position="210">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -412,7 +431,6 @@
         <option value="$PROJECT_DIR$/debugSheet.txt" />
         <option value="$PROJECT_DIR$/src/main/webapp/newCustomer.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/anthony/com/controller/customer/CreateCustomer.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/invoice/viewInvoice.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/template/navbar.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/anthony/com/controller/user/EmployeePrivileges.java" />
         <option value="$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/UpdateInvoice2.java" />
@@ -424,6 +442,11 @@
         <option value="$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/UpdateInvoice.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/generateInvoice.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/test.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/viewInvoice.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/generateInvoice.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/dashboard.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/masterstylesheet.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/invoice/viewInvoice.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/generateInvoice/generateInvoice.jsp" />
       </list>
     </option>
@@ -471,7 +494,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -495,30 +517,6 @@
               <item name="InvoiceGenerator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InvoiceGenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InvoiceGenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InvoiceGenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InvoiceGenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InvoiceGenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InvoiceGenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -527,36 +525,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InvoiceGenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InvoiceGenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="basic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InvoiceGenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InvoiceGenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="generateInvoice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InvoiceGenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InvoiceGenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -575,7 +550,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../IdeaProjects/MadJava" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -805,6 +780,10 @@
       <workItem from="1644943263683" duration="10345000" />
       <workItem from="1644965824128" duration="9630000" />
       <workItem from="1644985616813" duration="2005000" />
+      <workItem from="1644989046978" duration="28000" />
+      <workItem from="1644990205171" duration="258000" />
+      <workItem from="1645032878841" duration="41000" />
+      <workItem from="1645032946065" duration="3918000" />
     </task>
     <servers />
   </component>
@@ -841,7 +820,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59662000" />
+    <option name="totallyTimeSpent" value="63907000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -865,10 +844,10 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info id="Persistence" order="7" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="8" visible="true" weight="0.22080797" />
+      <window_info active="true" content_ui="combo" id="Project" order="8" visible="true" weight="0.22080797" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4997233" visible="true" weight="0.46179402" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4997233" weight="0.46179402" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39956802" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -978,30 +957,22 @@
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/invoice/viewInvoice.jsp</url>
+          <line>59</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/invoice/viewInvoice.jsp</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/anthony/com/entity/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0f3c313c-f17b-4907-8773-4ad1ba6c12e8/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/invoiceGenerator/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0f3c313c-f17b-4907-8773-4ad1ba6c12e8/debugging">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1028,13 +999,6 @@
             <Category>Columns</Category>
           </Categories>
           <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/invoiceGenerator/META-INF/context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="55" selection-start-column="55" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -1120,13 +1084,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/DeleteInvoice.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1184,24 +1141,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/invoice/viewInvoice.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="63" column="1" lean-forward="true" selection-start-line="63" selection-start-column="1" selection-end-line="68" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/updatePrivileges.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="33" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/navbar.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -1282,13 +1225,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/head.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" selection-start-line="23" selection-end-line="23" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1305,20 +1241,95 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/generateInvoice.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
+        <state relative-caret-position="105">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/target/invoiceGenerator/META-INF/context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/head.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="23" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/basic/editInvoice.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/masterstylesheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/dashboard.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/generateInvoice.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/viewInvoice.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/navbar.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/invoice/viewInvoice.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="15" lean-forward="true" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+          <folding>
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#table#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#tablehead#0;n#table#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#table#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/generateInvoice/generateInvoice.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="84" lean-forward="true" selection-start-line="5" selection-start-column="84" selection-end-line="5" selection-end-column="84" />
+        <state relative-caret-position="420">
+          <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
           <folding>
-            <element signature="n#style#0;n#span#0;n#button#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#form#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
@@ -1328,7 +1339,14 @@
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
-          <artifact-editor />
+          <artifact-editor>
+            <show-content>
+              <type id="javaee-facet-resources" />
+              <type id="library" />
+              <type id="artifact" />
+              <type id="jpa-descriptors" />
+            </show-content>
+          </artifact-editor>
           <last-edited>invoiceGenerator:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
@@ -1377,7 +1395,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>invoiceGenerator</last-edited>
+          <last-edited>Web|invoiceGenerator</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
