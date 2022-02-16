@@ -100,7 +100,7 @@
     </table>
 
     <h2>Total: ${invoice.total} (Taxes are calculated upon download of invoices)</h2>
-    <a href="updateInvoice?invoiceId=${invoice.id}">Edit</a>
+    <a href="GenerateInvoice?invoiceId=${invoice.id}">Edit</a>
     <a href="DeleteInvoice?invoiceId=${invoice.id}">Delete</a>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </form>

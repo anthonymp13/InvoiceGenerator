@@ -44,7 +44,6 @@ public class EmployeePrivileges extends HttpServlet {
 
         GenericDao roleDao = new GenericDao(Role.class);
 
-        // TODO: Get userId from session variables
         User updateUser = (User) userDao.getById(1);
         Company company = user.getCompany();
         Set<User> employees = company.getUsers();
