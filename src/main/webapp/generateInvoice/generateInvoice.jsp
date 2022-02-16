@@ -9,7 +9,9 @@
 <body>
 <c:import url="../template/navbar.jsp"/>
 
-<script src="../js/generateInvoice.jsp"></script>
+<script type="text/javascript" src="/invoiceGenerator/js/test.js"></script>
+<script type="text/javascript" src="/invoiceGenerator/js/generateInvoice.js"></script>
+
 <h1>Invoice Generator</h1>
 <p>Welcome to the Invoice Generator</p>
 
@@ -128,6 +130,8 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </form>
+
+
 
 </body>
 </html>

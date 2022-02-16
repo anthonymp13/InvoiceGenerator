@@ -31,6 +31,10 @@ import java.util.Set;
 
 public class Dashboard extends HttpServlet {
 
+
+
+
+
     /**
      * Set up employee, customer, and invoice data for jsp
      * @param request
@@ -92,4 +96,12 @@ public class Dashboard extends HttpServlet {
         dispatcher.forward(request, response);
     }
 
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+
+        doGet(request, response);
+    }
+    
 }

@@ -34,9 +34,10 @@ public class ViewInvoice extends HttpServlet {
      * @throws IOException
      */
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String userName = req.getRemoteUser();
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
 
+        String userName = req.getRemoteUser();
 
         GenericDao<Invoice> invoiceDao = new GenericDao(Invoice.class);
         GenericDao<User> userDao = new GenericDao(User.class);
@@ -54,8 +55,11 @@ public class ViewInvoice extends HttpServlet {
         dispatcher.forward(req, resp);
     }
 
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
+
         doPost(req, resp);
+
     }
 }
 

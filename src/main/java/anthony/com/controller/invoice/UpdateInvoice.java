@@ -29,13 +29,7 @@ public class UpdateInvoice extends HttpServlet {
 //    @Override
 //    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 ////        GenericDao<Invoice> invoiceDao = new GenericDao(Invoice.class);
-////        GenericDao userDao = new GenericDao(User.class);
-////        req.setAttribute("invoice", invoiceDao.getById(Integer.valueOf(req.getParameter("invoiceId"))));
-////
-////        String userName = req.getRemoteUser();
-////        User user = (User) userDao.getByPropertyEqual("userName", userName).get(0);
-////        Company company = user.getCompany();
-////        req.setAttribute("company", company);
+
 //        response.setContentType("text/html");
 //        String customer = null;
 //
@@ -65,9 +59,9 @@ public class UpdateInvoice extends HttpServlet {
 //    }
 //
 //
-//    @Override
-//    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
 //        GenericDao<Invoice> invoiceDao = new GenericDao(Invoice.class);
 //        GenericDao<Customer> customerDao = new GenericDao(Customer.class);
 //
@@ -134,7 +128,7 @@ public class UpdateInvoice extends HttpServlet {
 //
 //        RequestDispatcher dispatcher = req.getRequestDispatcher("ViewInvoice?invoiceId=" + newInvoice.getId());
 //        dispatcher.forward(req, resp);
-//    }
-//
-//
+    }
+
+
 }
