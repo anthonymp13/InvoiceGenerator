@@ -7,14 +7,14 @@
 
 </head>
 <body>
-<c:import url="../template/navbar.jsp"/>
+    <c:import url="../template/navbar.jsp"/>
 
-<script type="text/javascript" src="/invoiceGenerator/js/test.js"></script>
-<script type="text/javascript" src="/invoiceGenerator/js/generateInvoice.js"></script>
+    <script type="text/javascript" src="/invoiceGenerator/js/test.js"></script>
+    <script type="text/javascript" src="/invoiceGenerator/js/generateInvoice.js"></script>
 
 
     <div class="displayContainer">
-    <h1>Invoice Generator</h1>
+    <h1>Generate invoice</h1>
     <p>Welcome to the Invoice Generator</p>
 
     <div id="tables">
