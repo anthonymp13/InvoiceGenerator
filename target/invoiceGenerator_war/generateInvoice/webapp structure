@@ -1,8 +1,0 @@
-webapp >
-    WEB-INF
-    META-INF
-    css
-    js
-    admin
-    basic
-

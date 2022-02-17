@@ -6,14 +6,25 @@
 <link rel="stylesheet" type="text/css" href="css/viewInvoice.css">
 </head>
 <body>
-
-<p class="browsehappy">You are using an <strxong>outdated</strxong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-
+    
 
 <c:import url="../template/navbar.jsp"/>
+<%--<script type="text/javascript" src="/invoiceGenerator/js/deleteInvoice.js"></script>--%>
+
+<%--<input type="submit" id="confirmDelete" value="Confirm Delete">--%>
+
+
 
 
 <div class="displayContainer">
+
+    <form action="DeleteInvoice" method="post">
+
+        <label for="invoiceId">Invoice ID:</label>
+        <input type="text" name="invoiceId" id="invoiceId" value="${invoice.id}">
+
+        <input type="submit" name="confirmDelete" id="confirmDelete" value="Delete invoice">
+    </form>
 
     <div id="tables">
         <table class="table  table-bordered">
@@ -97,11 +108,6 @@
             </tr>
         </c:forEach>
     </table>
-
-    <p id="invoiceTotalParagraph">Total: ${invoice.total} (Taxes are calculated upon download of invoices)</p>
-    <a href="GenerateInvoice?invoiceId=${invoice.id}">Edit</a>
-    <a href="DeleteInvoice?invoiceId=${invoice.id}">Delete</a>
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
