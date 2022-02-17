@@ -33,7 +33,6 @@ users to use. This will allow for businesses to put more time and resources into
 * Independent Research Topic/s
   * iText
   * PdfBox
-* Project Lombok to eliminate boilerplate code like getters/setters/equals
 * Unit Testing
   * JUnit tests to achieve 80%+ code coverage 
 * IDE: IntelliJ IDEA
