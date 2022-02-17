@@ -2,7 +2,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <c:import url="template/head.jsp" />
-<title>Edit Invoice ${invoice.invoi}</title>
+<title>Edit Invoice ${invoice.id}</title>
 <link rel="stylesheet" type="text/css" href="/invoiceGenerator/css/generateInvoice.css">
 </head>
 <body>
@@ -50,7 +50,7 @@
         </tbody>
     </table>
 </div>
-<form method="POST" action="GenerateInvoice" id="invoiceForm">
+<form method="POST" action="UpdateInvoice" id="invoiceForm">
     <p>Image place holder</p>
     <div class="companyInfo">
         <td>${company.companyId}</td>

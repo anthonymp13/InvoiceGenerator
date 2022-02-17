@@ -7,8 +7,6 @@
 </head>
 <body>
 
-    <p class="browsehappy">You are using an <strxong>outdated</strxong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-
 
     <c:import url="../template/navbar.jsp"/>
 
