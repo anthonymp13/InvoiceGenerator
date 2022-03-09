@@ -84,11 +84,13 @@ public class UpdateInvoice extends HttpServlet {
         String terms;
         Customer customer;
         Date dt;
+        String invoiceId;
+
 
 //      Retrieves terms and selected customer id from form
         terms = req.getParameter("termList");
         customerId = req.getParameter("customerSelectBox");
-
+        invoiceId = req.getParameter("invoiceId");
 
 //      Retrieves all descriptions, quantities, and unitPrice for all products listed in the invoice and adds them to there own lists
 //      Inspired by: https://stackoverflow.com/questions/46203250/how-to-get-all-the-html-input-values-in-the-same-name-to-the-servlet-by-arraylis
@@ -112,10 +114,14 @@ public class UpdateInvoice extends HttpServlet {
         dt = new java.util.Date();
 
 //      Create new invoice object
-        Invoice newInvoice = new Invoice(total, terms, dt, customer);
+//        Invoice newInvoice = new Invoice(total, terms, dt, customer);
+        Invoice invoice = invoiceDao.getById(Integer.parseInt(invoiceId));
+
 
         GenericDao productDao = new GenericDao(Product.class);
-        invoiceDao.saveOrUpdate(newInvoice);
+        invoiceDao.saveOrUpdate(invoice);
+
+
 
         GenericDao itemDao = new GenericDao(Item.class);
 
@@ -128,13 +134,13 @@ public class UpdateInvoice extends HttpServlet {
 //          Create an item that represents an item in the invoice
             int quantity = Integer.parseInt(quantities.get(i));
             double cost = Double.valueOf(unitPrices.get(i)) * quantity;
-            Item item = new Item(i, product, quantity, cost, newInvoice);
+            Item item = new Item(i, product, quantity, cost, invoice);
             itemDao.insert(item);
             product.addItem(item);
-            newInvoice.addItem(item);
+            invoice.addItem(item);
         }
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("ViewInvoice?invoiceId=" + newInvoice.getId());
+        RequestDispatcher dispatcher = req.getRequestDispatcher("ViewInvoice?invoiceId=" + invoice.getId());
         dispatcher.forward(req, resp);
     }
 

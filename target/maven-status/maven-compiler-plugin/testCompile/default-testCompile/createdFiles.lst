@@ -1,5 +1,6 @@
 anthony/com/persistence/CompanyDaoTest.class
 anthony/com/persistence/CustomerDaoTest.class
+anthony/com/webapp/LoginTest.class
 anthony/com/persistence/UserDaoTest.class
 anthony/com/persistence/ItemDaoTest.class
 anthony/com/persistence/RoleDaoTest.class

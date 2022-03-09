@@ -64,19 +64,21 @@ class ItemDaoTest {
 //        product.removeItem(item);
 //        assertEquals(null, item);
 //    }
-//
-//    /**
-//     * Verify successful update of invoice
-//     */
-//    @Test
-//    void updateSuccess() {
-//        String newTerms = "New terms";
-//        Invoice invoiceToUpdate = (Invoice)invoiceDao.getById(1);
-//        invoiceToUpdate.setTerms(newTerms);
-//        invoiceDao.saveOrUpdate(invoiceToUpdate);
-//        Invoice retrievedInvoice = (Invoice)invoiceDao.getById(1);
-//        assertEquals(invoiceToUpdate, retrievedInvoice);
-//    }
+
+    /**
+     * Verify successful update of invoice
+     */
+    @Test
+    void updateSuccess() {
+        GenericDao invoiceDao = new GenericDao(Invoice.class);
+
+        String newTerms = "New terms";
+        Invoice invoiceToUpdate = (Invoice)invoiceDao.getById(1);
+        invoiceToUpdate.setTerms(newTerms);
+        invoiceDao.saveOrUpdate(invoiceToUpdate);
+        Invoice retrievedInvoice = (Invoice)invoiceDao.getById(1);
+        assertEquals(invoiceToUpdate, retrievedInvoice);
+    }
 //
 //    /**
 //     * Verify successful get by property (equal match)

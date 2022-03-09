@@ -22,7 +22,7 @@
         <TABLE>
             <TR><TD><label>User name:</label> <INPUT class="form-control" TYPE="TEXT" NAME="j_username">
             <TR><TD><label>Password:</label> <INPUT class="form-control" TYPE="PASSWORD" NAME="j_password">
-            <TR><TH><INPUT TYPE="SUBMIT" class="btn btn-primary" VALUE="Log In">
+            <TR><TH><INPUT TYPE="SUBMIT" name="login" class="btn btn-primary" VALUE="Log In">
         </TABLE>
     </FORM>
     <a href="#">Forgot username/password?</a>

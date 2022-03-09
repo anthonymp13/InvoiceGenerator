@@ -5,3 +5,4 @@
 /home/student/InvoiceGenerator/src/test/java/anthony/com/persistence/CustomerDaoTest.java
 /home/student/InvoiceGenerator/src/test/java/anthony/com/persistence/RoleDaoTest.java
 /home/student/InvoiceGenerator/src/test/java/anthony/com/persistence/InvoiceDaoTest.java
+/home/student/InvoiceGenerator/src/test/java/anthony/com/webapp/LoginTest.java
