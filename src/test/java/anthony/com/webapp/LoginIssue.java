@@ -52,8 +52,9 @@ public class LoginIssue extends LoadableComponent<LoginIssue> {
         WebElement passwordField = driver.findElement(By.name("j_password"));
         passwordField.sendKeys(password);
         passwordField.submit();
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(500));
 
-        driver.get(originalUrl);
+//        driver.get(originalUrl);
 
 
     }
@@ -62,8 +63,9 @@ public class LoginIssue extends LoadableComponent<LoginIssue> {
     protected void isLoaded() {
         try {
             WebElement div = driver.findElement(By.id("invoicesContainer"));
+
         } catch (NoSuchElementException e) {
-            fail("Cannot locate user name link");
+            fail("Cannot locate invoices container");
         }
     }
 
