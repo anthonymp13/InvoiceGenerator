@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Disabled;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,65 +23,102 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 
 import static org.testng.AssertJUnit.assertTrue;
+import static org.testng.AssertJUnit.fail;
 
 public class LoginIssue extends LoadableComponent<LoginIssue> {
 
-
     private final WebDriver driver;
-    @FindBy(name="j_username") private WebElement userName;
-    @FindBy(name="j_password") private WebElement password;
-    private WebElement login;
+    private final LoadableComponent<?> parent;
+    private final String username;
+    private final String password;
 
-    public LoginIssue(WebDriver driver) {
+    public LoginIssue(WebDriver driver, LoadableComponent<?> parent, String username, String password) {
         this.driver = driver;
-
-        PageFactory.initElements(driver, this);
+        this.parent = parent;
+        this.username = username;
+        this.password = password;
     }
+
 
     @Override
     protected void load() {
+        parent.get();
+
+        String originalUrl = driver.getCurrentUrl();
+
+//      Sign in
         driver.get("http://localhost:8080/invoiceGenerator/Dashboard");
+        driver.findElement(By.name("j_username")).sendKeys(username);
+        WebElement passwordField = driver.findElement(By.name("j_password"));
+        passwordField.sendKeys(password);
+        passwordField.submit();
+
+        driver.get(originalUrl);
+
 
     }
 
     @Override
-    protected void isLoaded() throws Error {
-
-        String url = driver.getCurrentUrl();
-        assertTrue("not on the login page: " + url, url.endsWith("/Dashboard"));
-
-    }
-
-    public void setUserName(String loginUserName) {
-        clearAndType(userName, loginUserName);
-
-    }
-
-    public void setPassword(String loginPassword) {
-        clearAndType(password, loginPassword);
+    protected void isLoaded() {
+        try {
+            WebElement div = driver.findElement(By.id("invoicesContainer"));
+        } catch (NoSuchElementException e) {
+            fail("Cannot locate user name link");
+        }
     }
 
 
-    public LoginIssue login() {
-        login.click();
-        return new LoginIssue(driver);
-    }
+
+//  ********* Second Interation ***************
+
+//    private final WebDriver driver;
+//    @FindBy(name="j_username") private WebElement userName;
+//    @FindBy(name="j_password") private WebElement password;
+//    private WebElement login;
+//
+//    public LoginIssue(WebDriver driver) {
+//        this.driver = driver;
+//
+//        PageFactory.initElements(driver, this);
+//    }
+//
+//    @Override
+//    protected void load() {
+//        driver.get("http://localhost:8080/invoiceGenerator/Dashboard");
+//
+//    }
+//
+//    @Override
+//    protected void isLoaded() throws Error {
+//
+//        String url = driver.getCurrentUrl();
+//        assertTrue("not on the login page: " + url, url.endsWith("/Dashboard"));
+//
+//    }
+//
+//    public void setUserName(String loginUserName) {
+//        clearAndType(userName, loginUserName);
+//
+//    }
+//
+//    public void setPassword(String loginPassword) {
+//        clearAndType(password, loginPassword);
+//    }
+//
+//
+//    public LoginIssue login() {
+//        login.click();
+//        return new LoginIssue(driver);
+//    }
+//
+//
+//    private void clearAndType(WebElement field, String text) {
+//        field.clear();
+//        field.sendKeys(text);
+//    }
 
 
-    private void clearAndType(WebElement field, String text) {
-        field.clear();
-        field.sendKeys(text);
-    }
-
-    @Test
-    private void runTest() {
-        LoginIssue page = new LoginIssue(driver).get();
-        page.setUserName("anthonyp");
-        page.setPassword("giggity");
-        page.login();
-
-    }
-
+//    ********* First Edition *************
 
 //    public void login() {
 //        WebDriverManager.firefoxdriver().setup();
@@ -107,7 +145,6 @@ public class LoginIssue extends LoadableComponent<LoginIssue> {
 //
 //        driver.quit();
 //    }
-
 
 
 

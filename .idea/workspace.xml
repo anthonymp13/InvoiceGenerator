@@ -7,27 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b77e9ab-3360-47d8-986f-b223f4b20263" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/anthony/com/webapp/LoginIssue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/anthony/com/webapp/IndexPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/anthony/com/webapp/InvoiceIssue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/UpdateInvoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/UpdateInvoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/anthony/com/persistence/ItemDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/anthony/com/persistence/ItemDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/anthony/com/persistence/ProductDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/anthony/com/persistence/ProductDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/controller/invoice/UpdateInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/controller/invoice/UpdateInvoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/invoice/UpdateInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/invoice/UpdateInvoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/lib/slf4j-api-1.7.31.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator_war.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator_war.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator_war/WEB-INF/classes/anthony/com/controller/invoice/UpdateInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator_war/WEB-INF/classes/anthony/com/controller/invoice/UpdateInvoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator_war/WEB-INF/lib/slf4j-api-1.7.31.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator_war/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator_war/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/anthony/com/persistence/ItemDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/anthony/com/persistence/ItemDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/anthony/com/persistence/ProductDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/anthony/com/persistence/ProductDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/anthony/com/webapp/LoginIssue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/anthony/com/webapp/LoginIssue.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -61,45 +44,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/anthony/com/webapp/LoginIssue.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/anthony/com/webapp/InvoiceIssue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
+            <state relative-caret-position="328">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1700#1701#0" expanded="true" />
-                <element signature="e#1730#1731#0" expanded="true" />
+                <element signature="e#1738#1739#0" expanded="true" />
+                <element signature="e#1767#1768#0" expanded="true" />
+                <element signature="e#1836#1837#0" expanded="true" />
+                <element signature="e#1883#1884#0" expanded="true" />
+                <element signature="e#1942#1943#0" expanded="true" />
+                <element signature="e#2001#2002#0" expanded="true" />
+                <element signature="e#2052#2053#0" expanded="true" />
+                <element signature="e#2107#2108#0" expanded="true" />
+                <element signature="e#2165#2166#0" expanded="true" />
+                <element signature="e#2224#2225#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+        <entry file="file://$PROJECT_DIR$/src/test/java/anthony/com/webapp/LoginIssue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/GenerateInvoice.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="480">
+              <caret line="117" column="7" selection-start-line="117" selection-start-column="7" selection-end-line="117" selection-end-column="7" />
               <folding>
-                <element signature="e#2556#2571#0" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -131,8 +104,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/anthony/com/generator/PdfInvoicesBasic.java" />
-        <option value="$PROJECT_DIR$/src/main/java/anthony/com/generator/Driver.java" />
         <option value="$PROJECT_DIR$/src/test/resources/sql.sql" />
         <option value="$PROJECT_DIR$/../tomcat/conf/tomcat-users.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/basic/editInvoice.jsp" />
@@ -180,7 +151,10 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
         <option value="$PROJECT_DIR$/src/test/java/anthony/com/webapp/LoginTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/anthony/com/webapp/LoginIssue2.java" />
+        <option value="$PROJECT_DIR$/src/test/java/anthony/com/webapp/IndexPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/anthony/com/webapp/LoginIssue.java" />
+        <option value="$PROJECT_DIR$/src/test/java/anthony/com/webapp/InvoiceIssue.java" />
       </list>
     </option>
   </component>
@@ -267,17 +241,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InvoiceGenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InvoiceGenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="invoice" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="InvoiceGenerator" type="b2602c69:ProjectViewProjectNode" />
@@ -306,6 +270,15 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InvoiceGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InvoiceGenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -600,14 +573,11 @@
       <workItem from="1645072684415" duration="12000" />
       <workItem from="1645072844867" duration="995000" />
       <workItem from="1645587331084" duration="1073000" />
-      <workItem from="1646771878106" duration="11181000" />
+      <workItem from="1646771878106" duration="15266000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LoginTest_firefoxSession_(1) - 2022.03.08 at 16h 31m 08s.xml">
-      <configuration name="LoginTest.firefoxSession (1)" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LoginTest_firefoxSession_(1) - 2022.03.08 at 16h 32m 46s.xml">
       <configuration name="LoginTest.firefoxSession (1)" configurationId="JUnit" />
     </history-entry>
@@ -635,9 +605,12 @@
     <history-entry file="LoginTest_firefoxSession_(1) - 2022.03.08 at 18h 05m 03s.xml">
       <configuration name="LoginTest.firefoxSession (1)" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LoginIssue_runTest - 2022.03.08 at 18h 55m 40s.xml">
+      <configuration name="LoginIssue.runTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86659000" />
+    <option name="totallyTimeSpent" value="90744000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -661,7 +634,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info id="Persistence" order="7" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="8" visible="true" weight="0.22357498" />
+      <window_info content_ui="combo" id="Project" order="8" weight="0.22357498" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32890365" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4997233" weight="0.46400887" />
@@ -778,55 +751,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../tomcat/conf/tomcat-users.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="79" selection-start-line="32" selection-start-column="79" selection-end-line="32" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/anthony/com/controller/customer/SearchCustomers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/anthony/com/controller/user/SearchUsers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/debugSheet.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/anthony/com/controller/user/CreateUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-390">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/anthony/com/controller/customer/ViewCustomer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/createCompany.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1010,13 +934,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/anthony/com/entity/Invoice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1980">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/anthony/com/persistence/GenericDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1020">
@@ -1090,12 +1007,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/GenerateInvoice.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="435">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/4.0.0/selenium-support-4.0.0.jar!/org/openqa/selenium/support/ui/LoadableComponent.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/anthony/com/webapp/LoginIssue2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
           <folding>
-            <element signature="e#2556#2571#0" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1107,21 +1041,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/GenerateInvoice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="495">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="e#2556#2571#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anthony/com/entity/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anthony/com/entity/Invoice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anthony/com/entity/Company.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/anthony/com/webapp/IndexPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/anthony/com/webapp/LoginIssue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
+        <state relative-caret-position="480">
+          <caret line="117" column="7" selection-start-line="117" selection-start-column="7" selection-end-line="117" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1700#1701#0" expanded="true" />
-            <element signature="e#1730#1731#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/anthony/com/webapp/InvoiceIssue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1738#1739#0" expanded="true" />
+            <element signature="e#1767#1768#0" expanded="true" />
+            <element signature="e#1836#1837#0" expanded="true" />
+            <element signature="e#1883#1884#0" expanded="true" />
+            <element signature="e#1942#1943#0" expanded="true" />
+            <element signature="e#2001#2002#0" expanded="true" />
+            <element signature="e#2052#2053#0" expanded="true" />
+            <element signature="e#2107#2108#0" expanded="true" />
+            <element signature="e#2165#2166#0" expanded="true" />
+            <element signature="e#2224#2225#0" expanded="true" />
           </folding>
         </state>
       </provider>
