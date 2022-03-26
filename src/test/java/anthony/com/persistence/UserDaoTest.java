@@ -1,9 +1,6 @@
 package anthony.com.persistence;
 
-import anthony.com.entity.Company;
-import anthony.com.entity.Customer;
-import anthony.com.entity.Role;
-import anthony.com.entity.User;
+import anthony.com.entity.*;
 import anthony.com.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -130,6 +127,19 @@ class UserDaoTest {
         customers.size();
         assertEquals(1, customers.size());
     }
+
+    /**
+     * Retrieve a limited amount of invoices (like match)
+     */
+    @Test
+    void getByPropertyLikeSuccess2() {
+        GenericDao companyDao = new GenericDao(Company.class);
+        Company company = (Company) companyDao.getById(1);
+
+        List<User> users = userDao.getLimitedResults("company", company, 0, 5);
+        assertEquals(2, users.size());
+    }
+
 
     /**
      * Test getting user and user role

@@ -3,7 +3,7 @@
 <html>
 <c:import url="../template/head.jsp" />
 
-<link rel="stylesheet" type="text/css" href="css/viewInvoice.css">
+<link rel="stylesheet" type="text/css" href="css/invoice/viewInvoice.css">
 </head>
 <body>
     

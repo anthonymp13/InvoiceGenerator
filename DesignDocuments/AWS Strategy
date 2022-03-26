@@ -1,0 +1,1 @@
+    aws ec2-instance-connect send-ssh-public-key --instance-id i-03d37acc367377be5 --availability-zone us-east-1a --instance-os-user ec2-user anthonymp34 --ssh-public-key file://invoice-generator-key.pub

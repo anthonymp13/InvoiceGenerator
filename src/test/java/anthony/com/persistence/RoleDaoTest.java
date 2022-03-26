@@ -25,6 +25,7 @@ class RoleDaoTest {
         roleDao = new GenericDao(Role.class);
         Database database = Database.getInstance();
         database.runSQL("sql.sql");
+
     }
 
     /**
@@ -32,6 +33,10 @@ class RoleDaoTest {
      */
     @Test
     void insertSuccess() {
+
+        roleDao = new GenericDao(Role.class);
+        Database database = Database.getInstance();
+        database.runSQL("sql.sql");
         GenericDao userDao = new GenericDao(User.class);
         User user = (User)userDao.getById(1);
         String userName = user.getUserName();
@@ -49,6 +54,7 @@ class RoleDaoTest {
      */
     @Test
     void deleteSuccess() {
+
         roleDao.delete(roleDao.getById(1));
         assertNull(roleDao.getById(1));
     }

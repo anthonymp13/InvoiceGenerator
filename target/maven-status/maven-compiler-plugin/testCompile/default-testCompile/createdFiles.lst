@@ -1,7 +1,11 @@
-anthony/com/persistence/CompanyDaoTest.class
 anthony/com/persistence/CustomerDaoTest.class
+anthony/com/webapp/IndexPage.class
+anthony/com/webapp/InvoiceIssue.class
 anthony/com/persistence/UserDaoTest.class
 anthony/com/persistence/ItemDaoTest.class
-anthony/com/persistence/RoleDaoTest.class
 anthony/com/persistence/InvoiceDaoTest.class
 anthony/com/persistence/ProductDaoTest.class
+anthony/com/webapp/LoginIssue.class
+anthony/com/persistence/CompanyDaoTest.class
+anthony/com/persistence/RoleDaoTest.class
+anthony/com/webapp/FooTest.class

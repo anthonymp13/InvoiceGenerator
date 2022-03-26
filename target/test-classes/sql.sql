@@ -1,9 +1,5 @@
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!50503 SET NAMES utf8mb4 */;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
-/*!40103 SET TIME_ZONE='+00:00' */;
+
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
@@ -88,6 +84,13 @@ CREATE TABLE `invoice` (
 LOCK TABLES `invoice` WRITE;
 /*!40000 ALTER TABLE `invoice` DISABLE KEYS */;
 INSERT INTO `invoice` VALUES (1,'2020-02-26',1,'Due upon receipt',1500);
+INSERT INTO invoice(id,invoicedate,customerid,terms,total) VALUES (2,'2022-3-4', 1,'Pay in Advance',23569.32);
+
+INSERT INTO invoice(id,invoicedate,customerid,terms,total) VALUES (3,'2021-10-30', 1,'Pay in Advance',83144.6);
+INSERT INTO invoice(id,invoicedate,customerid,terms,total) VALUES (4,'2022-2-18', 1,'Due upon receipt',73178.15);
+INSERT INTO invoice(id,invoicedate,customerid,terms,total) VALUES (5,'2021-5-2', 1,'Pay in Advance',79390.36);
+INSERT INTO invoice(id,invoicedate,customerid,terms,total) VALUES (6,'2021-1-4', 1,'Pay in Advance',25053.19);
+INSERT INTO invoice(id,invoicedate,customerid,terms,total) VALUES (7,'2021-12-14', 1,'Due upon receipt',70201.11);
 /*!40000 ALTER TABLE `invoice` ENABLE KEYS */;
 UNLOCK TABLES;
 

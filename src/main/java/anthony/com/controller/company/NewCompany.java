@@ -66,9 +66,6 @@ public class NewCompany extends HttpServlet {
         if(companies.isEmpty()) {
             company = new Company(companyName, address, city, state, zipcode, phoneNumber);
             companyDao.insert(company);
-        } else {
-            success = false;
-            url = "/createCompany.jsp";
         }
 
         if(users.isEmpty()) {

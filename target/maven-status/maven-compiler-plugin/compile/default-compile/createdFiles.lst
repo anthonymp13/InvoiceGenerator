@@ -16,6 +16,7 @@ anthony/com/controller/user/EmployeePrivileges.class
 anthony/com/controller/user/EditEmployee.class
 anthony/com/generator/InvoiceData.class
 anthony/com/controller/invoice/ViewInvoice.class
+anthony/com/controller/Logout.class
 anthony/com/controller/customer/CreateCustomer.class
 anthony/com/util/Database.class
 anthony/com/controller/company/NewCompany.class

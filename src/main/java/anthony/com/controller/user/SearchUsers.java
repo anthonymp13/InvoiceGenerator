@@ -36,7 +36,7 @@ public class SearchUsers extends HttpServlet {
             request.setAttribute("companies", companyDao.getAll());
         }
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/results.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/api/results.jsp");
 
         dispatcher.forward(request, response);
 

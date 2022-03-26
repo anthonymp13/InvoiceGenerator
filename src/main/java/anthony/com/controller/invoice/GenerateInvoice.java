@@ -58,7 +58,7 @@ public class GenerateInvoice extends HttpServlet {
 //      Set the users company to an attribute
         request.setAttribute("company", company);
 
-        String url = "/generateInvoice/generateInvoice.jsp";
+        String url = "/invoice/generateInvoice.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
     }

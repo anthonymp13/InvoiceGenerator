@@ -68,7 +68,7 @@ class CompanyDaoTest {
 
         // Test if users were deleted
         GenericDao userDao = new GenericDao(User.class);
-        // TODO: make database delete everything related to a company upon deletion
+
         List<User> users = userDao.getAll();
 
         assertEquals(0, users.size());

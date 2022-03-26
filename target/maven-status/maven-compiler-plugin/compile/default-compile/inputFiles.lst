@@ -24,6 +24,7 @@
 /home/student/InvoiceGenerator/src/main/java/anthony/com/controller/user/EmployeePrivileges.java
 /home/student/InvoiceGenerator/src/main/java/anthony/com/controller/user/CreateUser.java
 /home/student/InvoiceGenerator/src/main/java/anthony/com/persistence/GenericDao.java
+/home/student/InvoiceGenerator/src/main/java/anthony/com/controller/Logout.java
 /home/student/InvoiceGenerator/src/main/java/anthony/com/entity/Company.java
 /home/student/InvoiceGenerator/src/main/java/anthony/com/entity/User.java
 /home/student/InvoiceGenerator/src/main/java/anthony/com/controller/user/UpdatePrivileges.java

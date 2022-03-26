@@ -51,7 +51,7 @@ public class ViewInvoice extends HttpServlet {
 
 //      Set users/invoice company to a attribute
         req.setAttribute("company", userDao.getByPropertyEqual("userName", userName).get(0).getCompany());
-        RequestDispatcher dispatcher = req.getRequestDispatcher("invoice/viewInvoice.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/invoice/viewInvoice.jsp");
         dispatcher.forward(req, resp);
     }
 

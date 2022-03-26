@@ -47,7 +47,7 @@ public class EditEmployee extends HttpServlet {
 
 
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("admin/viewEmployee.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/user/viewEmployee.jsp");
 
         dispatcher.forward(request, response);
 

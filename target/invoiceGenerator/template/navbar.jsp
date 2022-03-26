@@ -1,5 +1,3 @@
-
-
 <%--
   Created by IntelliJ IDEA.
   User: Anthony
@@ -7,7 +5,8 @@
   Time: 5:45 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%--<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>--%>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
     <!-- Brand -->
@@ -21,9 +20,9 @@
     <!-- Navbar links -->
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
-<%--        <c:if test="${user == null}">--%>
+        <c:if test="${user == null}">
             <li class="nav-item">
-                <a class="nav-link" href="/invoiceGenerator/about.jsp">About us</a>
+                <a class="nav-link" href="about.jsp">About us</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Contribute</a>
@@ -31,27 +30,31 @@
             <li class="nav-item">
                 <a class="nav-link" href="#"></a>
             </li>
-<%--        </c:if>--%>
-<%--        <c:if test="${user != null}">--%>
+        </c:if>
+        <c:if test="${user != null}">
             <li class="nav-item">
-                <a class="nav-link" href="/invoiceGenerator/Dashboard">Dashboard</a>
+                <a class="nav-link" href="Dashboard">Dashboard</a>
             </li>
-<%--        </c:if>--%>
+            <li class="nav-item">
+                <a class="nav-link" href="Logout">logout</a>
+            </li>
+        </c:if>
             <li class="nav-item">
                 <a class="nav-link" href="#">Contact Us</a>
             </li>
 
-<%--            <c:if test="${user == null}">--%>
+            <c:if test="${user == null}">
                 <li class="nav-item">
-                    <a class="nav-link" href="/invoiceGenerator/Dashboard">Login</a>
+                    <a class="nav-link" href="Dashboard">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/invoiceGenerator/CreateUser.jsp">Sign Up</a>
+                    <a class="nav-link" href="CreateUser.jsp">Sign Up</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/invoiceGenerator/createCompany.jsp">Company Sign Up</a>
+                    <a class="nav-link" href="createCompany.jsp">Company Sign Up</a>
                 </li>
-<%--            </c:if>--%>
+            </c:if>
         </ul>
     </div>
 </nav>
+
