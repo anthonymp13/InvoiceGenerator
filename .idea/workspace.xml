@@ -10,41 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b77e9ab-3360-47d8-986f-b223f4b20263" name="Default Changelist" comment="Updated dashboard and supporting methods to allow limiting of results.">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/InvoiceGenerator_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/InvoiceGenerator_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocuments/AWS Strategy" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocuments/AWS Strategy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/company/NewCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/company/NewCompany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/UpdateInvoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/UpdateInvoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/ViewInvoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/invoice/ViewInvoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/user/DeleteUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/user/DeleteUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/user/EditEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/user/EditEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/user/EmployeePrivileges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/user/EmployeePrivileges.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anthony/com/controller/user/SearchUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anthony/com/controller/user/SearchUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/template/navbar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/database.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Invoice Generator.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Invoice Generator.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/controller/company/NewCompany.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/controller/company/NewCompany.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/controller/invoice/UpdateInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/controller/invoice/UpdateInvoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/controller/invoice/ViewInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/controller/invoice/ViewInvoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/controller/user/DeleteUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/controller/user/DeleteUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/controller/user/EditEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/controller/user/EditEmployee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/controller/user/EmployeePrivileges.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/controller/user/EmployeePrivileges.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anthony/com/controller/user/SearchUsers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anthony/com/controller/user/SearchUsers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/company/NewCompany.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/company/NewCompany.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/invoice/UpdateInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/invoice/UpdateInvoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/invoice/ViewInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/invoice/ViewInvoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/user/DeleteUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/user/DeleteUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/user/EditEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/user/EditEmployee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/user/EmployeePrivileges.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/user/EmployeePrivileges.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/user/SearchUsers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/anthony/com/controller/user/SearchUsers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/database.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/invoiceGenerator/WEB-INF/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -579,7 +545,7 @@
       <workItem from="1648245069971" duration="3207000" />
       <workItem from="1648256738394" duration="958000" />
       <workItem from="1648263741084" duration="2717000" />
-      <workItem from="1648298708171" duration="7375000" />
+      <workItem from="1648298708171" duration="8017000" />
     </task>
     <servers />
   </component>
