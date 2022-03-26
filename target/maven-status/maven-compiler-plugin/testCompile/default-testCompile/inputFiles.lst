@@ -1,8 +1,11 @@
+/home/student/InvoiceGenerator/src/test/java/anthony.com.webapp/FooTest.java
 /home/student/InvoiceGenerator/src/test/java/anthony/com/persistence/ProductDaoTest.java
 /home/student/InvoiceGenerator/src/test/java/anthony/com/persistence/ItemDaoTest.java
 /home/student/InvoiceGenerator/src/test/java/anthony/com/persistence/CompanyDaoTest.java
 /home/student/InvoiceGenerator/src/test/java/anthony/com/persistence/UserDaoTest.java
 /home/student/InvoiceGenerator/src/test/java/anthony/com/persistence/CustomerDaoTest.java
+/home/student/InvoiceGenerator/src/test/java/anthony.com.webapp/InvoiceIssue.java
 /home/student/InvoiceGenerator/src/test/java/anthony/com/persistence/RoleDaoTest.java
+/home/student/InvoiceGenerator/src/test/java/anthony.com.webapp/IndexPage.java
 /home/student/InvoiceGenerator/src/test/java/anthony/com/persistence/InvoiceDaoTest.java
-/home/student/InvoiceGenerator/src/test/java/anthony/com/webapp/LoginTest.java
+/home/student/InvoiceGenerator/src/test/java/anthony.com.webapp/LoginIssue.java

@@ -60,7 +60,7 @@ public class UpdateInvoice extends HttpServlet {
 //      Set the users company to an attribute
         request.setAttribute("company", company);
 
-        String url = "/editInvoice.jsp";
+        String url = "invoice/editInvoice.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
 

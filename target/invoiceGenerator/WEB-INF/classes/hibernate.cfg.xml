@@ -4,8 +4,8 @@
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
-        <property name = "hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-        <property name="connection.url">jdbc:mysql://localhost:3306/iTextInvoice</property>
+        <property name ="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="connection.url">jdbc:mysql://aa22cifnwb5s5p.c7krpqxb2x1p.us-east-1.rds.amazonaws.com:3306/iTextInvoice</property>
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
 
         <property name="connection.username">root</property>
@@ -17,12 +17,17 @@
         <property name="hibernate.c3p0.max_statements">50</property>
         <property name="hibernate.c3p0.idle_test_period">3000</property>
 
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+        <property name="use_sql_comments">true</property>
+
         <!--    Adding mapping class-->
         <mapping class="anthony.com.entity.Invoice"/>
         <mapping class="anthony.com.entity.Product"/>
         <mapping class="anthony.com.entity.Customer"/>
         <mapping class="anthony.com.entity.Company"/>
         <mapping class="anthony.com.entity.User"/>
+        <mapping class="anthony.com.entity.Role"/>
         <mapping class="anthony.com.entity.Role"/>
         <mapping class="anthony.com.entity.Item"/>
 

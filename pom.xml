@@ -18,7 +18,7 @@
     <junit.version>4.12</junit.version>
     <junit-vintage-version>4.12.0</junit-vintage-version>
     <jupiter-version>5.0.0</jupiter-version>
-    <log4j-version>2.10.0</log4j-version>
+    <log4j-version>2.17.1</log4j-version>
     <maven.compiler.release>11</maven.compiler.release>
     <maven-compiler-plugin-version>3.8.1</maven-compiler-plugin-version>
     <maven-surefire-plugin-version>2.19</maven-surefire-plugin-version>
@@ -71,7 +71,12 @@
       <artifactId>selenium-chrome-driver</artifactId>
       <version>2.50.0</version>
     </dependency>
-
+    <!-- https://mvnrepository.com/artifact/org.opentest4j/opentest4j -->
+    <dependency>
+      <groupId>org.opentest4j</groupId>
+      <artifactId>opentest4j</artifactId>
+      <version>1.2.0</version>
+    </dependency>
 
     <dependency>
       <groupId>org.junit.platform</groupId>
@@ -113,17 +118,22 @@
       <artifactId>mysql-connector-java</artifactId>
       <version>${mysql-version}</version>
     </dependency>
+
+
+    <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+    <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-api</artifactId>
-      <version>${log4j-version}</version>
+      <version>2.17.1</version>
     </dependency>
-    <!-- next 2 dependencies are for log4j -->
+
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-core</artifactId>
-      <version>${log4j-version}</version>
+      <version>2.17.1</version>
     </dependency>
+
     <dependency>
       <groupId>org.junit.platform</groupId>
       <artifactId>junit-platform-commons</artifactId>

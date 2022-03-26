@@ -93,27 +93,42 @@ class InvoiceDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
+        List<Invoice> invoices = invoiceDao.getByPropertyEqual("terms", "Pay in Advance");
+        assertEquals(4, invoices.size());
+        assertEquals(2, invoices.get(0).getId());
 
-        List<Invoice> invoices = invoiceDao.getByPropertyEqual("terms", "Due upon receipt");
-        assertEquals(1, invoices.size());
-        assertEquals(1, invoices.get(0).getId());
     }
+
+
 
     /**
      * Verify successful get by property (like match)
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<Invoice> invoices = invoiceDao.getByPropertyLike("terms", "Upon receipt");
-        assertEquals(1, invoices.size());
+        List<Invoice> invoices = invoiceDao.getByPropertyLike("terms", "Pay in Advance");
+        assertEquals(4, invoices.size());
+    }
+
+
+    /**
+     * Retrieve a limited amount of invoices (like match)
+     */
+    @Test
+    void getByPropertyLikeSuccess2() {
+        GenericDao customerDao = new GenericDao(Customer.class);
+        Customer customer = (Customer) customerDao.getById(1);
+
+        List<Invoice> invoices = invoiceDao.getLimitedResults("customer", customer, 0, 5);
+        assertEquals(5, invoices.size());
     }
 
     /**
      * Confirms getsa all invoices successfully.
      */
     @Test
-    void getAllUsersSuccess() {
+    void getAllInvoices() {
         List<Invoice> invoices = invoiceDao.getAll();
-        assertEquals(1, invoices.size());
+        assertEquals(7, invoices.size());
     }
 }

@@ -16,6 +16,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 
 
@@ -42,9 +43,15 @@ public class Dashboard extends HttpServlet {
      */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        int amount = 0;
+        int min = 0;
+        int max = 5;
         ArrayList<Invoice> invoices = new ArrayList<>();
-
         GenericDao userDao = new GenericDao(User.class);
+        GenericDao customerDao = new GenericDao(Customer.class);
+        GenericDao invoiceDao = new GenericDao(Invoice.class);
+
+
 
 //      Retrieve logged in users username
         String userName = request.getRemoteUser();
@@ -55,41 +62,28 @@ public class Dashboard extends HttpServlet {
         session.setAttribute("user", user);
 
 //      Get info based on username
-        Company userCompany = user.getCompany();
-        Set<User> companyUsers = userCompany.getUsers();
-        Set<Customer> companyCustomers = userCompany.getCustomers();
 
-//      Set customers invoices to a ArrayList
-        Iterator customers = companyCustomers.iterator();
-        while(customers.hasNext()) {
-            Customer customer = (Customer)customers.next();
-            invoices.addAll(customer.getInvoices());
-        }
+        Company company = user.getCompany();
+        List<User> users = userDao.getLimitedResults("company", company, min, max);
+
+        List<Customer> customers = customerDao.getLimitedResults("company", company, min, max);
+
+        Iterator currentCustomer = customers.iterator();
+
+
+            while(currentCustomer.hasNext() && invoices.size() < max) {
+                Customer customer = (Customer)currentCustomer.next();
+                invoices.addAll(customer.getInvoices());
+            }
+
+
+
 
 //      Set request attributes
         request.setAttribute("invoices", invoices);
-        request.setAttribute("customers", companyCustomers);
-        request.setAttribute("users", companyUsers);
+        request.setAttribute("customers", customers);
+        request.setAttribute("users", users);
 
-//      Download invoice
-
-//            int invoiceId = 1;
-//            if(request.getParameter("invoiceId") != "") {
-////                String[] invoiceToDownload = new String[invoiceId];
-////                driver.main(invoiceToDownload);
-//                try {
-//                    PdfInvoicesBasic generate = new PdfInvoicesBasic();
-//                    List<Invoice> list = new ArrayList<Invoice>();
-//                    Invoice invoice = (Invoice) invoiceDao.getById(invoiceId);
-//                    list.add(invoice);
-//                    generate.generateInvoice(list);
-//                } catch (Exception e) {
-//                    e.printStackTrace();
-//                }
-//
-//            }
-
-//        int invoiceId = Integer.parseInt(request.getParameter("invoiceId"));
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("admin/dashboard.jsp");
 

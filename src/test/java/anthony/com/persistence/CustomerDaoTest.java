@@ -7,6 +7,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
+import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -34,6 +35,7 @@ class CustomerDaoTest {
     void insertSuccess() {
         GenericDao companyDao = new GenericDao(Company.class);
         Company company = (Company)companyDao.getById(1);
+
         Customer newCustomer = new Customer("Sam", "Smith", "5342  South st", "madison", "Wisconsin", 53705, "543-234-2354", company, "BE", "samsmith@gmail.com");
 
         int id = customerDao.insert(newCustomer);
@@ -96,6 +98,21 @@ class CustomerDaoTest {
         assertEquals(1, customers.size());
     }
 
+//    @Test
+//    void getLimitedResults() {
+//        GenericDao companyDao = new GenericDao(Company.class);
+//        Company company = (Company)companyDao.getById(1);
+//
+//        Set<Customer> customers = company.getCustomers().;
+//////        List<Customer> customers = customerDao.getLimitedResults("company", company, 0, 5);
+////        List<Customer> customers = customerDao.getLimitedResults("company", 1, 0, 5);
+////        assertEquals(5, customers.size());
+////
+////        assertEquals("Belvia",customers.get(0).getFirstName());
+////        assertEquals("Rania",customers.get(2).getFirstName());
+//
+//    }
+
     /**
      * Verifies a user is returned correctly based on id search
      */
@@ -103,7 +120,7 @@ class CustomerDaoTest {
     void getByIdSuccess() {
         Customer retrievedCustomer = (Customer)customerDao.getById(1);
         assertNotNull(retrievedCustomer);
-        assertEquals("Tim", retrievedCustomer.getFirstName());
+
     }
 
 }

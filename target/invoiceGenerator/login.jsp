@@ -18,6 +18,7 @@
 
 <div id="loginContainer">
     <h1>Member Login:</h1>
+
     <FORM ACTION="j_security_check" METHOD="POST">
         <TABLE>
             <TR><TD><label>User name:</label> <INPUT class="form-control" TYPE="TEXT" NAME="j_username">

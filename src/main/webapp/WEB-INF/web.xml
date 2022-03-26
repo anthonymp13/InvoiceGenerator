@@ -13,7 +13,7 @@
     <auth-method>FORM</auth-method>
     <form-login-config>
       <form-login-page>/login.jsp</form-login-page>
-      <form-error-page>/loginError.jsp</form-error-page>
+      <form-error-page>/errors/loginError.jsp</form-error-page>
 
     </form-login-config>
   </login-config>
@@ -104,6 +104,13 @@
     <role-name>admin</role-name>
   </security-role>
 
+
+<!--  Error handling -->
+  <error-page>
+<!--    TODO: add error handling for 408 error -->
+    <error-code>404</error-code>
+    <location>/errors/404.jsp</location>
+  </error-page>
 
 </web-app>
 
