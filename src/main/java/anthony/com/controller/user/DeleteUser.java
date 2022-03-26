@@ -30,7 +30,7 @@ public class DeleteUser extends HttpServlet {
         GenericDao<User> userDao = new GenericDao(User.class);
         userDao.delete(userDao.getById(Integer.valueOf(req.getParameter("userId"))));
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("Dashboard");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/Dashboard");
         dispatcher.forward(req, resp);
     }
 

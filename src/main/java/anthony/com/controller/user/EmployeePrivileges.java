@@ -55,7 +55,7 @@ public class EmployeePrivileges extends HttpServlet {
         request.setAttribute("roles", roles);
         request.setAttribute("employees", employees);
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("admin/employeePrivileges.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/user/employeePrivileges.jsp");
 
         dispatcher.forward(request, response);
 
