@@ -4,13 +4,7 @@ body {
 
 }
 
-.displayContainer {
-    width: 50em;
-    padding-top: 1.5em;
-    padding-bottom: .65em;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 
 
@@ -106,18 +100,6 @@ body {
     }
 }
 
-
-@media (max-width:767px)
-{
-    .site-footer
-    {
-        padding-bottom:0
-    }
-    .site-footer .copyright-text,.site-footer .social-icons
-    {
-        text-align:center
-    }
-}
 
 .social-icons
 {
