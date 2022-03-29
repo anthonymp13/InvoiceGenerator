@@ -3,12 +3,22 @@ body {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
+    margin: auto;
+    width: max-content;
+
 }
+
+.displayContainer {
+    padding-top: 1.5em;
+    padding-bottom: .65em;
+    margin: 1em;
+
+}
+
 
 form {
     margin-bottom: 1em;
+    text-align: right;
 }
 
 form label {
@@ -17,32 +27,26 @@ form label {
 
 table {
     margin-top: 1em;
+    width: 100%;
+
 }
 
-.displayContainer {
-    padding-top: 1.5em;
-    padding-bottom: .65em;
-    margin: 1em;
-}
-
-.displayContainer form {
-    float: right;
-}
-
-.displayContainer button {
-    float: right;
-}
 
 .ch1 {
-    width: 15em;
+    /*width: 15em;*/
 }
 
 .ch3 {
-    width: 15em;
+    /*width: 15em;*/
 }
 
 
 @media (max-width: 750px) {
+
+    table {
+        margin-top: 1em;
+        width: min-content;
+    }
 
     .ch2 {
         display: none;
