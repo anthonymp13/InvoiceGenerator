@@ -2,6 +2,28 @@ body {
     text-align: center;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    margin-bottom: 1em;
+}
+
+form label {
+    display: none ;
+}
+
+table {
+    margin-top: 1em;
+}
+
+.displayContainer {
+    padding-top: 1.5em;
+    padding-bottom: .65em;
+    margin: 1em;
+}
 
 .displayContainer form {
     float: right;
@@ -17,4 +39,12 @@ body {
 
 .ch3 {
     width: 15em;
+}
+
+
+@media (max-width: 750px) {
+
+    .ch2 {
+        display: none;
+    }
 }
