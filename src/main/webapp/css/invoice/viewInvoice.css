@@ -1,96 +1,118 @@
-body ::before{
-    text-align: left;
-    display: inline;
-    margin: .5em;
 
-}
-
-body {
-    /* border: 1px black solid; */
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-label {
-    display: none;
-}
-
-input {
-    display: block;
+.displayContainer {
+    margin: 0 auto;
+    padding: 1em;
+    width: 75em;
 }
 
 #tables {
-    margin: .5em;
-    /* border: 1px black solid; */
-    display: inline-block;
-    float: right;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-end;
 }
 
 #tables table {
-    height: .5em;
+    width: max-content;
+
 }
 
-#tables th {
-    width: 150px;
-    padding: .5rem;
-}
-
-#tables tbody tr td {
-    /* width: 150px; */
-    padding: .5rem;
-}
-
-.companyInfo {
-    margin-top: 1.5em;
-    margin-bottom: 2.5em;
-}
-
-.companyInfo p {
-    margin-bottom: 0em;
-}
-
-#billToTable th, #billToTable td {
-    padding: .5rem;
-}
-
-#billToTable {
-    margin-top: .5em;
-    margin-bottom: 0em;
-    width: 100%;
-}
-
-#billToTable td {
-    /* width: 100%; */
-}
-
-.descriptionRow1 td input {
-    border: none;
-    border-bottom: 1px solid grey;
-}
-
-.descriptionRow1 td input:focus {
-    outline: none;
+#billToTable tr {
+    width: max-content;
 }
 
 
-.descriptionRow td input {
-    border: none;
-    border-bottom: 1px solid grey;
-}
+/*body ::before{*/
+/*    text-align: left;*/
+/*    display: inline;*/
+/*    margin: .5em;*/
 
-.descriptionRow td input:focus {
-    outline: none;
-}
+/*}*/
 
-#customerContainer {
-    margin-top: .5em;
-}
+/*body {*/
+/*    !* border: 1px black solid; *!*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*}*/
 
-select {
-    width: 100%;
-}
 
-nav {
-    width: 100%;
-}
+
+/*input {*/
+/*    display: block;*/
+/*}*/
+
+/*#tables {*/
+/*    margin: .5em;*/
+/*    !* border: 1px black solid; *!*/
+/*    display: inline-block;*/
+/*    float: right;*/
+/*}*/
+
+/*#tables table {*/
+/*    height: .5em;*/
+/*}*/
+
+/*#tables th {*/
+/*    width: 150px;*/
+/*    padding: .5rem;*/
+/*}*/
+
+/*#tables tbody tr td {*/
+/*    !* width: 150px; *!*/
+/*    padding: .5rem;*/
+/*}*/
+
+/*.companyInfo {*/
+/*    margin-top: 1.5em;*/
+/*    margin-bottom: 2.5em;*/
+/*}*/
+
+/*.companyInfo p {*/
+/*    margin-bottom: 0em;*/
+/*}*/
+
+/*#billToTable th, #billToTable td {*/
+/*    padding: .5rem;*/
+/*}*/
+
+/*#billToTable {*/
+/*    margin-top: .5em;*/
+/*    margin-bottom: 0em;*/
+/*    width: 100%;*/
+/*}*/
+
+/*#billToTable td {*/
+/*    !* width: 100%; *!*/
+/*}*/
+
+/*.descriptionRow1 td input {*/
+/*    border: none;*/
+/*    border-bottom: 1px solid grey;*/
+/*}*/
+
+/*.descriptionRow1 td input:focus {*/
+/*    outline: none;*/
+/*}*/
+
+
+/*.descriptionRow td input {*/
+/*    border: none;*/
+/*    border-bottom: 1px solid grey;*/
+/*}*/
+
+/*.descriptionRow td input:focus {*/
+/*    outline: none;*/
+/*}*/
+
+/*#customerContainer {*/
+/*    margin-top: .5em;*/
+/*}*/
+
+/*select {*/
+/*    width: 100%;*/
+/*}*/
+
+/*nav {*/
+/*    width: 100%;*/
+/*}*/

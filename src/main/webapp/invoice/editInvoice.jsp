@@ -10,7 +10,7 @@
 <c:import url="../template/navbar.jsp"/>
 <script src="/invoiceGenerator/js/generateInvoice.jsp"></script>
 <h1>Invoice Generator</h1>
-<p>Welcome to the Invoice Generator</p>
+<p>Welcome to the Invoice asasdfdfGenerator</p>
 <div id="container">
 <div id="tables">
     <table class="table  table-bordered">

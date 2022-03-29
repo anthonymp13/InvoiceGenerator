@@ -7,51 +7,42 @@
 </head>
 <body>
 
-
     <c:import url="../template/navbar.jsp"/>
-
 
     <div class="displayContainer">
 
     <div id="tables">
-    <table class="table  table-bordered">
-        <tablehead>
-            <tr class="bg-primary">
-                <th scope="col">Invoice #</th>
-                <th scope="col">Date</th>
+        <table class="table  table-bordered">
+            <tablehead>
+                <tr class="bg-primary">
+                    <th scope="col">Invoice #</th>
+                    <th scope="col">Date</th>
+                </tr>
+            </tablehead>
+            <tbody>
+            <tr>
+                <td scope="row">${invoice.id}</td>
+                <td>${invoice.invoiceDate}</td>
             </tr>
-        </tablehead>
-        <tbody>
-        <tr>
-            <td scope="row">${invoice.id}</td>
-            <td>${invoice.invoiceDate}</td>
-        </tr>
-        </tbody>
-    </table>
+            </tbody>
+        </table>
 
-    <table class="table  table-bordered">
-        <tablehead>
-            <tr class="bg-primary">
-                <th scope="col">Customer Id</th>
-                <th scope="col">Terms</th>
+        <table class="table  table-bordered">
+            <tablehead>
+                <tr class="bg-primary">
+                    <th scope="col">Customer Id</th>
+                    <th scope="col">Terms</th>
+                </tr>
+            </tablehead>
+            <tbody>
+            <tr>
+                <td scope="row">${invoice.customer.id}</td>
+                <td>
+                    ${invoice.terms}
+                </td>
             </tr>
-        </tablehead>
-        <tbody>
-        <tr>
-            <td scope="row">${invoice.customer.id}</td>
-            <td>
-                ${invoice.terms}
-            </td>
-        </tr>
-        </tbody>
-    </table>
-</div>
-    <p>Image place holder</p>
-    <div class="companyInfo">
-        <td>${company.companyId}</td>
-        <td>${company.companyName}</td>
-        <td>${company.phoneNumber}</td>
-        <td>${company.address}</td>
+            </tbody>
+        </table>
     </div>
 
     <table id="billToTable" class="table  table-bordered" style="overflow-y:auto;">
@@ -100,15 +91,9 @@
     <a href="GenerateInvoice?invoiceId=${invoice.id}">Edit</a>
     <a href="DeleteInvoice?invoiceId=${invoice.id}">Delete</a>
 
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
     </div>
-
-
-</body>
-</html>
-
 
 </body>
 </html>

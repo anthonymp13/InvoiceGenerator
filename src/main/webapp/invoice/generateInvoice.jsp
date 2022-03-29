@@ -9,8 +9,8 @@
 <body>
     <c:import url="../template/navbar.jsp"/>
 
-    <script type="text/javascript" src="/invoiceGenerator/js/test.js"></script>
-    <script type="text/javascript" src="/invoiceGenerator/js/generateInvoice.js"></script>
+    <script type="text/javascript" src="js/test.js"></script>
+    <script type="text/javascript" src="js/generateInvoice.js"></script>
 
 
     <main class="displayContainer">
@@ -46,7 +46,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="button" id="remove" class="btn btn-danger">Remove</button>
+<%--                    <button type="button" id="remove" class="btn btn-danger">Remove</button>--%>
                     <button type="button" id="saveChanges" class="btn btn-primary">Save</button>
                 </div>
             </div>
@@ -55,7 +55,7 @@
 
     <form action="GenerateInvoice" method="POST"  id="invoiceForm">
         <div class="input">
-            <label for="customerSelectBox">Customer (Required)</label>
+            <label for="customerSelectBox">Customer</label>
             <select form="invoiceForm" name="customerSelectBox" id="customerSelectBox">
                 <c:if test="${customer != null}">
                     <option value="${customer.id}" selected>${customer.firstName} ${customer.lastName}</option>
@@ -136,11 +136,11 @@
             </table>
 
 <%--        <a href="#" class="delete">Delete</a>--%>
-
-<%--        <input type="submit" id="submit" value="Submit"/>--%>
+        <button type="button" class="btn btn btn-link add_form_field"  data-toggle="modal" data-target=".modal">Add product&nbsp; <span style="font-size:16px; font-weight:bold;">+ </span></button>
+        <input type="submit" class="btn btn-primary add_form_field" id="submit" value="Save Invoice"/>
     </form>
 
-    <button type="button" class="btn btn-primary add_form_field"  data-toggle="modal" data-target=".modal">Add product&nbsp; <span style="font-size:16px; font-weight:bold;">+ </span></button>
+
 
 
 

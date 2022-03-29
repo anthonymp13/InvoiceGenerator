@@ -1,3 +1,103 @@
+.displayContainer {
+    margin: 1em;
+    text-align: left;
+
+}
+
+label {
+    width: 5em;
+}
+
+select {
+    height: 2em;
+    border: none;
+    background-color: whitesmoke;
+    padding-top: .5em;
+}
+
+/* Modal styling */
+input#unitPrice, input#quantity {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 6em;
+}
+
+label#descriptionLabel {
+    display: none;
+}
+
+textarea#description {
+    width: 15em;
+    border-width: 0 0 1px 0;
+    border-bottom-color: black;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+p {
+    margin-top: .5em
+}
+
+form#invoiceForm {
+
+}
+
+/* Table styling */
+table {
+    margin-top: 1em;
+    padding: .5em;
+    text-align: left;
+
+}
+
+table label {
+    display: none;
+}
+
+tr.product {
+    cursor: pointer;
+}
+
+.selected {
+    background-color: aquamarine;
+}
+
+th {
+    padding-right: .5em;
+    border-bottom: 1px solid black;
+}
+
+
+td.description {
+    word-break: break-all;
+}
+
+button.add_form_field {
+    text-align: center;
+    display: block;
+}
+
+
+@media (max-width: 500px) {
+
+    select, input {
+        width: 100%;
+    }
+
+    label {
+        display: inline-block;
+        text-align: left;
+        /*width: 5em;*/
+    }
+
+
+
+
+
+
+
+}
+
 /*body ::before{*/
 /*    text-align: left;*/
 /*    display: inline;*/
@@ -75,99 +175,3 @@
 /*select {*/
 /*    width: 100%;*/
 /*}*/
-
-.displayContainer {
-    margin: 1em;
-    text-align: left;
-}
-
-/* Modal styling */
-
-input#unitPrice, input#quantity {
-    border: none;
-    border-bottom: 1px solid black;
-    width: 6em;
-}
-
-label#descriptionLabel {
-    display: none;
-}
-
-textarea#description {
-    width: 15em;
-    border-width: 0 0 1px 0;
-    border-bottom-color: black;
-    word-break: break-word;
-    word-wrap: break-word;
-}
-
-input#description::placeholder {
-    /*color: lightgrey;*/
-}
-
-p {
-    margin-top: .5em
-}
-
-
-/* Table styling */
-table {
-    margin-top: 1em;
-    padding: .5em;
-    text-align: left;
-}
-
-table label {
-    display: none;
-}
-
-tr.product {
-    cursor: pointer;
-}
-
-.selected {
-    background-color: aquamarine;
-}
-
-th {
-    padding-right: .5em;
-    border-bottom: 1px solid black;
-}
-
-
-td.description {
-    word-break: break-all;
-}
-
-
-@media (max-width: 750px) {
-
-}
-
-@media (max-width: 500px) {
-
-
-    select, input {
-        width: 100%;
-    }
-
-    label {
-        display: inline-block;
-        text-align: left;
-        /*width: 5em;*/
-    }
-
-    select {
-        height: 2em;
-        border: none;
-        background-color: whitesmoke;
-    }
-
-    button.add_form_field {
-        /*position: absolute;*/
-    }
-
-
-
-
-}
