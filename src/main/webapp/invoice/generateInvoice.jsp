@@ -3,7 +3,7 @@
 <html>
 <c:import url="../template/head.jsp" />
 <link rel="stylesheet" type="text/css" href="css/invoice/generateInvoice.css">
-<link rel="stylesheet" type="text/css" href="css/invoice/viewInvoice.css">
+<%--<link rel="stylesheet" type="text/css" href="css/invoice/viewInvoice.css">--%>
 
 </head>
 <body>
@@ -13,127 +13,171 @@
     <script type="text/javascript" src="/invoiceGenerator/js/generateInvoice.js"></script>
 
 
-    <div class="displayContainer">
+    <main class="displayContainer">
     <h1>Generate invoice</h1>
-    <p>Welcome to the Invoice Generator</p>
 
-    <div id="tables">
-            <table class="table  table-bordered">
-                <tablehead>
-                    <tr class="bg-primary">
-                        <th scope="col">Invoice #</th>
-                        <th scope="col">Date</th>
-                    </tr>
-                </tablehead>
-                <tbody>
-                    <tr>
-                        <td scope="row">1</td>
-                        <td>2/28/2020</td>
-                    </tr>
-                </tbody>
-            </table>
 
-            <table class="table  table-bordered">
-                <tablehead>
-                    <tr class="bg-primary">
-                        <th scope="col">Customer Id</th>
-                        <th scope="col"><label for="terms">Terms</label></th>
-                    </tr>
-                </tablehead>
-                <tbody>
-                <tr>
-                    <td scope="row">1</td>
-                    <td>
-                        <select id="terms" name="termList" form="invoiceForm">
-                            <option value="Terms of Sale">Terms of Sale</option>
-                            <option value="Due upon completion">Payment in Advance</option>
-                            <option value="Due upon completion">Immediate Payment</option>
-                            <%-- TODO: Add more options button... and/or custom option input --%>
-                        </select>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+
+
+    <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Product/Service</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="input">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" id="quantity" class="quantity" name="quantity" required>
+                    </div>
+                    <div class="input">
+                        <label for="unitPrice">Unit Price</label>
+                        <input type="number" id="unitPrice" class="unitPrice" name="unitPrice" required>
+                    </div>
+                    <div class="input">
+                        <label id="descriptionLabel" for="description">Description</label>
+                        <textarea type="text" id="description" placeholder="Description" class="description" name="description" required></textarea>
+
+                    </div>
+                    <p class="amount">Amount:</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" id="remove" class="btn btn-danger">Remove</button>
+                    <button type="button" id="saveChanges" class="btn btn-primary">Save</button>
+                </div>
+            </div>
         </div>
+    </div>
+
     <form action="GenerateInvoice" method="POST"  id="invoiceForm">
-        <p>Image place holder</p>
-        <div class="companyInfo">
-            <td>${company.companyId}</td>
-            <td>${company.companyName}</td>
-            <td>${company.phoneNumber}</td>
-            <td>${company.address}</td>
+        <div class="input">
+            <label for="customerSelectBox">Customer (Required)</label>
+            <select form="invoiceForm" name="customerSelectBox" id="customerSelectBox">
+                <c:if test="${customer != null}">
+                    <option value="${customer.id}" selected>${customer.firstName} ${customer.lastName}</option>
+                    <c:forEach var="customer" items="${company.customers}">
+                        <option value="${customer.id}">${customer.firstName} ${customer.lastName}</option>
+                    </c:forEach>
+                </c:if>
+                <c:if test="${customer == null}">
+                    <c:forEach var="customer" items="${company.customers}">
+                        <option value="${customer.id}">${customer.firstName} ${customer.lastName}</option>
+                    </c:forEach>
+                </c:if>
+            </select>
+        </div>
+        <div class="input">
+            <label for="terms">Terms</label>
+            <select id="terms" name="termList" form="invoiceForm">
+                <option value="No Terms Set">(No terms set)</option>
+                <option value="Due upon completion">Payment in advance</option>
+                <option value="Due upon completion">Immediate payment</option>
+            </select>
         </div>
 
-        <table id="billToTable" class="table  table-bordered" style="overflow-y:auto;">
-            <tablehead>
-                <tr class="bg-primary">
-                    <th colspan="4" scope="col">Bill To:</th>
-                </tr>
-            </tablehead>
-        </table>
-        <select form="invoiceForm" name="customerSelectBox" id="customerSelectBox">
-            <c:if test="${customer != null}">
-                <option value="${customer.id}" selected>
-                        ${customer.firstName} ${customer.lastName},
-                    Address: ${customer.street}, ${customer.city}, ${customer.state} ${customer.postalcode}
-                </option>
-                <c:forEach var="customer" items="${company.customers}">
-                    <option value="${customer.id}">
-                            ${customer.firstName} ${customer.lastName},
-                        Address: ${customer.street}, ${customer.city}, ${customer.state} ${customer.postalcode}
-                    </option>
-                </c:forEach>
-            </c:if>
 
-            <c:if test="${customer == null}">
-                <c:forEach var="customer" items="${company.customers}">
-                    <option value="${customer.id}">
-                            ${customer.firstName} ${customer.lastName},
-                        Address: ${customer.street}, ${customer.city}, ${customer.state} ${customer.postalcode}
-                    </option>
-                </c:forEach>
-            </c:if>
+<%--        <table id="items">--%>
+<%--            <tr>--%>
+<%--                <th>Description</th>--%>
+<%--                <th>Quantity</th>--%>
+<%--                <th>Price</th>--%>
+<%--            </tr>--%>
+<%--            <tr class="product">--%>
+<%--                <td class="description">Remove multiple trees</td>--%>
+<%--                <td class="quantity">1</td>--%>
+<%--                <td class="price">18000</td>--%>
+<%--            </tr>--%>
+<%--            <tr class="product">--%>
+<%--                <td class="description">Remove multiple trees</td>--%>
+<%--                <td class="quantity">1</td>--%>
+<%--                <td class="price">18000</td>--%>
+<%--            </tr>--%>
+<%--            <tr class="product">--%>
+<%--                <td class="description">Remove multiple trees</td>--%>
+<%--                <td class="quantity">1</td>--%>
+<%--                <td class="price">18000</td>--%>
+<%--            </tr>--%>
+<%--            <tr class="product">--%>
+<%--                <td class="description">Remove multiple trees</td>--%>
+<%--                <td class="quantity">1</td>--%>
+<%--                <td class="price">18000</td>--%>
+<%--            </tr>--%>
 
-        </select>
+<%--        </table>--%>
 
-        <br/>
-        <br/>
-        <table class="table  table-bordered" id="table">
-            <tr class="bg-primary">
-                <th>Description</th>
-                <th>Qty</th>
-                <th>Unit Price</th>
-                <th>Amount</th>
-                <th>Remove row</th>
-            </tr>
+                <table  id="items">
+                    <tr>
+                        <th>Description</th>
+                        <th>Qty</th>
+                        <th>Unit Price</th>
+                    </tr>
 
-            <tr class="descriptionRow">
-                <td><label for="description">Description</label>
-                    <input type="text" id="description" class="description" name="description"></td>
-                <td>
-                    <label for="quantity">Quantity</label>
-                    <input type="text" id="quantity" class="quantity" name="quantity">
-                </td>
-                <td>
-                    <label for="unitPrice">Unit Price</label>
-                    <input type="text" id="unitPrice" class="unitPrice" name="unitPrice">
-                </td>
-                <td>
-                    <p class="amount"></p>
-                </td>
+<%--                    <tr class="product">--%>
+<%--                        <td class="description">--%>
+<%--                            <label for="description">Description</label>--%>
+<%--                            <input type="text" class="addedDescription"  name="description">--%>
+<%--                        </td>--%>
+<%--                        <td class="quantity">--%>
+<%--                            <label for="quantity">Quantity</label>--%>
+<%--                            <input type="text" class="addedQuantity"  name="quantity">--%>
+<%--                        </td>--%>
+<%--                        <td class="unitPrice">--%>
+<%--                            <label for="unitPrice">Unit Price</label>--%>
+<%--                            <input type="text" class="addedUnitPrice"  name="unitPrice">--%>
+<%--                        </td>--%>
+<%--                        <td>--%>
+<%--                            <a href="#" class="delete">Delete</a>--%>
+<%--                        </td>--%>
+<%--                    </tr>--%>
+            </table>
 
-                <td><a href="#" class="delete">Delete</a></td>
-            </tr>
-        </table>
-        <input type="submit" id="submit" value="Submit"/>
+<%--        <a href="#" class="delete">Delete</a>--%>
+
+<%--        <input type="submit" id="submit" value="Submit"/>--%>
     </form>
 
-    <button class="add_form_field">Add New Field &nbsp; <span style="font-size:16px; font-weight:bold;">+ </span></button>
+    <button type="button" class="btn btn-primary add_form_field"  data-toggle="modal" data-target=".modal">Add product&nbsp; <span style="font-size:16px; font-weight:bold;">+ </span></button>
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    </form>
 
-    </div>
+
+</main>
+<%--        <table class="table  table-bordered" id="table">--%>
+<%--            <tr class="bg-primary">--%>
+<%--                <th>Description</th>--%>
+<%--                <th>Qty</th>--%>
+<%--                <th>Unit Price</th>--%>
+<%--                <th>Amount</th>--%>
+<%--                <th>Remove row</th>--%>
+<%--            </tr>--%>
+
+<%--            <tr class="descriptionRow">--%>
+<%--                <td><label for="description">Description</label>--%>
+<%--                    <input type="text" id="description" class="description" name="description"></td>--%>
+<%--                <td>--%>
+<%--                    <label for="quantity">Quantity</label>--%>
+<%--                    <input type="text" id="quantity" class="quantity" name="quantity">--%>
+<%--                </td>--%>
+<%--                <td>--%>
+<%--                    <label for="unitPrice">Unit Price</label>--%>
+<%--                    <input type="text" id="unitPrice" class="unitPrice" name="unitPrice">--%>
+<%--                </td>--%>
+<%--                <td>--%>
+<%--                    <p class="amount"></p>--%>
+<%--                </td>--%>
+
+<%--                <td><a href="#" class="delete">Delete</a></td>--%>
+<%--            </tr>--%>
+<%--        </table>--%>
+
+
+
 
 </body>
 </html>
