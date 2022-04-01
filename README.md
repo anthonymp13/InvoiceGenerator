@@ -13,11 +13,9 @@ users to use. This will allow for businesses to put more time and resources into
 * Security/Authentication
   * Tomcat's JDBC Realm Authentication
   * Admin role: create/read/update/delete (crud) of all data
-  * User role: create invoice, edit data they have entered previously, delete invoice
+  * User role: create invoice, edit, view, and delete invoice
 * Database
   * MySQL
-  * Store users and roles
-  * Store all data for the invoice
 * ORM Framework
   * Hibernate 5
 * Dependency Management
@@ -29,10 +27,11 @@ users to use. This will allow for businesses to put more time and resources into
 * Logging
   * Configurable logging using Log4J2. In production, only errors will normally be logged, but logging at a debug level can be turned on to facilitate trouble-shooting. 
 * Hosting
-  * AWS
+  * AWS EC2, Elastic Beanstalk, S3
 * Independent Research Topic/s
   * iText
   * PdfBox
+  * Mockaroo
 * Unit Testing
   * JUnit tests to achieve 80%+ code coverage 
 * IDE: IntelliJ IDEA
@@ -40,4 +39,4 @@ users to use. This will allow for businesses to put more time and resources into
 
 ### Design
 
-* [User Stories](DesignDocuments/userStories.md)"
+* [User Stories](DesignDocuments/userStories.md)
