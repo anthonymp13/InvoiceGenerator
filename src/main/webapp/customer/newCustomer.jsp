@@ -1,6 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
 <c:import url="../template/head.jsp" />
 <title>New Customer | InvoiceGenerator</title>
 <link rel="stylesheet" type="text/css" href="../css/customer/newCustomer.css">
@@ -60,5 +59,4 @@
     <button type="reset" class="btn btn-secondary">Reset</button>
 </form>
 
-</body>
-</html>
+<c:import url="../template/footer.jsp"/>

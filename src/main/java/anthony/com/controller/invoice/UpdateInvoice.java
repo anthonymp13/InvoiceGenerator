@@ -72,6 +72,8 @@ public class UpdateInvoice extends HttpServlet {
 
         GenericDao<Invoice> invoiceDao = new GenericDao(Invoice.class);
         GenericDao<Customer> customerDao = new GenericDao(Customer.class);
+        GenericDao<Product> productDao = new GenericDao(Product.class);
+        GenericDao<Item> itemDao = new GenericDao(Item.class);
 
         int total = 0;
         String[] descriptionsList;
@@ -92,8 +94,8 @@ public class UpdateInvoice extends HttpServlet {
         customerId = req.getParameter("customerSelectBox");
         invoiceId = req.getParameter("invoiceId");
 
-//      Retrieves all descriptions, quantities, and unitPrice for all products listed in the invoice and adds them to there own lists
-//      Inspired by: https://stackoverflow.com/questions/46203250/how-to-get-all-the-html-input-values-in-the-same-name-to-the-servlet-by-arraylis
+//      Retrieves all descriptions, quantities, and unitPrice for all products listed in the
+//      invoice and adds them to there own lists
         descriptionsList = req.getParameterValues("description");
         quantityList = req.getParameterValues("quantity");
         unitPriceList = req.getParameterValues("unitPrice");
@@ -105,6 +107,7 @@ public class UpdateInvoice extends HttpServlet {
         for(int i = 0; i < descriptions.size(); i++) {
 //          Calculate total
             total += Integer.parseInt(quantities.get(i)) * Integer.parseInt(unitPrices.get(i));
+//            total += quantities.get(i) * unitPrices.get(i);
         }
 
 //      Get selected customer object
@@ -113,17 +116,12 @@ public class UpdateInvoice extends HttpServlet {
 //      Get current date and format
         dt = new java.util.Date();
 
-//      Create new invoice object
-//        Invoice newInvoice = new Invoice(total, terms, dt, customer);
+//      Retrieve invoice to be updated
         Invoice invoice = invoiceDao.getById(Integer.parseInt(invoiceId));
 
-
-        GenericDao productDao = new GenericDao(Product.class);
         invoiceDao.saveOrUpdate(invoice);
 
 
-
-        GenericDao itemDao = new GenericDao(Item.class);
 
 //      Add invoice items and products into database
         for(int i = 0; i < descriptions.size(); i++) {
@@ -133,6 +131,7 @@ public class UpdateInvoice extends HttpServlet {
 
 //          Create an item that represents an item in the invoice
             int quantity = Integer.parseInt(quantities.get(i));
+//            int quantity = quantities.get(i);
             double cost = Double.valueOf(unitPrices.get(i)) * quantity;
             Item item = new Item(i, product, quantity, cost, invoice);
             itemDao.insert(item);

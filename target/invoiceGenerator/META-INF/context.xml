@@ -1,8 +1,8 @@
 <Context docBase="/invoiceGenerator" path="/invoiceGenerator" reloadable="true">
-<!--    TODO: update connectionURL for AWS-->
+
     <Realm className="org.apache.catalina.realm.JDBCRealm"
            driverName="com.mysql.cj.jdbc.Driver"
-           connectionURL="jdbc:mysql://localhost:3306/iTextInvoice?user=root&amp;password=July.2600"
+            connectionURL="jdbc:mysql://localhost:3306/iTextInvoice?user=root&amp;password=July.2600"
            userTable="user" userNameCol="userName" userCredCol="password"
            userRoleTable="user_role" roleNameCol="role_name" >
     </Realm>

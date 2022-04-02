@@ -6,15 +6,14 @@
 }
 
 #tables {
-    width: 100%;
+    width: fit-content;
     display: flex;
     flex-direction: column;
-
-    align-items: flex-end;
+    align-self: flex-end;
 }
 
 #tables table {
-    width: max-content;
+    /*width: max-content;*/
 
 }
 

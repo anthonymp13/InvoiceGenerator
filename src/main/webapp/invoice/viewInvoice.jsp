@@ -1,9 +1,10 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <c:import url="../template/head.jsp" />
 
-<link rel="stylesheet" type="text/css" href="css/viewInvoice.css">
+<link rel="stylesheet" type="text/css" href="css/invoice/viewInvoice.css">
 </head>
 <body>
 
@@ -75,20 +76,23 @@
                 ${item.product.name}
             </td>
             <td>
-                ${item.quantity}
+                <fmt:formatNumber var="quantity" value="${item.quantity}" pattern="####"/>
+                ${quantity}
             </td>
             <td>
-                ${item.product.price}
+                <fmt:formatNumber var="price" value="${item.product.price}" pattern="####"/>
+                ${price}
             </td>
             <td>
-                ${item.cost}
+                <fmt:formatNumber var="cost" value="${item.cost}" pattern="####"/>
+                ${cost}
             </td>
         </tr>
         </c:forEach>
     </table>
 
     <h2>Total: ${invoice.total} (Taxes are calculated upon download of invoices)</h2>
-    <a href="GenerateInvoice?invoiceId=${invoice.id}">Edit</a>
+    <a href="UpdateInvoice?invoiceId=${invoice.id}">Edit</a>
     <a href="DeleteInvoice?invoiceId=${invoice.id}">Delete</a>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>

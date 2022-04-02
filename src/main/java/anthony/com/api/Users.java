@@ -28,6 +28,7 @@ public class Users {
                         + " First Name: " + user.getFirstName()
                         + " Last Name: " +user.getLastName()
                         + " Company: " + user.getCompany().getCompanyName()
+                        + "ss"
                         + "<br/>";
 
         }

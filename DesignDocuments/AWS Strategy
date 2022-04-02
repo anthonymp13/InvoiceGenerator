@@ -1,1 +1,27 @@
-    aws ec2-instance-connect send-ssh-public-key --instance-id i-03d37acc367377be5 --availability-zone us-east-1a --instance-os-user ec2-user anthonymp34 --ssh-public-key file://invoice-generator-key.pub
+    aws ec2-instance-connect send-ssh-public-key \
+     --instance-id i-09c8320479d0d5731 \
+     --availability-zone us-east-1b \
+     --instance-os-user ubuntu \
+     --ssh-public-key file://invoice-generator-key.pub
+
+
+Hotswap
+Ran with packed war updated jsps in target folder, but only classes in target/classes not web-inf/classes
+Nothing happened in browser
+
+Update classes and resources
+ran with exploded war updated jsps in target folder and classes in target/classes and web-inf/classes
+Failed to load style sheets while in debug mode and regular mode - 500 error
+Edited config to use packed war file and ran in regular mode.
+    Still fails in Google and Firefox private and normal windows...
+    Debug mode still updated target jsps
+Restarted server again?
+Updated path file of masterstylesheet in template
+Files are in correct place
+Removed cachingAllow="false" cacheMaxSize="1" from catalina/context.xml
+Restarted IDE
+Redeployed
+Dashboard servlet url was set to "/" which messed up the routing.
+Reset config to use update classes and resources using exploded war file.
+It is only reloading when classes have been updated?...
+Added compile automake in advanced settings

@@ -10,7 +10,7 @@
 
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
     <!-- Brand -->
-    <a class="navbar-brand" href="/index.jsp">Invoice Generator</a>
+    <a class="navbar-brand" href="index.jsp">Invoice Generator</a>
 
     <!-- Toggler/collapsibe Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -33,7 +33,7 @@
         </c:if>
         <c:if test="${user != null}">
             <li class="nav-item">
-                <a class="nav-link" href="Dashboard">Dashboard</a>
+                <a class="nav-link" href="invoiceGenerator/Dashboard">Dashboard</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="Logout">logout</a>

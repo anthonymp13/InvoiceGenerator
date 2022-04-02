@@ -2,8 +2,11 @@ body {
     text-align: center;
 }
 
-#loginContainer div {
-    padding-top: 5em;
+#loginContainer {
+    /*padding-top: 5em;*/
+    width: 15em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
@@ -27,6 +30,15 @@ label {
 input {
     margin-left: auto;
     margin-right: auto;
+}
+
+input[type="submit"] {
+    margin-top: 1em;
+    width: 100%;
+}
+
+th {
+    text-align: center;
 }
 
 a {

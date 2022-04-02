@@ -26,7 +26,7 @@
             <TR><TH><INPUT TYPE="SUBMIT" name="login" class="btn btn-primary" VALUE="Log In">
         </TABLE>
     </FORM>
-    <a href="#">Forgot usernamesssss/password?</a>
+    <a href="#">Forgot username/password?</a>
     <a href="user/createUser.jsp">Sign Up</a>
 
 </div>

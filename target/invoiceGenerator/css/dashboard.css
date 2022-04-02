@@ -2,19 +2,53 @@ body {
     text-align: center;
 }
 
+main {
+    margin: auto;
+    width: max-content;
 
-.displayContainer form {
-    float: right;
 }
 
-.displayContainer button {
-    float: right;
+.displayContainer {
+    padding-top: 1.5em;
+    padding-bottom: .65em;
+    margin: 1em;
+
 }
+
+
+form {
+    margin-bottom: 1em;
+    text-align: right;
+}
+
+form label {
+    display: none ;
+}
+
+table {
+    margin-top: 1em;
+    width: 100%;
+
+}
+
 
 .ch1 {
-    width: 15em;
+    /*width: 15em;*/
 }
 
 .ch3 {
-    width: 15em;
+    /*width: 15em;*/
+}
+
+
+@media (max-width: 750px) {
+
+    table {
+        margin-top: 1em;
+        width: min-content;
+    }
+
+    .ch2 {
+        display: none;
+    }
 }

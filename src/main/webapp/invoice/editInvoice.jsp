@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <c:import url="../template/head.jsp" />
@@ -10,7 +11,6 @@
 <c:import url="../template/navbar.jsp"/>
 <script src="/invoiceGenerator/js/generateInvoice.jsp"></script>
 <h1>Invoice Generator</h1>
-<p>Welcome to the Invoice asasdfdfGenerator</p>
 <div id="container">
 <div id="tables">
     <table class="table  table-bordered">
@@ -94,19 +94,24 @@
                 ${item.product.name}" class="description" name="description"></td>
             <td>
                 <label for="quantity">Quantity</label>
-                <input type="text" value="${item.quantity}" id="quantity" class="quantity" name="quantity">
+                <fmt:formatNumber var="quantity" value="${item.product.quantity}" pattern="####"/>
+                <input type="number" value="${quantity}" id="quantity" class="quantity" name="quantity">
             </td>
             <td>
                 <label for="unitPrice">Unit Price</label>
-                <input type="text" value="${item.product.price}" id="unitPrice" class="unitPrice" name="unitPrice">
+                <fmt:formatNumber var="price" value="item.product.price" pattern="####"/>
+                <input type="number" value="${price}" id="unitPrice" class="unitPrice" name="unitPrice">
             </td>
             <td>
-                <p class="amount">${item.product.price * item.quantity}</p>
+                <fmt:formatNumber var="amount" value="item.product.price * item.quantity"/>
+                <p class="amount">${amount}</p>
             </td>
             <td><a href="#" class="delete">Delete</a></td>
         </tr>
     </c:forEach>
     </table>
+
+    <input type="hidden" name="invoiceId" value="${invoice.id}">
     <input type="submit" id="submit" value="Submit"/>
 </form>
 

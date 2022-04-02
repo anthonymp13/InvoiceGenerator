@@ -12,35 +12,37 @@
 <c:import url="../template/navbar.jsp"/>
 
 
+<main>
+
 <%-- TODO: add deleted customer confirmation--%>
-<div class="displayContainer" id="usersContainer">
-    <form>
-        <label for="userSearch">Users</label>
-        <input type="text" id="userSearch" name="invoiceSearch">
-        <input type="submit" value="Search">
-    </form>
-    <table class="table table-bordered">
-        <tr>
-            <th class="ch1">Name</th>
-            <th>Privileges</th>
-            <th class="ch3">Actions</th>
-        </tr>
+<%--<div class="displayContainer" id="usersContainer">--%>
+<%--    <form>--%>
+<%--        <label for="userSearch">Users</label>--%>
+<%--        <input type="text" id="userSearch" name="invoiceSearch">--%>
+<%--        <input type="submit" value="Search">--%>
+<%--    </form>--%>
+<%--    <table class="table table-bordered">--%>
+<%--        <tr>--%>
+<%--            <th class="ch1">Name</th>--%>
+<%--            <th class="ch2">Privileges</th>--%>
+<%--            <th class="ch3">Actions</th>--%>
+<%--        </tr>--%>
 
-        <c:forEach var="user" items="${users}">
-            <tr>
-                <td>${user.firstName} ${user.lastName}</td>
-                <c:forEach var="role" items="${user.roles}">
-                    <td>${role.roleName}</td>
-                </c:forEach>
-                <td>
-                    <a href="/invoiceGenerator/EditEmployee?userId=${user.userId}">Edit</a>
-                    <a href="/invoiceGenerator/DeleteUser?userId=${user.userId}">Delete</a>
-                </td>
-            </tr>
-        </c:forEach>
+<%--        <c:forEach var="user" items="${users}">--%>
+<%--            <tr>--%>
+<%--                <td>${user.firstName} ${user.lastName}</td>--%>
+<%--                <c:forEach var="role" items="${user.roles}">--%>
+<%--                    <td class="ch2">${role.roleName}</td>--%>
+<%--                </c:forEach>--%>
+<%--                <td>--%>
+<%--                    <a href="/invoiceGenerator/EditEmployee?userId=${user.userId}">Edit</a>--%>
+<%--                    <a href="/invoiceGenerator/DeleteUser?userId=${user.userId}">Delete</a>--%>
+<%--                </td>--%>
+<%--            </tr>--%>
+<%--        </c:forEach>--%>
 
-    </table>
-</div>
+<%--    </table>--%>
+<%--</div>--%>
 
 <div class="displayContainer" id="invoicesContainer">
     <form>
@@ -51,13 +53,13 @@
     <table class="table table-bordered">
         <tr>
             <th class="ch1">Name</th>
-            <th>Invoice Date</th>
+            <th class="ch2">Invoice Date</th>
             <th class="ch3">Actions</th>
         </tr>
         <c:forEach var="invoice" items="${invoices}">
             <tr>
                 <td>${invoice.customer.firstName} ${invoice.customer.lastName}</td>
-                <td>${invoice.invoiceDate}</td>
+                <td class="ch2">${invoice.invoiceDate}</td>
                 <td>
                     <a href="UpdateInvoice?invoiceId=${invoice.id}">Edit</a>
                     <a href="ViewInvoice?invoiceId=${invoice.id}">View</a>
@@ -79,13 +81,13 @@
     <table class="table table-bordered">
         <tr>
             <th class="ch1">Name</th>
-            <th>Address</th>
+            <th class="ch2">Address</th>
             <th class="ch3">Actions</th>
         </tr>
         <c:forEach var="customer" items="${customers}">
             <tr>
                 <td>${customer.firstName} ${customer.lastName}</td>
-                <td>${customer.street} ${customer.city}, ${customer.state} ${customer.postalcode}</td>
+                <td class="ch2">${customer.street} ${customer.city}, ${customer.state} ${customer.postalcode}</td>
                 <td>
                     <a href="updateCustomer?customerId=${customer.id}">Edit</a>
                     <a href="DeleteCustomer?customerId=${customer.id}">Delete</a>
@@ -93,7 +95,8 @@
             </tr>
         </c:forEach>
     </table>
-    <a href="newCustomer.jsp">Add Customer</a>
+    <a href="customer/newCustomer.jsp">Add Customer</a>
 </div>
+</main>
 </body>
 </html>

@@ -33,7 +33,7 @@
         </c:if>
         <c:if test="${user != null}">
             <li class="nav-item">
-                <a class="nav-link" href="Dashboard">Dashboard</a>
+                <a class="nav-link" href="invoiceGenerator/Dashboard">Dashboard</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="Logout">logout</a>

@@ -15,34 +15,34 @@
 <main>
 
 <%-- TODO: add deleted customer confirmation--%>
-<div class="displayContainer" id="usersContainer">
-    <form>
-        <label for="userSearch">Users</label>
-        <input type="text" id="userSearch" name="invoiceSearch">
-        <input type="submit" value="Search">
-    </form>
-    <table class="table table-bordered">
-        <tr>
-            <th class="ch1">Name</th>
-            <th class="ch2">Privileges</th>
-            <th class="ch3">Actions</th>
-        </tr>
+<%--<div class="displayContainer" id="usersContainer">--%>
+<%--    <form>--%>
+<%--        <label for="userSearch">Users</label>--%>
+<%--        <input type="text" id="userSearch" name="invoiceSearch">--%>
+<%--        <input type="submit" value="Search">--%>
+<%--    </form>--%>
+<%--    <table class="table table-bordered">--%>
+<%--        <tr>--%>
+<%--            <th class="ch1">Name</th>--%>
+<%--            <th class="ch2">Privileges</th>--%>
+<%--            <th class="ch3">Actions</th>--%>
+<%--        </tr>--%>
 
-        <c:forEach var="user" items="${users}">
-            <tr>
-                <td>${user.firstName} ${user.lastName}</td>
-                <c:forEach var="role" items="${user.roles}">
-                    <td class="ch2">${role.roleName}</td>
-                </c:forEach>
-                <td>
-                    <a href="/invoiceGenerator/EditEmployee?userId=${user.userId}">Edit</a>
-                    <a href="/invoiceGenerator/DeleteUser?userId=${user.userId}">Delete</a>
-                </td>
-            </tr>
-        </c:forEach>
+<%--        <c:forEach var="user" items="${users}">--%>
+<%--            <tr>--%>
+<%--                <td>${user.firstName} ${user.lastName}</td>--%>
+<%--                <c:forEach var="role" items="${user.roles}">--%>
+<%--                    <td class="ch2">${role.roleName}</td>--%>
+<%--                </c:forEach>--%>
+<%--                <td>--%>
+<%--                    <a href="/invoiceGenerator/EditEmployee?userId=${user.userId}">Edit</a>--%>
+<%--                    <a href="/invoiceGenerator/DeleteUser?userId=${user.userId}">Delete</a>--%>
+<%--                </td>--%>
+<%--            </tr>--%>
+<%--        </c:forEach>--%>
 
-    </table>
-</div>
+<%--    </table>--%>
+<%--</div>--%>
 
 <div class="displayContainer" id="invoicesContainer">
     <form>
@@ -95,7 +95,7 @@
             </tr>
         </c:forEach>
     </table>
-    <a href="newCustomer.jsp">Add Customer</a>
+    <a href="customer/newCustomer.jsp">Add Customer</a>
 </div>
 </main>
 </body>
